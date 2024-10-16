@@ -3,6 +3,7 @@
 ### Equipe 👩‍💻👨‍💻
 - Victória Rocha
 - Matheus Gois
+- Pedro Guedes
 - Guilherme
 - Kevin
 - Carlos
