@@ -1,13 +1,6 @@
 # Trabalho de Extensão 2 - IFSP
 ## ONG - Instituto Jaguatirica 🐆
-### Equipe 👩‍💻👨‍💻
-- Victória Rocha
-- Matheus Gois
-- Pedro Guedes
-- Guilherme
-- Kevin
-- Carlos
-##
+
 ### Escopo 📃
   O sistema a ser desenvolvido será um site web criado para representar a ONG fictícia "Instituto Jaguatirica", a qual defende animais silvestres. A página deverá conter informações científicas sobre animais, assim como características da fauna regional. Além disso, será possível realizar inscrições para o voluntariado na ONG utilizando este sistema, assim como haverá o caso de "apadrinhamento" de animais, no qual o público geral poderá patrocinar animais em específico que estão aos cuidados do Instituto Jaguatirica.</p>
 ##
@@ -64,3 +57,25 @@
     - _id_animal_: int 🗺️
     - _id_usuario_: int  🗺️
 
+
+
+### Equipe 👩‍💻👨‍💻
+![Static Badge](https://img.shields.io/badge/vicotirah-github?logo=github&logoColor=white&labelColor=black&color=%23000058&link=https%3A%2F%2Fgithub.com%2Fvicotirah)
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Matheus Gois
+- Pedro Guedes
+- Guilherme
+- Kevin
+- Carlos
