@@ -32,3 +32,35 @@
 ##
 ### Front-end 🖼️
 #### Figma: 🔗[Projeto no Figma](https://www.figma.com)
+##
+### Back-end 🔢
+##
+### Banco de Dados 🎲
+#### Entidades e atributos:
+- **Usuário** 👥
+    - **id_usuario**: autoincrement int 🔑
+    - CPF: int
+    - nome: varchar
+    - e-mail: varchar
+    - endereço: varchar
+    - cidade: varchar
+    - estado: varchar
+    - telefone: int
+- **Animal** 🐾
+    - **id_animal**: autoincrement int 🔑
+    - nome: varchar
+    - especie: varchar
+    - regiao: varchar
+    - data_entrada: date
+    - status : varchar
+- **Voluntário** 🤲
+    - **id_voluntario**: autoincrement int 🔑
+    - atividade: varchar
+    - _id_usuario_: int (chave estrangeira) 🗺️
+
+- **Padrinhos** 🤲
+    - **id_apadrinhamento**: autoincrement int 🔑
+    - mesada: float
+    - _id_animal_: int 🗺️
+    - _id_usuario_: int  🗺️
+
