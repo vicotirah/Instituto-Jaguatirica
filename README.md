@@ -1,5 +1,5 @@
-# Trabalho de Extensão 2 - IFSP
-## ONG - Instituto Jaguatirica 🐆
+# ONG - Instituto Jaguatirica 🐆
+## Trabalho de Extensão 2 - IFSP
 
 ### Escopo 📃
   O sistema a ser desenvolvido será um site web criado para representar a ONG fictícia "Instituto Jaguatirica", a qual defende animais silvestres. A página deverá conter informações científicas sobre animais, assim como características da fauna regional. Além disso, será possível realizar inscrições para o voluntariado na ONG utilizando este sistema, assim como haverá o caso de "apadrinhamento" de animais, no qual o público geral poderá patrocinar animais em específico que estão aos cuidados do Instituto Jaguatirica.</p>
