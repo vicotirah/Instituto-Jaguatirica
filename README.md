@@ -30,32 +30,8 @@
 ##
 ### Banco de Dados 🎲
 #### Entidades e atributos:
-- **Usuário** 👥
-    - **id_usuario**: autoincrement int 🔑
-    - CPF: int
-    - nome: varchar
-    - e-mail: varchar
-    - endereço: varchar
-    - cidade: varchar
-    - estado: varchar
-    - telefone: int
-- **Animal** 🐾
-    - **id_animal**: autoincrement int 🔑
-    - nome: varchar
-    - especie: varchar
-    - regiao: varchar
-    - data_entrada: date
-    - status : varchar
-- **Voluntário** 🤲
-    - **id_voluntario**: autoincrement int 🔑
-    - atividade: varchar
-    - _id_usuario_: int (chave estrangeira) 🗺️
+![image](https://github.com/user-attachments/assets/0e38233d-18fc-44df-a46d-7bad19476cd1)
 
-- **Padrinhos** 🤲
-    - **id_apadrinhamento**: autoincrement int 🔑
-    - mesada: float
-    - _id_animal_: int 🗺️
-    - _id_usuario_: int  🗺️
 
 
 
