@@ -7,6 +7,10 @@
 	font-family: "Titillium Web", sans-serif;
 }
 
+img{
+    width: 8vw;
+    border-radius: 50%;
+}
 :root {
 	--mainColor: #29335c;
 	--mainColorLight: #5767aa;
