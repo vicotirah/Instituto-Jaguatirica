@@ -16,18 +16,18 @@ create table if not exists animal (
 create table if not exists  usuario (
     idUser INT PRIMARY KEY AUTO_INCREMENT,
     CPF INT NOT NULL,
-    nome TEXT NOT NULL,
-    email TEXT NOT NULL,
-    endereco TEXT NOT NULL,
-    cidade TEXT NOT NULL,
-    estado TEXT NOT NULL,
+    nome VARCHAR(45)  NOT NULL,
+    email VARCHAR(45)  NOT NULL,
+    endereco VARCHAR(45)  NOT NULL,
+    cidade VARCHAR(45)  NOT NULL,
+    estado VARCHAR(45)  NOT NULL,
     tel INT
 
 );
 
 create table if not exists  voluntario (
     idVoluntario INT PRIMARY KEY AUTO_INCREMENT,
-	Atividade TEXT NOT NULL,
+	Atividade VARCHAR(45)  NOT NULL,
 	idUser INT,
     idAnimal INT,
     FOREIGN KEY (usuario_idUser) REFERENCES usuario(idUser)
@@ -36,7 +36,7 @@ create table if not exists  voluntario (
 
 create table if not exists  apadrinhamento (
     idApadrinhamento INT PRIMARY KEY AUTO_INCREMENT,
-	valor DECIMAL (4,2) NOT NULL,
+    valor DECIMAL (4,2) NOT NULL,
     idUser INT,
     FOREIGN KEY (usuario_idUser) REFERENCES usuario(idUser),
 	FOREIGN KEY (animal_idAnimal) REFERENCES animal(idAnimal)
