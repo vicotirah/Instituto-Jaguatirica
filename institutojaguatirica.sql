@@ -47,7 +47,7 @@ INSERT INTO animal (nome, nome_popular, sexo, genero, especie, regiao, data_entr
 ('Jade', 'Ararinha-azul', 'Fêmea', 'Ave', 'Cyanopsitta spixii', 'Cerrado', '2023-01-02', 'Extinto na Natureza'),
 ('Taki', 'Mico-leão-dourado', 'Macho', 'Mamífero', 'Leontopithecus rosalia', 'Mata Atlântica', '2023-01-03', 'Ameaçado'),
 ('Tande', 'Tamanduá-bandeira', 'Macho', 'Mamífero', 'Myrmecophaga tridactyla', 'Cerrado', '2023-01-04', 'Vulnerável'),
-('Iporã', 'Cágado-da-amazônia', 'Macho', 'Réptil','Podocnemis expansa', 'Amazônia', '2023-01-05', 'Ameaçado'),
+('Iporã', 'Jabuti-tinga', 'Macho', 'Réptil','Chelonoidis denticulatus', 'Amazônia', '2023-01-05', 'Ameaçado'),
 ('Guarati', 'Lobo-guará','Macho', 'Mamífero', 'Chrysocyon brachyurus', 'Cerrado', '2023-01-06', 'Vulnerável'),
 ('Fuleco', 'Tatu-canastra', 'Macho', 'Réptil','Priodontes maximus', 'Amazônia', '2023-01-07', 'Ameaçado'),
 ('Sombra', 'Gato-do-mato','Fêmea', 'Mamífero', 'Leopardus wiedii', 'Mata Atlântica', '2023-01-08', 'Vulnerável'),
