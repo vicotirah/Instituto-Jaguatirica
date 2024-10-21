@@ -5,15 +5,22 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
+	font-size: 1.5vw;
 }
-
-img{
+header{
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+header img{
     width: 8vw;
     border-radius: 50%;
 }
+img{
+	margin: 0.5vw
+}
 :root {
-	--mainColor: #29335c;
-	--mainColorLight: #5767aa;
+	--mainColor: #295c4e;
+	--mainColorLight: #a8946b;
 	--secondaryColor: #db2b39;
 	--textColor: #eee;
 }

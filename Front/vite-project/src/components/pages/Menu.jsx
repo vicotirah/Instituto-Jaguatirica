@@ -3,6 +3,7 @@ import { useRef } from "react";
 import "./Menu.css"
 export default function Menu() {
     const logo="https://github.com/vicotirah/Instituto-Jaguatirica/blob/main/Front/vite-project/src/components/pages/logoIJ.png?raw=true";
+    const hamburguer = "https://static.vecteezy.com/system/resources/previews/021/190/402/non_2x/hamburger-menu-filled-icon-in-transparent-background-basic-app-and-web-ui-bold-line-icon-eps10-free-vector.jpg";
     const navRef = useRef();
 
 	const showNavbar = () => {
@@ -22,13 +23,13 @@ export default function Menu() {
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
-					aaaa
+					X
 				</button>
 			</nav>
 			<button
 				className="nav-btn"
 				onClick={showNavbar}>
-				nnnn
+				<img src={hamburguer}/>
 			</button>
 		</header>
     );
