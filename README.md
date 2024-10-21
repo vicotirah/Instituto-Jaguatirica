@@ -6,7 +6,7 @@
 ##
 ### Requisitos ⚙️
 #### Funcionais:
-- O sistema deve exibir informações sobre grupos de animais silvestres do Brasil, de acordo as regiões.
+- O sistema deve exibir informações sobre grupos de animais silvestres do Brasil, de acordo com risco de extinção.
 - O sistema deve exibir informações sobre espécies de animais silvestres.
 - O sistema deve permitir ao usuário enviar seus dados em um formulário de inscrição para ser voluntário.
 - O sistema deve permitir ao usuário criar uma conta.
