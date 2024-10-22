@@ -1,23 +1,19 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Paleta de cores */
+  --cor-branco-principal: #f6f6f6;
+  --cor-branco-frio: hsl(0, 0%, 100%);
+  --cor-clara-1: #F2E1CD;
+  --cor-clara-2: #D7B68B;
+  --cor-media: #9F7541;
+  --cor-escura-1:#3E2111;
+  --cor-escura-2:#19090A;
+  --cor-verde-escuro: #163513;
+  /*Fonte*/
+  --fonte-primaria: "Poppins", sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 1c0e83b54f1d71d2413e17291296b8c8d86ffdf3
 }
+
 
 a {
   font-weight: 500;
@@ -28,11 +24,6 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-}
 article{
   margin-left: 5vw;
   margin-right: 5vw;
@@ -61,39 +52,80 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
-.cabecalho__logo, .cabecalho__mobile {
-  margin: 0.5em 1em
+/*Mobile*/
+/*Cabeçalho*/
 
+.cabecalho__mobile {
+  background-color: var(--cor-escura-2);
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+} 
+
+.cabecalho__mobile__item {
+  margin: 0.5em 0.75em
 }
 
 .cabecalho__logo {
   height: 15%;
   width: 15%;
   border-radius: 50%;
+}
 
+/*Imagem e descrição*/
+
+
+.container__imagem__home {
+  background-image: url("../src/assets/images/Animais/jaguatirica/jaquatirica_home.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+.botao__about {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-branco-frio);
+  background-color: var(--cor-verde-escuro);
+  padding: 0.5em;
+  position: relative;
+  margin-top: 17em;
+  margin-left: 1em;
+  border-radius: 0.5em;
+}
+
+.container {
+  height: 45vh;
+  background-color: var(--cor-escura-1);
+  width: 100vw;
+  font-family: var(--fonte-primaria);
 
 }
 
-.cabecalho__mobile {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-<<<<<<< HEAD
-} 
-=======
+.principal {
+  color: var(--cor-branco-principal);
 }
->>>>>>> 1c0e83b54f1d71d2413e17291296b8c8d86ffdf3
+
+
+.titulo__principal {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5em;
+  padding-bottom: 0;
+}
+
+.texto__principal {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 0.75em;
+  margin: 1em;
+  background-color: var(--cor-media);
+  border-radius: 1.25em;
+}
+
+
+
