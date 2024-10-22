@@ -106,14 +106,17 @@ button:focus-visible {
 
 .principal {
   color: var(--cor-branco-principal);
+  height: 35vh;
 }
 
-
-.titulo__principal {
-  font-size: 1.75rem;
+.titulo__principal, .titulo__conheca {
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   padding: 0.5em;
+}
+
+.titulo__principal {
   padding-bottom: 0;
 }
 
@@ -127,5 +130,27 @@ button:focus-visible {
   border-radius: 1.25em;
 }
 
+.conheca {
+  background-color: var(--cor-clara-1);
+  color: var(--cor-escura-2);
+}
 
+.lista__conheca {
+  display: flex;
+  justify-content: space-between;
 
+}
+
+.lista__conheca__item {
+  background-color: var(--cor-media);
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.lista__conheca__item__titulo {
+  font-weight: 600;
+  text-align: center;
+  padding-top: 0.5em;
+  font-size: 1.125rem;
+}
