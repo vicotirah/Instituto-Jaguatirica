@@ -1,0 +1,13 @@
+#root {
+}
+article{
+
+}
+article img{
+  text-align: center;
+}
+@media screen and (max-width:1000px){
+  img{
+    width: 50vw;
+  }
+}
