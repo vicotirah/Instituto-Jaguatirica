@@ -12,7 +12,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 1c0e83b54f1d71d2413e17291296b8c8d86ffdf3
 }
 
 a {
@@ -88,4 +92,8 @@ button:focus-visible {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> 1c0e83b54f1d71d2413e17291296b8c8d86ffdf3
