@@ -19,25 +19,54 @@
 
 /*Agrupamento*/
 
-.cabecalho__mobile, .container, .subtitulo__programas, .botao__about {
+.cabecalho__mobile, .subtitulo__programas, .botao__about, .titulo__conheca {
   font-family: var(--fonte-primaria);
 }
 
-.cabecalho__mobile, .principal, .programas, .subtitulo__programas {
+.container,.principal,.programas {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-branco-principal);
+  padding: 0.5em;
+  width: 100vw;
+ }
+
+.cabecalho__mobile, .subtitulo__programas, .titulo__principal{
   color: var(--cor-branco-principal);
 }
 
-.botao__about, .container, .principal, .titulo__conheca, .titulo__programas, .programas {
+.titulo__conheca, .titulo__programas {
   padding: 0.5em;
 }
 
-.container, .principal, .programas {
-  width: 100vw;
+.botao__aliado, .botao__about {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-branco-principal);
+  border-radius: 0.5em;
+  border-color: transparent;
+  padding: 0.5em;
 }
 
+.container, .conheca {
+  height: 35vh;
+}
+
+.lista__conheca__item, .card {
+  background-color: var(--cor-media);
+  border-radius: 1em;
+}
 
 .texto__principal, .lista__conheca, .lista__conheca__item {
   margin: 0.5em;
+}
+
+.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.programas__item__imagem, .voluntarios_imagem {
+  border-radius: 1em;
 }
 
 /*Cabeçalho*/
@@ -49,8 +78,6 @@
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-
-
 } 
 
 .cabecalho__mobile__item {
@@ -65,7 +92,6 @@
 
 /*Imagem e descrição*/
 
-
 .container__imagem__home {
   background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
   background-repeat: no-repeat;
@@ -79,28 +105,17 @@
   position: relative;
   margin-top: 20em;
   margin-left: 1em;
-  border-radius: 0.5em;
 }
 
 .container {
   display: block;
   box-sizing: border-box;
-  height: 35vh;
   background-color: var(--cor-escura-1);
-
   align-items: center;
 }
 
 .principal {
   height: 30vh;
-
-}
-
-.titulo__principal {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  color: var(--cor-branco-principal)
 }
 
 .texto__principal {
@@ -108,20 +123,15 @@
   font-weight: 400;
   text-align: center;
   padding: 0.85em;
-  background-color: var(--cor-media);
   border-radius: 1.25em;
 }
 
 .conheca {
   background-color: var(--cor-clara-1);
   color: var(--cor-escura-2);
-  height: 35vh;
 }
 
 .titulo__conheca, .titulo__programas {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
   padding-bottom: 0;
 }
 
@@ -130,24 +140,21 @@
   justify-content: space-between;
 }
 
-
 .lista__conheca__item {
   display: block;
   box-sizing: border-box;
   width: 10em;
   height: 10m;
-  background-color: var(--cor-media);
   padding: 1em;
-  border-radius: 1em;
   text-align: center;
 }
 
 .lista__conheca__item__titulo {
-  font-weight: 600;
-  text-align: center;
   padding-top: 0.5em;
   margin-top: 0.5em;
   font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .lista__conheca__item__imagem {
@@ -173,17 +180,14 @@
   display: block;
   box-sizing: border-box;
   text-align: center;
-  background-color: var(--cor-media);
   height: 20em;
   padding: 1em 0.5em;
   margin: 1em;
-  border-radius: 1em;
 }
 
 .programas__item__imagem {
   width: 90%;
   height: 80%;
-  border-radius: 1em;
   margin: 0.5em 0;
 }
 
@@ -193,6 +197,28 @@
 }
 
 .aliado {
+  display: block;
+  align-items: center;
+  text-align: center;
   height: 60vh;
-  background-color: var(--cor-clara-1);
+  background-color: var(--cor-clara-2);
+  color: var(--cor-escura-2);
+  width: 100vw;
+}
+
+.titulo__aliado {
+  margin-bottom:0.5em;
+}
+
+.voluntarios_imagem {
+  width: 90%;
+}
+
+.botao__aliado {
+  text-align: center;
+  font-size: 1.25rem;
+  width: 70%;
+  margin: 0.5em;
+  background-color: var(--cor-escura-1);
+  font-weight: 600;
 }
