@@ -120,6 +120,7 @@ button:focus-visible {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
+  color: var(--cor-branco-principal)
 }
 
 .texto__principal {
