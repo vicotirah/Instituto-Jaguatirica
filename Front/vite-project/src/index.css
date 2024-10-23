@@ -63,6 +63,8 @@ button:focus-visible {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
+  color: var(--cor-branco-principal);
+  font-family: var(--fonte-primaria);
 } 
 
 .cabecalho__mobile__item {
@@ -97,35 +99,35 @@ button:focus-visible {
 }
 
 .container {
-  height: 45vh;
+  display: block;
+  box-sizing: border-box;
+  height: 35vh;
   background-color: var(--cor-escura-1);
   width: 100vw;
   font-family: var(--fonte-primaria);
-
+  padding: 0.5em;
+  align-items: center;
 }
 
 .principal {
   color: var(--cor-branco-principal);
-  height: 35vh;
-}
-
-.titulo__principal, .titulo__conheca {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
+  height: 30vh;
+  width: 100vw;
   padding: 0.5em;
 }
 
 .titulo__principal {
-  padding-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .texto__principal {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  padding: 0.75em;
-  margin: 1em;
+  padding: 0.85em;
+  margin: 0.5em;
   background-color: var(--cor-media);
   border-radius: 1.25em;
 }
@@ -133,24 +135,57 @@ button:focus-visible {
 .conheca {
   background-color: var(--cor-clara-1);
   color: var(--cor-escura-2);
+  height: 35vh;
+}
+
+.titulo__conheca, .titulo__programas {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5em;
+  padding-bottom: 0;
 }
 
 .lista__conheca {
   display: flex;
   justify-content: space-between;
-
+  margin: 0.5em;
 }
 
+
 .lista__conheca__item {
+  display: block;
+  box-sizing: border-box;
+  width: 10em;
+  height: 10m;
   background-color: var(--cor-media);
   margin: 0.5em;
   padding: 1em;
   border-radius: 1em;
+  text-align: center;
 }
 
 .lista__conheca__item__titulo {
   font-weight: 600;
   text-align: center;
   padding-top: 0.5em;
+  margin-top: 0.5em;
   font-size: 1.125rem;
+}
+
+.lista__conheca__item__imagem {
+  height: 75%;
+  width: 80%;
+}
+
+.container__programas {
+  display: block;
+  box-sizing: border-box;
+  height: 35vh;
+  background-color: var(--cor-escura-1);
+  width: 100vw;
+  font-family: var(--fonte-primaria);
+  padding: 0.5em;
+  align-items: center;
+  color: var(--cor-branco-principal)
 }

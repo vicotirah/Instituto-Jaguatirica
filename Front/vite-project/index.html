@@ -12,39 +12,38 @@
     <title>Vite + React</title>
   </head>
   <body>
-    <header>
-      <div class="cabecalho">
-        <ul class="cabecalho__mobile">
-         <li class="cabecalho__mobile__item"><img class="cabecalho__logo" src="src\assets\images\logoIJ.png" ></li>
-          <li class="cabecalho__mobile__item"><img class="cabecalho__menu_hamburguer" src="src/assets/images/menu_hamburguer.png" ></li>
-        </ul>
+    <header class="cabecalho">
+      <div class="cabecalho__mobile">
+         <img class="cabecalho__mobile__item cabecalho__logo" src="src\assets\images\logoIJ.png" >
+         <h1 class="titulo__principal">Instituto Jaguatirica</h1>
+        <img class="cabecalho__mobile__item cabecalho__menu_hamburguer" src="src/assets/images/menu_hamburguer.png" >
     </div>
     </header>
     <section class="container__imagem__home">
       <button class="botao__about">Sobre Nós</button>
     </section>
     <section class="container principal">
-      <h1 class="titulo__principal">Instituto Jaguatirica</h1>
       <p class="texto__principal">O Instituto Jaguatirica é uma ONG dedicada à proteção e preservação da fauna silvestre brasileira. Nossa missão é promover a conscientização sobre a importância da biodiversidade e a necessidade de proteger os habitats naturais dos animais. Atuamos no resgate, reabilitação e reintegração de espécies ameaçadas, além de desenvolver projetos educativos que envolvem a comunidade em ações de conservação.</p>
     </section>
     <section class="container conheca">
       <h1 class="titulo__conheca">Conheça nossos animais!</h1>
       <ul class="lista__conheca">
         <li class="lista__conheca__item">
-          <p>
-            <h5>procurar um png mapa do Brasil</h5>
+            <img class="lista__conheca__item__imagem" src="src/assets/images/Vetores/brazil.png">
             <h3 class="lista__conheca__item__titulo">Região</h3>
-          </p>
         </li>
         <li class="lista__conheca__item">
-          <p>
-            <h5>procurar um png patinhas</h5>
+            <img class="lista__conheca__item__imagem" src="src/assets/images/Vetores/patas.png">
             <h3 class="lista__conheca__item__titulo">Espécie</h3>
-          </p>
         </li>
       </ul>
     </section>
-    <section></section>
+    <section class="container__programas">
+      <h1 class= "titulo__programas">Programas do Instituto</h1>
+      
+
+
+    </section>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
