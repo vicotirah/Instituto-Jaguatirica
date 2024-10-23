@@ -15,45 +15,60 @@
 }
 
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-article{
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-
 /*Mobile*/
+
+/*Agrupamento*/
+
+.cabecalho__mobile, .subtitulo__programas, .botao__about, .titulo__conheca {
+  font-family: var(--fonte-primaria);
+}
+
+.container,.principal,.programas {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-branco-principal);
+  padding: 0.5em;
+  width: 100vw;
+ }
+
+.cabecalho__mobile, .subtitulo__programas, .titulo__principal{
+  color: var(--cor-branco-principal);
+}
+
+.titulo__conheca, .titulo__programas {
+  padding: 0.5em;
+}
+
+.botao__aliado, .botao__about {
+  font-family: var(--fonte-primaria);
+  color: var(--cor-branco-principal);
+  border-radius: 0.5em;
+  border-color: transparent;
+  padding: 0.5em;
+}
+
+.container, .conheca {
+  height: 35vh;
+}
+
+.lista__conheca__item, .card {
+  background-color: var(--cor-media);
+  border-radius: 1em;
+}
+
+.texto__principal, .lista__conheca, .lista__conheca__item {
+  margin: 0.5em;
+}
+
+.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.programas__item__imagem, .voluntarios_imagem {
+  border-radius: 1em;
+}
+
 /*Cabeçalho*/
 
 .cabecalho__mobile {
@@ -63,12 +78,10 @@ button:focus-visible {
   justify-content: space-evenly;
   align-items: center;
   list-style: none;
-  color: var(--cor-branco-principal);
-  font-family: var(--fonte-primaria);
 } 
 
 .cabecalho__mobile__item {
-  margin: 0.5em 0.75em
+  margin: 0.5em 0.75em;
 }
 
 .cabecalho__logo {
@@ -79,48 +92,30 @@ button:focus-visible {
 
 /*Imagem e descrição*/
 
-
 .container__imagem__home {
-  background-image: url("../src/assets/images/Animais/jaguatirica/jaquatirica_home.svg");
+  background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;
 }
 
 .botao__about {
-  font-family: var(--fonte-primaria);
   color: var(--cor-branco-frio);
   background-color: var(--cor-verde-escuro);
-  padding: 0.5em;
   position: relative;
-  margin-top: 17em;
+  margin-top: 20em;
   margin-left: 1em;
-  border-radius: 0.5em;
 }
 
 .container {
   display: block;
   box-sizing: border-box;
-  height: 35vh;
   background-color: var(--cor-escura-1);
-  width: 100vw;
-  font-family: var(--fonte-primaria);
-  padding: 0.5em;
   align-items: center;
 }
 
 .principal {
-  color: var(--cor-branco-principal);
   height: 30vh;
-  width: 100vw;
-  padding: 0.5em;
-}
-
-.titulo__principal {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  color: var(--cor-branco-principal)
 }
 
 .texto__principal {
@@ -128,50 +123,38 @@ button:focus-visible {
   font-weight: 400;
   text-align: center;
   padding: 0.85em;
-  margin: 0.5em;
-  background-color: var(--cor-media);
   border-radius: 1.25em;
 }
 
 .conheca {
   background-color: var(--cor-clara-1);
   color: var(--cor-escura-2);
-  height: 35vh;
 }
 
 .titulo__conheca, .titulo__programas {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 0.5em;
   padding-bottom: 0;
 }
 
 .lista__conheca {
   display: flex;
   justify-content: space-between;
-  margin: 0.5em;
 }
-
 
 .lista__conheca__item {
   display: block;
   box-sizing: border-box;
   width: 10em;
   height: 10m;
-  background-color: var(--cor-media);
-  margin: 0.5em;
   padding: 1em;
-  border-radius: 1em;
   text-align: center;
 }
 
 .lista__conheca__item__titulo {
-  font-weight: 600;
-  text-align: center;
   padding-top: 0.5em;
   margin-top: 0.5em;
   font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .lista__conheca__item__imagem {
@@ -179,14 +162,63 @@ button:focus-visible {
   width: 80%;
 }
 
-.container__programas {
+.programas {
   display: block;
   box-sizing: border-box;
-  height: 35vh;
-  background-color: var(--cor-escura-1);
-  width: 100vw;
-  font-family: var(--fonte-primaria);
-  padding: 0.5em;
+  height: 180vh;
   align-items: center;
-  color: var(--cor-branco-principal)
+
+}
+
+.lista__programas {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  height: 20em;
+  padding: 1em 0.5em;
+  margin: 1em;
+}
+
+.programas__item__imagem {
+  width: 90%;
+  height: 80%;
+  margin: 0.5em 0;
+}
+
+.subtitulo__programas {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.aliado {
+  display: block;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  background-color: var(--cor-clara-2);
+  color: var(--cor-escura-2);
+  width: 100vw;
+}
+
+.titulo__aliado {
+  margin-bottom:0.5em;
+}
+
+.voluntarios_imagem {
+  width: 90%;
+}
+
+.botao__aliado {
+  text-align: center;
+  font-size: 1.25rem;
+  width: 70%;
+  margin: 0.5em;
+  background-color: var(--cor-escura-1);
+  font-weight: 600;
 }
