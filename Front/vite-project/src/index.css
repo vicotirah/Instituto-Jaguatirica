@@ -35,7 +35,7 @@
 }
 
 .titulo__conheca, .titulo__programas {
-  padding: 0.5em;
+  padding: 0.25em;
 }
 
 .botao__aliado, .botao__about {
@@ -47,7 +47,7 @@
 }
 
 .container, .conheca {
-  height: 35vh;
+  height: 40vh;
 }
 
 .lista__conheca__item, .card {
@@ -56,11 +56,11 @@
 }
 
 .texto__principal, .lista__conheca, .lista__conheca__item {
-  margin: 0.5em;
+  margin: 0.25em;
 }
 
-.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
-  font-size: 1.5rem;
+.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado, .lista__conheca__item__titulo {
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
 }
@@ -75,18 +75,18 @@
   background-color: var(--cor-escura-2);
   margin: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
 } 
 
 .cabecalho__mobile__item {
-  margin: 0.5em 0.75em;
+  margin: 0.25em;
 }
 
 .cabecalho__logo {
-  height: 15%;
-  width: 15%;
+  height: 10%;
+  width: 10%;
   border-radius: 50%;
 }
 
@@ -96,14 +96,14 @@
   background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: 45vh;
 }
 
 .botao__about {
   color: var(--cor-branco-frio);
   background-color: var(--cor-verde-escuro);
   position: relative;
-  margin-top: 20em;
+  margin-top: 18em;
   margin-left: 1em;
 }
 
@@ -115,15 +115,16 @@
 }
 
 .principal {
-  height: 30vh;
+  height: 35vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .texto__principal {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  padding: 0.85em;
-  border-radius: 1.25em;
 }
 
 .conheca {
@@ -152,7 +153,6 @@
 .lista__conheca__item__titulo {
   padding-top: 0.5em;
   margin-top: 0.5em;
-  font-size: 1.125rem;
   font-weight: 600;
   text-align: center;
 }
@@ -165,8 +165,9 @@
 .programas {
   display: block;
   box-sizing: border-box;
-  height: 180vh;
+  height: 165vh;
   align-items: center;
+  justify-content: center;
 
 }
 
@@ -180,19 +181,20 @@
   display: block;
   box-sizing: border-box;
   text-align: center;
-  height: 20em;
-  padding: 1em 0.5em;
-  margin: 1em;
+  height: 15em;
+  width: 80%;
+  padding: 0.5em 0.25em;
+  margin: 0.5em auto;
 }
 
 .programas__item__imagem {
-  width: 90%;
-  height: 80%;
+  width: 80%;
+  height: 70%;
   margin: 0.5em 0;
 }
 
 .subtitulo__programas {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -200,7 +202,7 @@
   display: block;
   align-items: center;
   text-align: center;
-  height: 60vh;
+  height: 75vh;
   background-color: var(--cor-clara-2);
   color: var(--cor-escura-2);
   width: 100vw;
@@ -221,4 +223,188 @@
   margin: 0.5em;
   background-color: var(--cor-escura-1);
   font-weight: 600;
+}
+
+@media screen and (min-width: 390px) {
+  
+  .container,.principal,.programas, .titulo__conheca, .titulo__programas, .botao__aliado, .botao__about {
+    padding: 0.5em;
+   }
+  
+  .container, .conheca {
+    height: 35vh;
+  }
+  
+  .lista__conheca__item, .card {
+    background-color: var(--cor-media);
+    border-radius: 1em;
+  }
+  
+  .texto__principal, .lista__conheca, .lista__conheca__item {
+    margin: 0.5em;
+  }
+  
+  .titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .programas__item__imagem, .voluntarios_imagem {
+    border-radius: 1em;
+  }
+  
+  /*Cabeçalho*/
+  
+  .cabecalho__mobile {
+    background-color: var(--cor-escura-2);
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  } 
+  
+  .cabecalho__mobile__item {
+    margin: 0.5em 0.75em;
+  }
+  
+  .cabecalho__logo {
+    height: 15%;
+    width: 15%;
+  }
+  
+  /*Imagem e descrição*/
+  
+  .container__imagem__home {
+    background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+  }
+  
+  .botao__about {
+    color: var(--cor-branco-frio);
+    background-color: var(--cor-verde-escuro);
+    position: relative;
+    margin-top: 20em;
+    margin-left: 1em;
+  }
+  
+  .container {
+    display: block;
+    box-sizing: border-box;
+    background-color: var(--cor-escura-1);
+    align-items: center;
+  }
+  
+  .principal {
+    height: 30vh;
+  }
+  
+  .texto__principal {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.85em;
+    border-radius: 1.25em;
+  }
+  
+  .conheca {
+    background-color: var(--cor-clara-1);
+    color: var(--cor-escura-2);
+  }
+  
+  .titulo__conheca, .titulo__programas {
+    padding-bottom: 0;
+  }
+  
+  .lista__conheca {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lista__conheca__item {
+    display: block;
+    box-sizing: border-box;
+    width: 10em;
+    height: 10m;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .lista__conheca__item__titulo {
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .lista__conheca__item__imagem {
+    height: 75%;
+    width: 80%;
+  }
+  
+  .programas {
+    display: block;
+    box-sizing: border-box;
+    height: 180vh;
+    align-items: center;
+  
+  }
+  
+  .lista__programas {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .card {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    height: 20em;
+    padding: 1em 0.5em;
+    margin: 1em;
+  }
+  
+  .programas__item__imagem {
+    width: 90%;
+    height: 80%;
+    margin: 0.5em 0;
+  }
+  
+  .subtitulo__programas {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  .aliado {
+    display: block;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    background-color: var(--cor-clara-2);
+    color: var(--cor-escura-2);
+    width: 100vw;
+  }
+  
+  .titulo__aliado {
+    margin-bottom:0.5em;
+  }
+  
+  .voluntarios_imagem {
+    width: 90%;
+  }
+  
+  .botao__aliado {
+    text-align: center;
+    font-size: 1.25rem;
+    width: 70%;
+    margin: 0.5em;
+    background-color: var(--cor-escura-1);
+    font-weight: 600;
+  }
+  
 }
