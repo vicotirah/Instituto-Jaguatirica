@@ -15,39 +15,67 @@
 }
 
 
-/*Mobile*/
+/* =============================
+            MOBILE 
+   ============================= */
 
-/*Agrupamento*/
+/* Agrupamento */
 
-.cabecalho__mobile, .subtitulo__programas, .botao__about, .titulo__conheca {
-  font-family: var(--fonte-primaria);
+/* Tamanho, padding, margin, altura, largura */
+.container, .lista__conheca__item, .programas, .card  {
+  box-sizing: border-box;
 }
 
-.container,.principal,.programas {
-  font-family: var(--fonte-primaria);
-  color: var(--cor-branco-principal);
+.container,.principal,.programas, .botao__aliado, .botao__about {
   padding: 0.5em;
-  width: 100vw;
- }
-
-.cabecalho__mobile, .subtitulo__programas, .titulo__principal{
-  color: var(--cor-branco-principal);
 }
 
 .titulo__conheca, .titulo__programas {
-  padding: 0.5em;
+  padding: 0.25em;
 }
 
-.botao__aliado, .botao__about {
-  font-family: var(--fonte-primaria);
-  color: var(--cor-branco-principal);
-  border-radius: 0.5em;
-  border-color: transparent;
-  padding: 0.5em;
+.texto__principal, .lista__conheca, .lista__conheca__item, .cabecalho__mobile__item  {
+  margin: 0.25em;
 }
 
 .container, .conheca {
-  height: 35vh;
+  height: 40vh;
+}
+
+.container,.principal,.programas, .aliado {
+  width: 100vw;
+}
+
+/* Fonte */
+
+.cabecalho__mobile, .subtitulo__programas, .botao__about, .titulo__conheca, .container,.principal,.programas, .botao__aliado, .botao__about {
+  font-family: var(--fonte-primaria);
+}
+
+.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado, .lista__conheca__item__titulo, .botao__aliado, .lista__conheca__item__titulo, .botao__aliado {
+  font-weight: 600;
+}
+
+.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado, .lista__conheca__item__titulo, .botao__aliado {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.texto__principal, .subtitulo__programas {
+  font-size: 1rem;
+}
+
+.cabecalho__mobile, .subtitulo__programas, .titulo__principal, .botao__aliado, .botao__about, .container,.principal,.programas{
+  color: var(--cor-branco-principal);
+}
+
+.conheca, .aliado {
+  color: var(--cor-escura-2);
+}
+
+.botao__aliado, .botao__about {
+  border-radius: 0.5em;
+  border-color: transparent;
 }
 
 .lista__conheca__item, .card {
@@ -55,19 +83,15 @@
   border-radius: 1em;
 }
 
-.texto__principal, .lista__conheca, .lista__conheca__item {
-  margin: 0.5em;
-}
-
-.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-}
-
 .programas__item__imagem, .voluntarios_imagem {
   border-radius: 1em;
 }
+
+.container, .botao__aliado {
+  background-color: var(--cor-escura-1);
+}
+
+
 
 /*Cabeçalho*/
 
@@ -75,18 +99,14 @@
   background-color: var(--cor-escura-2);
   margin: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
-} 
-
-.cabecalho__mobile__item {
-  margin: 0.5em 0.75em;
 }
 
 .cabecalho__logo {
-  height: 15%;
-  width: 15%;
+  height: 10%;
+  width: 10%;
   border-radius: 50%;
 }
 
@@ -96,39 +116,33 @@
   background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: 45vh;
 }
 
 .botao__about {
-  color: var(--cor-branco-frio);
   background-color: var(--cor-verde-escuro);
   position: relative;
-  margin-top: 20em;
-  margin-left: 1em;
+  margin: 18em 0 0 1em;
 }
 
 .container {
   display: block;
-  box-sizing: border-box;
-  background-color: var(--cor-escura-1);
   align-items: center;
 }
 
 .principal {
-  height: 30vh;
+  height: 35vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .texto__principal {
-  font-size: 1rem;
-  font-weight: 400;
   text-align: center;
-  padding: 0.85em;
-  border-radius: 1.25em;
 }
 
 .conheca {
   background-color: var(--cor-clara-1);
-  color: var(--cor-escura-2);
 }
 
 .titulo__conheca, .titulo__programas {
@@ -142,7 +156,6 @@
 
 .lista__conheca__item {
   display: block;
-  box-sizing: border-box;
   width: 10em;
   height: 10m;
   padding: 1em;
@@ -152,47 +165,43 @@
 .lista__conheca__item__titulo {
   padding-top: 0.5em;
   margin-top: 0.5em;
-  font-size: 1.125rem;
-  font-weight: 600;
   text-align: center;
 }
 
 .lista__conheca__item__imagem {
-  height: 75%;
+  height: 70%;
   width: 80%;
 }
 
 .programas {
   display: block;
-  box-sizing: border-box;
-  height: 180vh;
+  height: 165vh;
   align-items: center;
+  justify-content: center;
 
 }
 
 .lista__programas {
   display: flex;
   flex-direction: column;
-
 }
 
 .card {
   display: block;
-  box-sizing: border-box;
   text-align: center;
-  height: 20em;
-  padding: 1em 0.5em;
-  margin: 1em;
+  height: 15em;
+  width: 80%;
+  padding: 0.5em 0.25em;
+  margin: 0.5em auto;
 }
 
 .programas__item__imagem {
-  width: 90%;
-  height: 80%;
+  width: 80%;
+  height: 70%;
   margin: 0.5em 0;
 }
 
 .subtitulo__programas {
-  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -200,14 +209,12 @@
   display: block;
   align-items: center;
   text-align: center;
-  height: 60vh;
+  height: 75vh;
   background-color: var(--cor-clara-2);
-  color: var(--cor-escura-2);
-  width: 100vw;
 }
 
 .titulo__aliado {
-  margin-bottom:0.5em;
+  margin-bottom: 0.5em;
 }
 
 .voluntarios_imagem {
@@ -216,9 +223,85 @@
 
 .botao__aliado {
   text-align: center;
-  font-size: 1.25rem;
   width: 70%;
   margin: 0.5em;
-  background-color: var(--cor-escura-1);
-  font-weight: 600;
+}
+
+@media screen and (min-width: 390px) {
+  
+  .container,.principal,.programas, .titulo__conheca, .titulo__programas, .botao__aliado, .botao__about {
+    padding: 0.5em;
+   }
+  
+  .container, .conheca {
+    height: 35vh;
+  }
+  
+  .lista__conheca__item, .card {
+    background-color: var(--cor-media);
+    border-radius: 1em;
+  }
+  
+  .texto__principal, .lista__conheca, .lista__conheca__item, .botao__aliado {
+    margin: 0.5em;
+  }
+  
+  .titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
+    font-size: 1.5rem;
+  }
+
+  .titulo__conheca, .titulo__programas {
+    padding-bottom: 0;
+  }
+
+  /*Cabeçalho*/
+  
+  .cabecalho__mobile {
+    justify-content: space-evenly;
+  } 
+  
+  .cabecalho__mobile__item {
+    margin: 0.5em 0.75em;
+  } 
+  
+  /*Imagem e descrição*/
+  
+  .container__imagem__home {
+    height: 40vh;
+  }
+  
+  .botao__about {
+    margin: 20em 0 0 0.75em;
+  }
+
+  .principal {
+    height: 30vh;
+  }
+
+  .programas {
+    height: 180vh;
+  }
+  
+  .card {
+    height: 20em;
+    padding: 1em 0.5em;
+    margin: 1em auto;
+  }
+  
+  .programas__item__imagem {
+    width: 90%;
+    height: 80%;
+  }
+
+  .subtitulo__programas {
+    font-size: 1.25rem;
+  }
+  
+  .aliado {
+    height: 60vh;
+  }
+
+  .botao__aliado {
+    font-size: 1.25rem;
+  }
 }
