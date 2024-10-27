@@ -8,8 +8,8 @@
 	font-size: 1.5vw;
 }
 header{
-	margin-top: 2vw;
-	margin-bottom: 2vw;
+	margin:2vw;
+	border-radius: 15%;
 }
 header img{
     width: 8vw;
