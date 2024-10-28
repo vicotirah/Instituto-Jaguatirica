@@ -2,15 +2,28 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Menu from './components/pages/Menu'
 import './index.css'
 
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Menu from "../src/components/pages/Menu";
+import Voluntariado from "../src/components/pages/Voluntariado";
+import Apadrinhamento from "../src/components/pages/Apadrinhamento";
+import Sobre from '../src/components/pages/Sobre'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Menu/>
+      <Router>
+            <Menu />
+            <Routes>
+                <Route path="/" element={<Sobre />} />
+                <Route path="/sobre-nos" element={<Sobre />} />
+                <Route path="/voluntariado" element={<Voluntariado />} />
+                <Route path="/apadrinhamento" element={<Apadrinhamento />} />
+            </Routes>
+        </Router>
       
       <article>
       <img src='https://portalamazonia.com/wp-content/uploads/2020/09/b2ap3_large_equeejaguatirica.jpg'/>
