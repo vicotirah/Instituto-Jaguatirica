@@ -1,6 +1,4 @@
 :root {
-
-  /* Paleta de cores */
   --cor-branco-principal: #f6f6f6;
   --cor-branco-frio: hsl(0, 0%, 100%);
   --cor-clara-1: #F2E1CD;
@@ -9,19 +7,10 @@
   --cor-escura-1:#3E2111;
   --cor-escura-2:#19090A;
   --cor-verde-escuro: #163513;
-  /*Fonte*/
   --fonte-primaria: "Poppins", sans-serif;
-
 }
 
 
-/* =============================
-            MOBILE 
-   ============================= */
-
-/* Agrupamento */
-
-/* Tamanho, padding, margin, altura, largura */
 .container, .lista__conheca__item, .programas, .card  {
   box-sizing: border-box;
 }
@@ -45,8 +34,6 @@
 .container,.principal,.programas, .aliado {
   width: 100vw;
 }
-
-/* Fonte */
 
 .cabecalho__mobile, .subtitulo__programas, .botao__about, .titulo__conheca, .container,.principal,.programas, .botao__aliado, .botao__about {
   font-family: var(--fonte-primaria);
@@ -91,10 +78,6 @@
   background-color: var(--cor-escura-1);
 }
 
-
-
-/*Cabeçalho*/
-
 .cabecalho__mobile {
   background-color: var(--cor-escura-2);
   margin: 0;
@@ -109,8 +92,6 @@
   width: 10%;
   border-radius: 50%;
 }
-
-/*Imagem e descrição*/
 
 .container__imagem__home {
   background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
@@ -229,8 +210,6 @@
 
 @media screen and (min-width: 380px) {
 
-  /*Agrupamento*/
-  
   .titulo__conheca, .titulo__programas {
     padding: 0.5em;
   }
@@ -255,8 +234,6 @@
   .subtitulo__programas, .botao__aliado {
     font-size: 1.25rem;
   }
-
-  /*Cabeçalho*/
   
   .cabecalho__mobile {
     justify-content: space-evenly;
@@ -265,8 +242,6 @@
   .cabecalho__mobile__item {
     margin: 0.5em 0.75em;
   } 
-  
-  /*Imagem e descrição*/
   
   .container__imagem__home {
     height: 40vh;
@@ -336,20 +311,13 @@
    
 }
 
-/* =============================
-            TABLET 
-   ============================= */
-
 @media screen and (min-width: 700px) {
-/* Agrupamento */
-
-/* Tamanho, padding, margin, altura, largura */
 
 .cabecalho__mobile, .texto__principal, .titulo__aliado {
   padding: 0.5em;
 }
 
-.cabecalho__mobile__item  {
+.cabecalho__mobile__item, .card  {
   margin: 0.5em;
 }
 
@@ -357,22 +325,20 @@
   height: 45vh;
 }
 
-/* Fonte */
+.container__imagem__home, .aliado {
+  height: 65vh;
+}
+
+.card, .aliado {
+  background-color: var(--cor-clara-2);
+}
 
 .titulo__principal, .titulo__conheca, .titulo__programas, .lista__conheca__item__titulo {
   font-size: 2rem;
 }
 
-/*Cabeçalho*/
-
 .cabecalho__mobile {
   justify-content: space-between;
-}
-
-/*Imagem e descrição*/
-
-.container__imagem__home {
-  height: 65vh;
 }
 
 .botao__about {
@@ -399,7 +365,6 @@
   display: flex;
   justify-content: space-evenly;
   text-align: center;
-
 }
 
 .lista__conheca__item {
@@ -426,9 +391,6 @@
   text-align: center;
   height: 15em;
   width: 45%;
-  padding: 0.5em 0.25em;
-  margin: 0.5em;
-  background-color: var(--cor-clara-2);
 }
 
 .programas__item__imagem {
@@ -438,7 +400,6 @@
 }
 
 .subtitulo__programas {
-  font-weight: 500;
   color: var(--cor-escura-2);
 }
 
@@ -446,12 +407,9 @@
   display: block;
   align-items: center;
   text-align: center;
-  height: 65vh;
-  background-color: var(--cor-clara-2);
 }
 
 .titulo__aliado {
-  margin-bottom: 0.5em;
   font-size: 2.5rem;
 }
 
