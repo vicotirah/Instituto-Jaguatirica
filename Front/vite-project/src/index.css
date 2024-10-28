@@ -227,11 +227,13 @@
   margin: 0.5em;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 380px) {
+
+  /*Agrupamento*/
   
-  .container,.principal,.programas, .titulo__conheca, .titulo__programas, .botao__aliado, .botao__about {
+  .titulo__conheca, .titulo__programas {
     padding: 0.5em;
-   }
+  }
   
   .container, .conheca {
     height: 35vh;
@@ -250,8 +252,8 @@
     font-size: 1.5rem;
   }
 
-  .titulo__conheca, .titulo__programas {
-    padding-bottom: 0;
+  .subtitulo__programas, .botao__aliado {
+    font-size: 1.25rem;
   }
 
   /*Cabeçalho*/
@@ -292,16 +294,175 @@
     width: 90%;
     height: 80%;
   }
-
-  .subtitulo__programas {
-    font-size: 1.25rem;
-  }
   
   .aliado {
     height: 60vh;
   }
+}
 
-  .botao__aliado {
+@media screen and (min-width: 400px) {
+
+  .titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
+    font-size: 1.5rem;
+  }
+ 
+  .subtitulo__programas, .botao__aliado, .texto__principal  {
+    font-size: 1.125rem;
+  }
+
+  .programas {
+    height: 165vh;
+  }
+
+  .voluntarios_imagem {
+    margin-bottom: 1em;
+  }
+    
+}
+
+@media screen and (min-width: 430px) {
+ 
+  .subtitulo__programas, .botao__aliado, .texto__principal  {
     font-size: 1.25rem;
   }
+
+ .programas {
+   height: 165vh;
+ }
+
+ .aliado {
+  height: 65vh;
+}
+   
+}
+
+/* =============================
+            TABLET 
+   ============================= */
+
+@media screen and (min-width: 700px) {
+/* Agrupamento */
+
+/* Tamanho, padding, margin, altura, largura */
+
+.cabecalho__mobile, .texto__principal, .titulo__aliado {
+  padding: 0.5em;
+}
+
+.cabecalho__mobile__item  {
+  margin: 0.5em;
+}
+
+.container, .conheca {
+  height: 45vh;
+}
+
+/* Fonte */
+
+.titulo__principal, .titulo__conheca, .titulo__programas, .lista__conheca__item__titulo {
+  font-size: 2rem;
+}
+
+/*Cabeçalho*/
+
+.cabecalho__mobile {
+  justify-content: space-between;
+}
+
+/*Imagem e descrição*/
+
+.container__imagem__home {
+  height: 65vh;
+}
+
+.botao__about {
+  font-size: 1.5rem;
+  margin: 22em 0 0 2em;
+  width: 30%;
+}
+
+.principal {
+  height: 35vh;
+  background-image: url("../src/assets/images/Vetores/—Pngtree—jaguar\ or\ leopard\ seamless\ pattern_1166421.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto__principal {
+  text-align: center;
+  border-radius: 1em;
+  background-color: var(--cor-escura-2);
+  font-size: 1.65rem;
+}
+
+.lista__conheca {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+
+}
+
+.lista__conheca__item {
+  width: 15em;
+  height: 10m;
+  padding: 1em;
+  text-align: center;
+}
+
+.programas {
+  display: block;
+  height: 60vh;
+}
+
+.lista__programas {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: block;
+  text-align: center;
+  height: 15em;
+  width: 45%;
+  padding: 0.5em 0.25em;
+  margin: 0.5em;
+  background-color: var(--cor-clara-2);
+}
+
+.programas__item__imagem {
+  width: 80%;
+  height: 70%;
+  margin: 0.5em 0;
+}
+
+.subtitulo__programas {
+  font-weight: 500;
+  color: var(--cor-escura-2);
+}
+
+.aliado {
+  display: block;
+  align-items: center;
+  text-align: center;
+  height: 65vh;
+  background-color: var(--cor-clara-2);
+}
+
+.titulo__aliado {
+  margin-bottom: 0.5em;
+  font-size: 2.5rem;
+}
+
+.voluntarios_imagem {
+  width: 80%;
+}
+
+.botao__aliado {
+  box-sizing: content-box;
+  text-align: center;
+  width: 20%;
+  font-size: 1.25rem;
+}
 }
