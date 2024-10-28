@@ -1,0 +1,62 @@
+
+.cabecalho__mobile{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-branco-principal);
+    background-color: var(--cor-escura-2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+.titulo__principal {
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--cor-branco-principal);
+}
+
+.cabecalho__mobile__item  {
+    margin: 0.5em;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-branco-principal);
+    background-color: var(--cor-escura-2);
+  }
+
+  .cabecalho__logo {
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+  }
+
+@media screen and (min-width: 380px) {
+
+    .cabecalho__mobile {
+        justify-content: space-evenly;
+    } 
+
+    .cabecalho__mobile__item {
+        margin: 0.5em 0.75em;
+    } 
+
+    .titulo__principal {
+        font-size: 1.5rem;
+      }
+    }
+
+
+@media screen and (min-width: 700px) {
+    .cabecalho__mobile {
+        padding: 0.5em;
+        justify-content: space-between;
+    }
+
+    .cabecalho__mobile__item {
+        margin: 0.5em;
+    }
+
+    .titulo__principal {
+        font-size: 2rem;
+      }
+
+}
