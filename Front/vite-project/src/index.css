@@ -285,6 +285,14 @@
     font-size: 1.125rem;
   }
 
+  .container, .conheca {
+    height: 40vh;
+  }
+
+  .principal {
+    height: 35vh;
+  }
+
   .programas {
     height: 165vh;
   }
@@ -309,6 +317,70 @@
   height: 65vh;
 }
    
+}
+
+@media screen and (min-width: 500px) {
+
+  .titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
+    font-size: 1.5rem;
+  }
+ 
+  .subtitulo__programas, .botao__aliado, .texto__principal  {
+    font-size: 1rem;
+  }
+
+
+  .botao__about {
+    margin: 30em 0 0 0.75em;
+  }
+
+  .lista__conheca {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .programas {
+    height: 165vh;
+  }
+
+  .programas {
+    display: block;
+    height: 90vh;
+  }
+  
+  .lista__programas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    display: block;
+    text-align: center;
+    height: 15em;
+    width: 45%;
+  }
+
+  .voluntarios_imagem {
+    margin-bottom: 1em;
+  }
+
+  .container__imagem__home {
+    height: 65vh;
+  }
+
+  .voluntarios_imagem {
+    width: 80%;
+  }
+  
+  .botao__aliado {
+    box-sizing: content-box;
+    text-align: center;
+    width: 20%;
+  }
+    
 }
 
 @media screen and (min-width: 700px) {
@@ -361,12 +433,6 @@
   font-size: 1.65rem;
 }
 
-.lista__conheca {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-}
-
 .lista__conheca__item {
   width: 15em;
   height: 10m;
@@ -377,20 +443,6 @@
 .programas {
   display: block;
   height: 60vh;
-}
-
-.lista__programas {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.card {
-  display: block;
-  text-align: center;
-  height: 15em;
-  width: 45%;
 }
 
 .programas__item__imagem {
@@ -413,14 +465,7 @@
   font-size: 2.5rem;
 }
 
-.voluntarios_imagem {
-  width: 80%;
-}
-
 .botao__aliado {
-  box-sizing: content-box;
-  text-align: center;
-  width: 20%;
   font-size: 1.25rem;
 }
 }
