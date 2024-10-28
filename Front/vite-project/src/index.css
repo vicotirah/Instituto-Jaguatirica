@@ -1,6 +1,7 @@
-:root {
+@import url("../src/static/header.css");
+@import url("../src/static/about.css");
 
-  /* Paleta de cores */
+:root {
   --cor-branco-principal: #f6f6f6;
   --cor-branco-frio: hsl(0, 0%, 100%);
   --cor-clara-1: #F2E1CD;
@@ -9,24 +10,21 @@
   --cor-escura-1:#3E2111;
   --cor-escura-2:#19090A;
   --cor-verde-escuro: #163513;
-  /*Fonte*/
   --fonte-primaria: "Poppins", sans-serif;
-
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-/* =============================
-            MOBILE 
-   ============================= */
-
-/* Agrupamento */
-
-/* Tamanho, padding, margin, altura, largura */
-.container, .lista__conheca__item, .programas, .card  {
+.container, .lista__conheca__item,
+.programas, .card  {
   box-sizing: border-box;
 }
 
-.container,.principal,.programas, .botao__aliado, .botao__about {
+.container,.principal,.programas,
+.botao__aliado, .botao__about {
   padding: 0.5em;
 }
 
@@ -34,7 +32,8 @@
   padding: 0.25em;
 }
 
-.texto__principal, .lista__conheca, .lista__conheca__item, .cabecalho__mobile__item  {
+.texto__principal, .lista__conheca,
+.lista__conheca__item {
   margin: 0.25em;
 }
 
@@ -42,21 +41,27 @@
   height: 40vh;
 }
 
-.container,.principal,.programas, .aliado {
+.container,.principal,
+.programas, .aliado {
   width: 100vw;
 }
 
-/* Fonte */
-
-.cabecalho__mobile, .subtitulo__programas, .botao__about, .titulo__conheca, .container,.principal,.programas, .botao__aliado, .botao__about {
+.subtitulo__programas, .botao__about,
+.titulo__conheca, .container,.principal,.programas,
+.botao__aliado, .botao__about {
   font-family: var(--fonte-primaria);
 }
 
-.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado, .lista__conheca__item__titulo, .botao__aliado, .lista__conheca__item__titulo, .botao__aliado {
+.titulo__conheca,.titulo__programas, 
+.titulo__aliado,.lista__conheca__item__titulo,
+.botao__aliado, .lista__conheca__item__titulo, 
+.botao__aliado {
   font-weight: 600;
 }
 
-.titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado, .lista__conheca__item__titulo, .botao__aliado {
+.titulo__conheca, .titulo__programas, 
+.titulo__aliado, .lista__conheca__item__titulo, 
+.botao__aliado {
   font-size: 1.25rem;
   text-align: center;
 }
@@ -65,7 +70,9 @@
   font-size: 1rem;
 }
 
-.cabecalho__mobile, .subtitulo__programas, .titulo__principal, .botao__aliado, .botao__about, .container,.principal,.programas{
+.subtitulo__programas, 
+.botao__aliado, .botao__about, .container,
+.principal, .programas{
   color: var(--cor-branco-principal);
 }
 
@@ -91,26 +98,9 @@
   background-color: var(--cor-escura-1);
 }
 
-
-
-/*Cabeçalho*/
-
-.cabecalho__mobile {
-  background-color: var(--cor-escura-2);
-  margin: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+.titulo__conheca, .titulo__programas {
+  padding-bottom: 0;
 }
-
-.cabecalho__logo {
-  height: 10%;
-  width: 10%;
-  border-radius: 50%;
-}
-
-/*Imagem e descrição*/
 
 .container__imagem__home {
   background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
@@ -145,10 +135,6 @@
   background-color: var(--cor-clara-1);
 }
 
-.titulo__conheca, .titulo__programas {
-  padding-bottom: 0;
-}
-
 .lista__conheca {
   display: flex;
   justify-content: space-between;
@@ -178,7 +164,6 @@
   height: 165vh;
   align-items: center;
   justify-content: center;
-
 }
 
 .lista__programas {
@@ -227,11 +212,11 @@
   margin: 0.5em;
 }
 
-@media screen and (min-width: 390px) {
-  
-  .container,.principal,.programas, .titulo__conheca, .titulo__programas, .botao__aliado, .botao__about {
+@media screen and (min-width: 380px) {
+
+  .titulo__conheca, .titulo__programas {
     padding: 0.5em;
-   }
+  }
   
   .container, .conheca {
     height: 35vh;
@@ -242,29 +227,19 @@
     border-radius: 1em;
   }
   
-  .texto__principal, .lista__conheca, .lista__conheca__item, .botao__aliado {
+  .texto__principal, .lista__conheca, 
+  .lista__conheca__item, .botao__aliado {
     margin: 0.5em;
   }
-  
-  .titulo__principal, .titulo__conheca, .titulo__programas, .titulo__aliado {
+
+  .titulo__conheca, .titulo__programas,
+  .titulo__aliado {
     font-size: 1.5rem;
   }
 
-  .titulo__conheca, .titulo__programas {
-    padding-bottom: 0;
+  .subtitulo__programas, .botao__aliado {
+    font-size: 1.25rem;
   }
-
-  /*Cabeçalho*/
-  
-  .cabecalho__mobile {
-    justify-content: space-evenly;
-  } 
-  
-  .cabecalho__mobile__item {
-    margin: 0.5em 0.75em;
-  } 
-  
-  /*Imagem e descrição*/
   
   .container__imagem__home {
     height: 40vh;
@@ -292,16 +267,198 @@
     width: 90%;
     height: 80%;
   }
-
-  .subtitulo__programas {
-    font-size: 1.25rem;
-  }
   
   .aliado {
     height: 60vh;
   }
+}
 
-  .botao__aliado {
+@media screen and (min-width: 400px) {
+ 
+  .subtitulo__programas, .botao__aliado, 
+  .texto__principal  {
+    font-size: 1.125rem;
+  }
+
+  .container, .conheca {
+    height: 40vh;
+  }
+
+  .principal {
+    height: 35vh;
+  }
+
+  .programas {
+    height: 165vh;
+  }
+
+  .voluntarios_imagem {
+    margin-bottom: 1em;
+  }
+    
+}
+
+@media screen and (min-width: 430px) {
+ 
+  .subtitulo__programas, .botao__aliado, 
+  .texto__principal  {
     font-size: 1.25rem;
   }
+
+ .programas {
+   height: 165vh;
+ }
+
+ .aliado {
+  height: 65vh;
+}   
+}
+
+@media screen and (min-width: 500px) {
+
+  .titulo__conheca, .titulo__programas, 
+  .titulo__aliado {
+    font-size: 1.5rem;
+  }
+ 
+  .subtitulo__programas, .botao__aliado, 
+  .texto__principal {
+    font-size: 1rem;
+  }
+
+  .botao__about {
+    margin: 30em 0 0 0.75em;
+  }
+
+  .lista__conheca {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .programas {
+    height: 165vh;
+  }
+
+  .programas {
+    display: block;
+    height: 90vh;
+  }
+  
+  .lista__programas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    display: block;
+    text-align: center;
+    height: 15em;
+    width: 45%;
+  }
+
+  .voluntarios_imagem {
+    margin-bottom: 1em;
+  }
+
+  .container__imagem__home {
+    height: 65vh;
+  }
+
+  .voluntarios_imagem {
+    width: 80%;
+  }
+  
+  .botao__aliado {
+    box-sizing: content-box;
+    text-align: center;
+    width: 20%;
+  }
+    
+}
+
+@media screen and (min-width: 700px) {
+
+.texto__principal, .titulo__aliado {
+  padding: 0.5em;
+}
+
+.container, .conheca {
+  height: 45vh;
+}
+
+.container__imagem__home, .aliado {
+  height: 65vh;
+}
+
+.card, .aliado {
+  background-color: var(--cor-clara-2);
+}
+
+.titulo__conheca, 
+.titulo__programas, .lista__conheca__item__titulo {
+  font-size: 2rem;
+}
+
+.botao__about {
+  font-size: 1.5rem;
+  margin: 22em 0 0 2em;
+  width: 30%;
+}
+
+.principal {
+  height: 35vh;
+  background-image: url("../src/assets/images/Vetores/—Pngtree—jaguar\ or\ leopard\ seamless\ pattern_1166421.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto__principal {
+  text-align: center;
+  border-radius: 1em;
+  background-color: var(--cor-escura-2);
+  font-size: 1.65rem;
+}
+
+.lista__conheca__item {
+  width: 15em;
+  height: 10m;
+  padding: 1em;
+  text-align: center;
+}
+
+.programas {
+  display: block;
+  height: 60vh;
+}
+
+.card  {
+  margin: 0.5em;
+}
+
+.programas__item__imagem {
+  width: 80%;
+  height: 70%;
+  margin: 0.5em 0;
+}
+
+.subtitulo__programas {
+  color: var(--cor-escura-2);
+}
+
+.aliado {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.titulo__aliado {
+  font-size: 2.5rem;
+}
+
+.botao__aliado {
+  font-size: 1.25rem;
+}
 }
