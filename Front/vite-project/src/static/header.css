@@ -1,13 +1,21 @@
 
-.cabecalho__mobile{
+.cabecalho__mobile, .cabecalho__desktop {
     font-family: var(--fonte-primaria);
     color: var(--cor-branco-principal);
     background-color: var(--cor-escura-2);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     list-style: none;
-  }
+}
+
+.cabecalho__mobile{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cabecalho__desktop, .cabecalho__desktop__lista,
+.cabecalho__desktop__pags {
+  display: none;
+}
 
 .titulo__principal {
   font-weight: 600;
@@ -46,17 +54,116 @@
 
 
 @media screen and (min-width: 700px) {
-    .cabecalho__mobile {
-        padding: 0.5em;
-        justify-content: space-between;
-    }
+  .cabecalho__mobile {
+      padding: 0.5em;
+      justify-content: space-between;
+  }
 
-    .cabecalho__mobile__item {
-        margin: 0.5em;
-    }
+  .cabecalho__mobile__item {
+      margin: 0.5em;
+  }
 
-    .titulo__principal {
-        font-size: 2rem;
-      }
+  .titulo__principal {
+      font-size: 2.25rem;
+  }
+
+  .cabecalho__menu_hamburguer{
+    height: 10%;
+    width: 10%;
+
+  }
+
+}
+
+@media screen and (min-width: 780px) {
+
+  .cabecalho__mobile {
+      display: flex;
+      padding: 0.5em;
+      justify-content: space-between;
+  }
+
+  .cabecalho__desktop{
+    display: none;
+  }
+
+  .cabecalho__mobile__item {
+      margin: 0.5em 1em;
+  }
+
+  .titulo__principal {
+      font-size: 2.75rem;
+  }
+
+  .cabecalho__menu_hamburguer{
+    height: 10%;
+    width: 10%;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .cabecalho__mobile {
+    display: none;
+  }
+
+  .cabecalho__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .cabecalho__desktop__lista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5em;
+  }
+
+  .cabecalho__desktop__pags {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.125rem;
+    margin: 0 0.5em;
+  }
+
+  .titulo__principal {
+      font-size: 2.75rem;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  .cabecalho__mobile {
+    display: none;
+  }
+
+  .cabecalho__desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .cabecalho__desktop__lista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1em;
+  }
+
+  .cabecalho__desktop__pags {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.85rem;
+    margin: 0 1em;
+  }
+
+  .titulo__principal {
+      font-size: 3rem;
+  }
 
 }

@@ -102,6 +102,10 @@ a {
   padding-bottom: 0;
 }
 
+.titulo__principal_desktop{
+  display: none;
+}
+
 .container__imagem__home {
   background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
   background-repeat: no-repeat;
