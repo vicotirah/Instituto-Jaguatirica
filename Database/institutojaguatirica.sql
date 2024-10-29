@@ -43,13 +43,13 @@ create table if not exists  apadrinhamento (
 );
 
 INSERT INTO animal (nome, nome_popular, sexo, genero, especie, regiao, data_entrada, status_preservacao) VALUES
-('Jacy', 'Onça-Pintada', 'Fêmea', 'Mamífero', 'Panthera onca', 'Mata Atlântica', '2023-01-01', 'Ameaçado'),
+('Juma', 'Onça-Pintada', 'Fêmea', 'Mamífero', 'Panthera onca', 'Mata Atlântica', '2023-01-01', 'Ameaçado'),
 ('Jade', 'Ararinha-azul', 'Fêmea', 'Ave', 'Cyanopsitta spixii', 'Cerrado', '2023-01-02', 'Extinto na Natureza'),
-('Taki', 'Mico-leão-dourado', 'Macho', 'Mamífero', 'Leontopithecus rosalia', 'Mata Atlântica', '2023-01-03', 'Ameaçado'),
+('Taru', 'Mico-leão-dourado', 'Macho', 'Mamífero', 'Leontopithecus rosalia', 'Mata Atlântica', '2023-01-03', 'Ameaçado'),
 ('Tande', 'Tamanduá-bandeira', 'Macho', 'Mamífero', 'Myrmecophaga tridactyla', 'Cerrado', '2023-01-04', 'Vulnerável'),
 ('Iporã', 'Jabuti-tinga', 'Macho', 'Réptil','Chelonoidis denticulatus', 'Amazônia', '2023-01-05', 'Ameaçado'),
 ('Guarati', 'Lobo-guará','Macho', 'Mamífero', 'Chrysocyon brachyurus', 'Cerrado', '2023-01-06', 'Vulnerável'),
-('Fuleco', 'Tatu-canastra', 'Macho', 'Réptil','Priodontes maximus', 'Amazônia', '2023-01-07', 'Ameaçado'),
+('Fuleco', 'Tatu-canastra', 'Macho', 'Mamífero','Priodontes maximus', 'Amazônia', '2023-01-07', 'Ameaçado'),
 ('Sombra', 'Gato-do-mato','Fêmea', 'Mamífero', 'Leopardus wiedii', 'Mata Atlântica', '2023-01-08', 'Vulnerável'),
 ('Yara', 'Peixe-boi', 'Fêmea', 'Mamífero','Trichechus inunguis', 'Amazônia', '2023-01-09', 'Ameaçado'),
 ('Pitanga', 'Jaguatirica', 'Fêmea', 'Mamífero','Leopardus pardalis', 'Mata Atlântica', '2023-01-10', 'Ameaçado');
