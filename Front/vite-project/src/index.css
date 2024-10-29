@@ -42,26 +42,27 @@ a {
 }
 
 .container,.principal,
-.programas, .aliado {
+.programas, .aliado, .paragrafo_descr {
   width: 100vw;
 }
 
 .subtitulo__programas, .botao__about,
 .titulo__conheca, .container,.principal,.programas,
-.botao__aliado, .botao__about {
+.botao__aliado, .botao__about,
+.titulo__principal_desktop {
   font-family: var(--fonte-primaria);
 }
 
 .titulo__conheca,.titulo__programas, 
 .titulo__aliado,.lista__conheca__item__titulo,
 .botao__aliado, .lista__conheca__item__titulo, 
-.botao__aliado {
+.botao__aliado, .titulo__principal_desktop{
   font-weight: 600;
 }
 
 .titulo__conheca, .titulo__programas, 
 .titulo__aliado, .lista__conheca__item__titulo, 
-.botao__aliado {
+.botao__aliado, .titulo__principal_desktop {
   font-size: 1.25rem;
   text-align: center;
 }
@@ -71,8 +72,9 @@ a {
 }
 
 .subtitulo__programas, 
-.botao__aliado, .botao__about, .container,
-.principal, .programas{
+.botao__aliado, .botao__about,
+.container, .principal, 
+.programas, .titulo__principal_desktop {
   color: var(--cor-branco-principal);
 }
 
@@ -102,7 +104,7 @@ a {
   padding-bottom: 0;
 }
 
-.titulo__principal_desktop{
+.titulo__principal_desktop {
   display: none;
 }
 
@@ -255,6 +257,7 @@ a {
 
   .principal {
     height: 30vh;
+    max-width: 100vw;
   }
 
   .programas {
@@ -390,7 +393,9 @@ a {
 }
 
 .container, .conheca {
+  box-sizing: border-box;
   height: 45vh;
+  max-width: 100vw;
 }
 
 .container__imagem__home, .aliado {
@@ -415,8 +420,9 @@ a {
 .principal {
   height: 35vh;
   background-image: url("../src/assets/images/Vetores/—Pngtree—jaguar\ or\ leopard\ seamless\ pattern_1166421.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: contain;
+
 }
 
 .texto__principal {
@@ -465,4 +471,42 @@ a {
 .botao__aliado {
   font-size: 1.25rem;
 }
+}
+
+@media screen and (min-width: 1000px) {
+
+  .botao__about {
+    font-size: 1.85rem;
+    margin: 25em 0 0 2em;
+    width: 20%;
+    padding: 0.5em;
+  }
+
+  .paragrafo_descr {
+    background-color: var(--cor-escura-2);
+    padding: 1em;
+    margin: 1em;
+    width: 90vw;
+    border-radius: 1em;
+  }
+
+  .texto__principal {
+    font-size: 1.85rem;
+  }
+
+  .titulo__principal_desktop {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .container, .conheca {
+    box-sizing: border-box;
+    height: 35vh;
+    max-width: 100vw;
+  }
+
+  .programas {
+    display: block;
+    height: 70vh;
+  }
 }
