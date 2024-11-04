@@ -25,8 +25,8 @@
   background-color: var(--cor-escura-2);
   overflow: hidden;
   display: flex;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-top: 2.5vw;
+  padding-bottom: 0vw;
 }
 .topnav img{
   margin-left: 5vw;
