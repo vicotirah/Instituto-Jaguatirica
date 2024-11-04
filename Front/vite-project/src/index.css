@@ -14,7 +14,7 @@
 }
 .topnav img{
   border-radius: 50%;
-  width: 10rem;
+  width: 20rem;
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -35,7 +35,7 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 1.25vw 1.25vw;
+  padding: 3vw 3vw;
   text-decoration: none;
   font-size: 3rem;
 }
@@ -109,6 +109,10 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  .topnav img{
+    display: none;
+    border-radius: 80%;
+  }
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
