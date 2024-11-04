@@ -1,91 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="src/index.css"/>
-    <link rel="stylesheet" href="src\reset.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <header class="cabecalho">
-      <div class="cabecalho__mobile">
-         <img class="cabecalho__mobile__item cabecalho__logo" src="src\assets\images\logoIJ.png" >
-         <h1 class="titulo__principal">Instituto Jaguatirica</h1>
-       <img class="cabecalho__mobile__item cabecalho__menu_hamburguer" src="src/assets/images/menu_hamburguer.png" >
-    </div>
-    <div class="cabecalho__desktop">
-      <img class="cabecalho__desktop__item cabecalho__logo" src="src\assets\images\logoIJ.png" >
-      <ul class="cabecalho__desktop__lista">
-        <li class="cabecalho__desktop__pags" href="./src/templates/about.html">Sobre Nós</li>
-        <li class="cabecalho__desktop__pags" href="./src/templates/programas.html">Programas</li>
-        <li class="cabecalho__desktop__pags" href="#">Animais</li> <!---abrir lista embaixo com os links para por região e por espécie--->
-        <li class="cabecalho__desktop__pags" href="./src/templates/cadastro_voluntario.html">Voluntariado</li>
-        <li class="cabecalho__desktop__pags" href="#">Doações</li> <!---abrir lista embaixo com os links para doação e apadrinhamento--->
-      </ul>
- </div>
-    </header>
-    <section class="container__imagem__home">
-      <button class="botao__about"><a href="./src/templates/about.html">Sobre Nós</a></button>
-    </section>
-    <section class="container principal">
-      <div class="paragrafo_descr">
-        <h1 class="titulo__principal_desktop">Instituto Jaguatirica</h1>
-        <p class="texto__principal">O Instituto Jaguatirica é uma ONG dedicada à proteção e preservação da fauna silvestre brasileira. Nossa missão é promover a conscientização sobre a importância da biodiversidade e a necessidade de proteger os habitats naturais dos animais. Atuamos no resgate, reabilitação e reintegração de espécies ameaçadas, além de desenvolver projetos educativos que envolvem a comunidade em ações de conservação.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="src/index.css" />
+  <link rel="stylesheet" href="src\reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="index.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <img src="src/assets/images/logoIJ.png">
+    <div class="putz">
+      <a href="src/templates/about.html" class="active">Sobre nós</a>
+      <a href="src/templates/programas.html">programas</a>
+      <a href="src/templates/cadastro_voluntario.html">voluntariado</a>
+      <div class="dropdown">
+        <button class="dropbtn">animais
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="src/templates/animais_regioes.html">Região</a>
+          <a href="src/templates/animais_especies.html">Taxonomia</a>
+        </div>
       </div>
-    </section>
-    <section class="container conheca">
-      <h1 class="titulo__conheca">Conheça nossos animais!</h1>
-      <ul class="lista__conheca">
-        <li class="lista__conheca__item">
-            <img class="lista__conheca__item__imagem" src="src/assets/images/Vetores/brazil.png">
-            <h3 class="lista__conheca__item__titulo"><a href="./src/templates/animais_regioes.html">Região</a></h3>
-        </li>
-        <li class="lista__conheca__item">
-            <img class="lista__conheca__item__imagem" src="src/assets/images/Vetores/patas.png">
-            <h3 class="lista__conheca__item__titulo"><a href="./src/templates/animais_especies.html">Espécie</a></h3>
-        </li>
-      </ul>
-    </section>
-    <section class="container programas">
-      <h1 class= "titulo__programas">Programas do Instituto</h1>
-      <ul class="lista__programas">
-        <li class="lista__programas__item card">
-          <img class="programas__item__imagem" src="src/assets/images/Animais/mamifero/micoleao/micoleao.jfif">
-          <h2 class="subtitulo__programas"><a href="./src/templates/programas.html">Monitoramento de Espécies Ameaçadas</a></h2>
-        </li>
-        <li class="lista__programas__item card">
-          <img class="programas__item__imagem" src="src/assets/images/Animais/ave/ararinha_azul/Ararinha-azul.png">
-          <h2 class="subtitulo__programas"><a href="./src/templates/programas.html">Combate ao Tráfico de Animais Silvestres</a></h2>
-        </li>
-        <li class="lista__programas__item card">
-          <img class="programas__item__imagem" src="src/assets/images/Animais/mamifero/tatucanastra/tatu_canastra.jpg">
-          <h2 class="subtitulo__programas"><a href="./src/templates/programas.html">Resgate e Reabilitação de Animais Silvestres</a></h2>
-        </li>
-        <li class="lista__programas__item card">
-          <img class="programas__item__imagem" src="src/assets/images/Animais/mamifero/jaguatirica/jaguaritica filhota.png">
-          <h2 class="subtitulo__programas"><a href="./src/templates/programas.html">Apadrinhamento de Animais e Apoio à Fauna</a></h2>
-        </li>
-      </ul>
-    </section>
-    <section class="container aliado">
-      <h1 class="titulo__aliado">Seja um aliado!</h1>
+      <a href="#about">doações</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+  <section class="container__imagem__home">
+    <button class="botao__about"><a href="./src/templates/about.html">Sobre Nós</a></button>
+  </section>
+  <section class="container principal">
+    <div class="paragrafo_descr">
+      <h1 class="titulo__principal_desktop">Instituto Jaguatirica</h1>
+      <p class="texto__principal">O Instituto Jaguatirica é uma ONG dedicada à proteção e preservação da fauna
+        silvestre
+        brasileira. Nossa missão é promover a conscientização sobre a importância da biodiversidade e a necessidade de
+        proteger os habitats naturais dos animais. Atuamos no resgate, reabilitação e reintegração de espécies
+        ameaçadas, além de desenvolver projetos educativos que envolvem a comunidade em ações de conservação.</p>
+    </div>
+  </section>
+  <section class="container conheca">
+    <h1 class="titulo__conheca">Conheça nossos animais!</h1>
+    <ul class="lista__conheca">
+      <li class="lista__conheca__item">
+        <img class="lista__conheca__item__imagem" src="src/assets/images/Vetores/brazil.png">
+        <h3 class="lista__conheca__item__titulo"><a href="./src/templates/animais_regioes.html">Região</a></h3>
+      </li>
+      <li class="lista__conheca__item">
+        <img class="lista__conheca__item__imagem" src="src/assets/images/Vetores/patas.png">
+        <h3 class="lista__conheca__item__titulo"><a href="./src/templates/animais_especies.html">Espécie</a></h3>
+      </li>
+    </ul>
+  </section>
+  <section class="container programas">
+    <h1 class="titulo__programas">Programas do Instituto</h1>
+    <ul class="lista__programas">
+      <li class="lista__programas__item card">
+        <img class="programas__item__imagem" src="src/assets/images/Animais/mamifero/micoleao/micoleao.jfif">
+        <h2 class="subtitulo__programas"><a href="./src/templates/programas.html">Monitoramento de Espécies
+            Ameaçadas</a></h2>
+      </li>
+      <li class="lista__programas__item card">
+        <img class="programas__item__imagem" src="src/assets/images/Animais/ave/ararinha_azul/Ararinha-azul.png">
+        <h2 class="subtitulo__programas"><a href="./src/templates/programas.html">Combate ao Tráfico de Animais
+            Silvestres</a></h2>
+      </li>
+      <li class="lista__programas__item card">
+        <img class="programas__item__imagem" src="src/assets/images/Animais/mamifero/tatucanastra/tatu_canastra.jpg">
+        <h2 class="subtitulo__programas"><a href="./src/templates/programas.html">Resgate e Reabilitação de Animais
+            Silvestres</a></h2>
+      </li>
+      <li class="lista__programas__item card">
+        <img class="programas__item__imagem"
+          src="src/assets/images/Animais/mamifero/jaguatirica/jaguaritica filhota.png">
+        <h2 class="subtitulo__programas"><a href="./src/templates/programas.html">Apadrinhamento de Animais e Apoio à
+            Fauna</a></h2>
+      </li>
+    </ul>
+  </section>
+  <section class="container aliado">
+    <h1 class="titulo__aliado">Seja um aliado!</h1>
 
-      <img class="voluntarios_imagem" src="src/assets/images/voluntarios/voluntarios3.jpg">
-      <button class ="botao__aliado"><a href="./src/templates/doacao.html">Doações</a></button>
-      <button class ="botao__aliado"><a href="./src/templates/apadrinhamento.html">Padrinhos</a></button>
-      <button class ="botao__aliado"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></button>
-    </section>
-    <section class="conheca">
-      <h1 class="titulo__conheca">Contato</h1>
-    </section>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <img class="voluntarios_imagem" src="src/assets/images/voluntarios/voluntarios3.jpg">
+    <button class="botao__aliado"><a href="./src/templates/doacao.html">Doações</a></button>
+    <button class="botao__aliado"><a href="./src/templates/apadrinhamento.html">Padrinhos</a></button>
+    <button class="botao__aliado"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></button>
+  </section>
+  <section class="conheca">
+    <h1 class="titulo__conheca">Contato</h1>
+  </section>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
-  
-
