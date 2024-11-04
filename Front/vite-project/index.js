@@ -6,3 +6,6 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+function envioVoluntario(){
+  alert("Dados enviados!")
+}
