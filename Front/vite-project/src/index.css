@@ -14,7 +14,11 @@
 }
 .topnav img{
   border-radius: 50%;
-  width: 20rem;
+  width: 10rem;
+}
+.topnav img a{
+  width: min-content;
+
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -37,12 +41,12 @@
   text-align: center;
   padding: 3vw 3vw;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 1.7rem;
 }
 
 /* Add an active class to highlight the current page */
 .active {
-  background-color: #04AA6D;
+  background-color: var(--cor-escura-2);
   color: white;
 }
 
@@ -67,7 +71,7 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  font-size: 3rem;
+  font-size: 1.7rem;
 }
 
 /* Style the dropdown content (hidden by default) */
