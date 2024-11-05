@@ -1,20 +1,82 @@
 
-.cabecalho__mobile, .cabecalho__desktop {
+.hdr, .hdr-mobile, .cabecalho__desktop, .hamburguer-button, .nav-menu, .menu, .menu-item {
   font-family: var(--fonte-primaria);
   color: var(--cor-branco-principal);
   background-color: var(--cor-escura-2);
   list-style: none;
+  position:relative;
+  padding: 0.15em;
 }
 
-.cabecalho__mobile{
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  margin: 0;
+  width: 100vw;
+}
+
+.hamburguer-button .icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.hamburguer-button[aria-expanded="false"] .icon::before {
+  content: "\2630";
+}
+
+.hamburguer-button[aria-expanded="true"] .icon::before {
+  content: "\2715";
+}
+
+.hamburguer-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: none;
+}
+
+.menu-item, .menu-item a{
+  display: block;
+  padding: 0.5em;
+}
+
+.menu-item a:hover, .menu-item a:focus {
+  background-color: var(--cor-escura-2-hover);
+  padding: 0.5em; 
+}
+
+
+.hdr-mobile {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.cabecalho__desktop, .cabecalho__desktop__lista,
-.cabecalho__desktop__pags {
+.hdr-desktop {
   display: none;
+}
+
+.hamburguer-button-js-enabled + .menu {
+  display: flex;
+  position: absolute;
+  width: 60%;
+  right: 0;
+  top: 2.8em;
+  flex-direction: column;
+}
+
+.hamburguer-button-js-enabled + .menu-closed {
+  display: none;
+  
+}
+
+.hamburguer-button-js-enabled{
+  display: block;
 }
 
 .titulo__principal {
@@ -24,14 +86,7 @@
   color: var(--cor-branco-principal);
 }
 
-.cabecalho__mobile__item  {
-    margin: 0.5em;
-    font-family: var(--fonte-primaria);
-    color: var(--cor-branco-principal);
-    background-color: var(--cor-escura-2);
-  }
-
-  .cabecalho__logo {
+  .hdr-logo {
     height: 10%;
     width: 10%;
     border-radius: 50%;
@@ -39,11 +94,11 @@
 
 @media screen and (min-width: 380px) {
 
-  .cabecalho__mobile {
+  .hdr-mobile   {
     justify-content: space-evenly;
   } 
 
-  .cabecalho__mobile__item {
+  .hdr-mobile-item {
     margin: 0.5em 0.75em;
   } 
 
@@ -54,12 +109,12 @@
 
 
 @media screen and (min-width: 700px) {
-  .cabecalho__mobile {
+  .hdr-mobile {
     padding: 0.5em;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
-  .cabecalho__mobile__item {
+  .hdr-mobile-item {
     margin: 0.5em;
   }
 
@@ -67,17 +122,37 @@
     font-size: 2.25rem;
   }
 
-  .cabecalho__menu_hamburguer{
-    height: 10%;
-    width: 10%;
-
-  }
 }
 
 @media screen and (min-width: 1000px) {
-  .cabecalho__mobile {
+  .hdr-mobile {
     display: none;
   }
+
+  .hdr-desktop {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+  }
+
+  .hdr-logo {
+    height: 6%;
+    width: 6%;
+    border-radius: 50%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+  }
+
+  .
+
 
   .cabecalho__desktop {
     display: flex;
