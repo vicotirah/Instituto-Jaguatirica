@@ -2,21 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="src\index.css"/>
-    <link rel="stylesheet" href="src\reset.css"/>
+    <link rel="icon" type="jpg" href="../assets/images/logoIJ.png" />
+    <link rel="stylesheet" href="../index.css"/>
+    <link rel="stylesheet" href="../reset.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="../../index.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>IJ</title>
   </head>
   <body>
-    <header class="cabecalho">
-      <div class="cabecalho__mobile">
-         <img class="cabecalho__mobile__item cabecalho__logo" src="../assets/images/logoIJ.png" >
-         <h1 class="titulo__principal">Instituto Jaguatirica</h1>
-        <img class="cabecalho__mobile__item cabecalho__menu_hamburguer" src="../assets/images/menu_hamburguer.png" >
+    <div class="topnav" id="myTopnav">
+      <a href="./../../index.html"><img src="../assets/images/logoIJ.png"></a>
+      <div class="putz">
+        <a href="./about.html" class="active">Sobre nós</a>
+        <a href="./programas.html">programas</a>
+        <a href="./cadastro_voluntario.html">voluntariado</a>
+        <div class="dropdown">
+          <button class="dropbtn">animais
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="./animais_regioes.html">Região</a>
+            <a href="./animais_especies.html">Taxonomia</a>
+          </div>
+        </div>
+        <a href="./doacao.html">doações</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
     </div>
-    </header>
+    
   </body>
