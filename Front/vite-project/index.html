@@ -3,32 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!---Styles-->
     <link rel="stylesheet" href="src\index.css"/>
     <link rel="stylesheet" href="src\reset.css"/>
+    <!---Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Index</title>
   </head>
   <body>
-    <header class="cabecalho">
-      <div class="cabecalho__mobile">
-         <img class="cabecalho__mobile__item cabecalho__logo" src="src\assets\images\logoIJ.png" >
-         <h1 class="titulo__principal">Instituto Jaguatirica</h1>
-        <img class="cabecalho__mobile__item cabecalho__menu_hamburguer" src="src/assets/images/menu_hamburguer.png" >
+    <nav class="hdr">
+      <div class="hdr-mobile">
+        <img class="hdr-mobile-item hdr-logo" src="src\assets\images\logoIJ.png" >
+        <h1 class="titulo__principal">Instituto Jaguatirica</h1>
+        <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu">
+          <span class="icon"></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li class="menu-item"><a href="#">Home</a></li>
+          <li class="menu-item"><a href="#">Sobre Nós</a></li>
+          <li class="menu-item"><a href="#">Programas</a></li>
+          <li class="menu-item"><a href="#">Animais</a></li>
+          <li class="menu-item"><a href="#">Voluntariado</a></li>
+          <li class="menu-item"><a href="#">Doações</a></li>
+        </ul>
     </div>
-    <div class="cabecalho__desktop">
+    <div class="hdr-desktop">
+      <img class="hdr-desktop-item hdr-logo" src="src\assets\images\logoIJ.png" >
+      <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu" aria-expanded="true">
+        <span class="icon"></span>Menu
+      </button>
+      <ul id="menu" class="menu" aria-hidden="true">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item"><a href="#">Sobre Nós</a></li>
+        <li class="menu-item"><a href="#">Programas</a></li>
+        <li class="menu-item"><a href="#">Animais</a></li>
+        <li class="menu-item"><a href="#">Voluntariado</a></li>
+        <li class="menu-item"><a href="#">Doações</a></li>
+      </ul>
+  </div>
+
+<!--   <div class="cabecalho__desktop">
       <img class="cabecalho__desktop__item cabecalho__logo" src="src\assets\images\logoIJ.png" >
-      <ul class="cabecalho__desktop__lista">
+        <ul class="cabecalho__desktop__lista">
         <li class="cabecalho__desktop__pags" href="./src/templates/about.html">Sobre Nós</li>
         <li class="cabecalho__desktop__pags" href="./src/templates/programas.html">Programas</li>
-        <li class="cabecalho__desktop__pags" href="#">Animais</li> <!---abrir lista embaixo com os links para por região e por espécie--->
+        <li class="cabecalho__desktop__pags" href="#">Animais</li>
         <li class="cabecalho__desktop__pags" href="./src/templates/cadastro_voluntario.html">Voluntariado</li>
-        <li class="cabecalho__desktop__pags" href="#">Doações</li> <!---abrir lista embaixo com os links para doação e apadrinhamento--->
+        <li class="cabecalho__desktop__pags" href="#">Doações</li> 
       </ul>
- </div>
-    </header>
+    </div>
+  --> 
+  </nav>
     <section class="container__imagem__home">
       <button class="botao__about"><a href="./src/templates/about.html">Sobre Nós</a></button>
     </section>
@@ -85,6 +114,7 @@
     </section>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="menu.js"></script>
   </body>
 </html>
   
