@@ -10,6 +10,7 @@
   --cor-escura-1:#3E2111;
   --cor-escura-2:#19090A;
   --cor-verde-escuro: #163513;
+  --cor-verde-escuro-hover: #36862f82;
   --cor-escura-2-hover: #4414178f;
   --fonte-primaria: "Poppins", sans-serif;
 }
@@ -19,104 +20,104 @@ a {
   color: inherit;
 }
 
-.container, .lista__conheca__item,
-.programas, .card  {
+.container, .list-our-animals-item,
+.program, .card  {
   box-sizing: border-box;
 }
 
-.container,.principal,.programas,
-.botao__aliado, .botao__about {
+.container,.principal,.program,
+.btn-ally, .bnt-about {
   padding: 0.5em;
 }
 
-.titulo__conheca, .titulo__programas {
+.title-our-animals, .title-program {
   padding: 0.25em;
 }
 
-.texto__principal, .lista__conheca,
-.lista__conheca__item {
+.txt-principal, .list-our-animals,
+.list-our-animals-item {
   margin: 0.25em;
 }
 
-.container, .conheca {
+.container, .our-animals {
   height: 40vh;
 }
 
 .container,.principal,
-.programas, .aliado, .paragrafo_descr {
+.program, .ally, .txt-description {
   width: 100vw;
 }
 
-.subtitulo__programas, .botao__about,
-.titulo__conheca, .container,.principal,.programas,
-.botao__aliado, .botao__about,
-.titulo__principal_desktop {
+.subtitle-program, .bnt-about,
+.title-our-animals, .container,.principal,.program,
+.btn-ally, .bnt-about,
+.title-principal-dkt {
   font-family: var(--fonte-primaria);
 }
 
-.titulo__conheca,.titulo__programas, 
-.titulo__aliado,.lista__conheca__item__titulo,
-.botao__aliado, .lista__conheca__item__titulo, 
-.botao__aliado, .titulo__principal_desktop{
+.title-our-animals,.title-program, 
+.title-ally,.list-our-animals-item-title,
+.btn-ally, .list-our-animals-item-title, 
+.btn-ally, .title-principal-dkt{
   font-weight: 600;
 }
 
-.titulo__conheca, .titulo__programas, 
-.titulo__aliado, .lista__conheca__item__titulo, 
-.botao__aliado, .titulo__principal_desktop {
+.title-our-animals, .title-program, 
+.title-ally, .list-our-animals-item-title, 
+.btn-ally, .title-principal-dkt {
   font-size: 1.25rem;
   text-align: center;
 }
 
-.texto__principal, .subtitulo__programas {
+.txt-principal, .subtitle-program {
   font-size: 1rem;
 }
 
-.subtitulo__programas, 
-.botao__aliado, .botao__about,
+.subtitle-program, 
+.btn-ally, .bnt-about,
 .container, .principal, 
-.programas, .titulo__principal_desktop {
+.program, .title-principal-dkt {
   color: var(--cor-branco-principal);
 }
 
-.conheca, .aliado {
+.our-animals, .ally {
   color: var(--cor-escura-2);
 }
 
-.botao__aliado, .botao__about {
+.btn-ally, .bnt-about {
   border-radius: 0.5em;
   border-color: transparent;
 }
 
-.lista__conheca__item, .card {
+.list-our-animals-item, .card {
   background-color: var(--cor-media);
   border-radius: 1em;
 }
 
-.programas__item__imagem, .voluntarios_imagem {
+.program-item-img, .voluntarios_imagem {
   border-radius: 1em;
 }
 
-.container, .botao__aliado {
+.container, .btn-ally {
   background-color: var(--cor-escura-1);
 }
 
-.titulo__conheca, .titulo__programas {
+.title-our-animals, .title-program {
   padding-bottom: 0;
 }
 
-.titulo__principal_desktop {
+.title-principal-dkt {
   display: none;
 }
 
-.container__imagem__home {
-  background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/jaquatirica_home.svg");
+.container-img-home {
+  background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/Site_GeneticaeComportamento-0-1140.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 45vh;
 }
 
-.botao__about {
+.bnt-about {
   background-color: var(--cor-verde-escuro);
   position: relative;
   margin: 18em 0 0 1em;
@@ -134,20 +135,20 @@ a {
   align-items: center; 
 }
 
-.texto__principal {
+.txt-principal {
   text-align: center;
 }
 
-.conheca {
+.our-animals {
   background-color: var(--cor-clara-1);
 }
 
-.lista__conheca {
+.list-our-animals {
   display: flex;
   justify-content: space-between;
 }
 
-.lista__conheca__item {
+.list-our-animals-item {
   display: block;
   width: 10em;
   height: 10m;
@@ -155,25 +156,25 @@ a {
   text-align: center;
 }
 
-.lista__conheca__item__titulo {
+.list-our-animals-item-title {
   padding-top: 0.5em;
   margin-top: 0.5em;
   text-align: center;
 }
 
-.lista__conheca__item__imagem {
+.list-our-animals-item-img {
   height: 70%;
   width: 80%;
 }
 
-.programas {
+.program {
   display: block;
   height: 165vh;
   align-items: center;
   justify-content: center;
 }
 
-.lista__programas {
+.list-program {
   display: flex;
   flex-direction: column;
 }
@@ -187,17 +188,17 @@ a {
   margin: 0.5em auto;
 }
 
-.programas__item__imagem {
+.program-item-img {
   width: 80%;
   height: 70%;
   margin: 0.5em 0;
 }
 
-.subtitulo__programas {
+.subtitle-program {
   font-weight: 500;
 }
 
-.aliado {
+.ally {
   display: block;
   align-items: center;
   text-align: center;
@@ -205,7 +206,7 @@ a {
   background-color: var(--cor-clara-2);
 }
 
-.titulo__aliado {
+.title-ally {
   margin-bottom: 0.5em;
 }
 
@@ -213,7 +214,7 @@ a {
   width: 90%;
 }
 
-.botao__aliado {
+.btn-ally {
   text-align: center;
   width: 70%;
   margin: 0.5em;
@@ -221,38 +222,38 @@ a {
 
 @media screen and (min-width: 380px) {
 
-  .titulo__conheca, .titulo__programas {
+  .title-our-animals, .title-program {
     padding: 0.5em;
   }
   
-  .container, .conheca {
+  .container, .our-animals {
     height: 35vh;
   }
   
-  .lista__conheca__item, .card {
+  .list-our-animals-item, .card {
     background-color: var(--cor-media);
     border-radius: 1em;
   }
   
-  .texto__principal, .lista__conheca, 
-  .lista__conheca__item, .botao__aliado {
+  .txt-principal, .list-our-animals, 
+  .list-our-animals-item, .btn-ally {
     margin: 0.5em;
   }
 
-  .titulo__conheca, .titulo__programas,
-  .titulo__aliado {
+  .title-our-animals, .title-program,
+  .title-ally {
     font-size: 1.5rem;
   }
 
-  .subtitulo__programas, .botao__aliado {
+  .subtitle-program, .btn-ally {
     font-size: 1.25rem;
   }
   
-  .container__imagem__home {
+  .container-img-home {
     height: 40vh;
   }
   
-  .botao__about {
+  .bnt-about {
     margin: 20em 0 0 0.75em;
   }
 
@@ -261,7 +262,7 @@ a {
     max-width: 100vw;
   }
 
-  .programas {
+  .program {
     height: 180vh;
   }
   
@@ -271,24 +272,24 @@ a {
     margin: 1em auto;
   }
   
-  .programas__item__imagem {
+  .program-item-img {
     width: 90%;
     height: 80%;
   }
   
-  .aliado {
+  .ally {
     height: 60vh;
   }
 }
 
 @media screen and (min-width: 400px) {
  
-  .subtitulo__programas, .botao__aliado, 
-  .texto__principal  {
+  .subtitle-program, .btn-ally, 
+  .txt-principal  {
     font-size: 1.125rem;
   }
 
-  .container, .conheca {
+  .container, .our-animals {
     height: 40vh;
   }
 
@@ -296,7 +297,7 @@ a {
     height: 35vh;
   }
 
-  .programas {
+  .program {
     height: 165vh;
   }
 
@@ -308,52 +309,52 @@ a {
 
 @media screen and (min-width: 430px) {
  
-  .subtitulo__programas, .botao__aliado, 
-  .texto__principal  {
+  .subtitle-program, .btn-ally, 
+  .txt-principal  {
     font-size: 1.25rem;
   }
 
- .programas {
+ .program {
    height: 165vh;
  }
 
- .aliado {
+ .ally {
   height: 65vh;
 }   
 }
 
 @media screen and (min-width: 500px) {
 
-  .titulo__conheca, .titulo__programas, 
-  .titulo__aliado {
+  .title-our-animals, .title-program, 
+  .title-ally {
     font-size: 1.5rem;
   }
  
-  .subtitulo__programas, .botao__aliado, 
-  .texto__principal {
+  .subtitle-program, .btn-ally, 
+  .txt-principal {
     font-size: 1rem;
   }
 
-  .botao__about {
+  .bnt-about {
     margin: 30em 0 0 0.75em;
   }
 
-  .lista__conheca {
+  .list-our-animals {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
   }
 
-  .programas {
+  .program {
     height: 165vh;
   }
 
-  .programas {
+  .program {
     display: block;
     height: 90vh;
   }
   
-  .lista__programas {
+  .list-program {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -371,7 +372,7 @@ a {
     margin-bottom: 1em;
   }
 
-  .container__imagem__home {
+  .container-img-home {
     height: 65vh;
   }
 
@@ -379,7 +380,7 @@ a {
     width: 80%;
   }
   
-  .botao__aliado {
+  .btn-ally {
     box-sizing: content-box;
     text-align: center;
     width: 20%;
@@ -389,30 +390,30 @@ a {
 
 @media screen and (min-width: 700px) {
 
-.texto__principal, .titulo__aliado {
+.txt-principal, .title-ally {
   padding: 0.5em;
 }
 
-.container, .conheca {
+.container, .our-animals {
   box-sizing: border-box;
   height: 45vh;
   max-width: 100vw;
 }
 
-.container__imagem__home, .aliado {
+.container-img-home, .ally {
   height: 65vh;
 }
 
-.card, .aliado {
+.card, .ally {
   background-color: var(--cor-clara-2);
 }
 
-.titulo__conheca, 
-.titulo__programas, .lista__conheca__item__titulo {
+.title-our-animals, 
+.title-program, .list-our-animals-item-title {
   font-size: 2rem;
 }
 
-.botao__about {
+.bnt-about {
   font-size: 1.5rem;
   margin: 22em 0 0 2em;
   width: 30%;
@@ -420,27 +421,25 @@ a {
 
 .principal {
   height: 35vh;
-  background-image: url("../src/assets/images/Vetores/—Pngtree—jaguar\ or\ leopard\ seamless\ pattern_1166421.png");
   background-repeat: repeat;
   background-size: contain;
-
 }
 
-.texto__principal {
+.txt-principal {
   text-align: center;
   border-radius: 1em;
   background-color: var(--cor-escura-2);
-  font-size: 1.65rem;
+  font-size: 1.5rem;
 }
 
-.lista__conheca__item {
+.list-our-animals-item {
   width: 15em;
   height: 10m;
   padding: 1em;
   text-align: center;
 }
 
-.programas {
+.program {
   display: block;
   height: 60vh;
 }
@@ -449,65 +448,110 @@ a {
   margin: 0.5em;
 }
 
-.programas__item__imagem {
+.program-item-img {
   width: 80%;
   height: 70%;
   margin: 0.5em 0;
 }
 
-.subtitulo__programas {
+.subtitle-program {
   color: var(--cor-escura-2);
 }
 
-.aliado {
+.ally {
   display: block;
   align-items: center;
   text-align: center;
 }
 
-.titulo__aliado {
+.title-ally {
   font-size: 2.5rem;
 }
 
-.botao__aliado {
+.btn-ally {
   font-size: 1.25rem;
 }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
 
-  .botao__about {
-    font-size: 1.85rem;
-    margin: 25em 0 0 2em;
+  .container-img-home {
+    background-size: initial;
+    height: 50vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 20em 0 0 2em;
     width: 20%;
     padding: 0.5em;
   }
 
-  .paragrafo_descr {
+  .txt-description {
     background-color: var(--cor-escura-2);
     padding: 1em;
     margin: 1em;
-    width: 90vw;
+    width: 85vw;
     border-radius: 1em;
   }
 
-  .texto__principal {
-    font-size: 1.85rem;
-  }
-
-  .titulo__principal_desktop {
+  .title-principal-dkt {
     display: block;
     font-size: 2.5rem;
   }
 
-  .container, .conheca {
+  .container, .principal, .our-animals {
     box-sizing: border-box;
     height: 35vh;
-    max-width: 100vw;
+    width: 100vw;
   }
 
-  .programas {
+  .program {
     display: block;
-    height: 70vh;
+    height: 60vh;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+  .container-img-home {
+    background-size: initial;
+    height: 90vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 18em 0 0 2em;
+    width: 20%;
+    padding: 0.5em;
+  }
+
+  .txt-description {
+    width: 85vw;
+  }
+
+  .txt-principal {
+    font-size: 1.85rem;
+  }
+
+  .title-principal-dkt {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .container, .principal, .our-animals {
+    box-sizing: border-box;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .program {
+    display: block;
+    height: 100vh;
+  }
+
+  .ally {
+    height: 130vh;
   }
 }

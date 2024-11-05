@@ -1,43 +1,51 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="jpg" href="../assets/images/logoIJ.png" />
-  <link rel="stylesheet" href="../index.css" />
-  <link rel="stylesheet" href="../reset.css" />
-  <link rel="stylesheet" href="../static/cadastro_voluntario.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="../../index.js"></script>
-  <title>IJ</title>
-</head>
-
-<body>
-  <div class="topnav" id="myTopnav">
-    <a href="./../../index.html"><img src="../assets/images/logoIJ.png"></a>
-    <div class="putz">
-      <a href="./about.html" class="active">Sobre nós</a>
-      <a href="./programas.html">programas</a>
-      <a href="./cadastro_voluntario.html">voluntariado</a>
-      <div class="dropdown">
-        <button class="dropbtn">animais
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="./animais_regioes.html">Região</a>
-          <a href="./animais_especies.html">Taxonomia</a>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="src\index.css"/>
+    <link rel="stylesheet" href="src\reset.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <header>
+      <nav class="hdr">
+        <div class="hdr-mobile">
+          <img class="hdr-mobile-item hdr-logo" src="src\assets\images\logoIJ.png" >
+          <h1 class="title-principal">Instituto Jaguatirica</h1>
+          <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu">
+            <span class="icon"></span>
+          </button>
+          <ul id="menu" class="menu">
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">Sobre Nós</a></li>
+            <li class="menu-item"><a href="#">Programas</a></li>
+            <li class="menu-item"><a href="#">Animais</a></li>
+            <li class="menu-item"><a href="#">Voluntariado</a></li>
+            <li class="menu-item"><a href="#">Doações</a></li>
+          </ul>
         </div>
-      </div>
-      <a href="./doacao.html">doações</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-  </div>
-  <header>
+        <div class="hdr-desktop">
+          <img class="hdr-desktop-item hdr-logo" src="src\assets\images\logoIJ.png" >
+          <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
+            <li class="menu-item-dkt"><a href="#">Home</a></li>
+            <li class="menu-item-dkt"><a href="./src/templates/about.html">Sobre Nós</a></li>
+            <li class="menu-item-dkt"><a href="./src/templates/program.html">Programas</a></li>
+            <li class="menu-item-dkt"><a href="#">Animais</a></li>
+            <li class="menu-item-dkt"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></li>
+            <li class="menu-item-dkt"><a href="#">Doações</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header> 
+
   <h1><i>Vem ser voluntário!</i></h1>
-</header>
+
   <form name="cadastro">
     <fieldset>
       <legend>Voluntário</legend>
