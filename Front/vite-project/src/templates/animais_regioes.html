@@ -2,40 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../assets/images/logoIJ.png" />
+    <!--Styles-->
     <link rel="stylesheet" href="../index.css"/>
     <link rel="stylesheet" href="../reset.css"/>
-    <link rel="stylesheet" href="./animais_regioes.html">
+    <link rel="stylesheet" href="../static/animais_regioes.css">
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../../index.js"></script>
     <title>IJ</title>
   </head>
-  <body>
+  <body class="bd-anml">
 
     <header>
       <nav class="hdr">
         <div class="hdr-mobile">
-          <img class="hdr-mobile-item hdr-logo" src="src\assets\images\logoIJ.png" >
+          <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png" >
           <h1 class="title-principal">Instituto Jaguatirica</h1>
           <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu">
             <span class="icon"></span>
           </button>
           <ul id="menu" class="menu">
-            <li class="menu-item"><a href="#">Home</a></li>
-            <li class="menu-item"><a href="#">Sobre Nós</a></li>
-            <li class="menu-item"><a href="#">Programas</a></li>
+            <li class="menu-item"><a href="./index.html">Home</a></li>
+            <li class="menu-item"><a href="./src/templates/about.html">Sobre Nós</a></li>
+            <li class="menu-item"><a href="./src/templates/program.html">Programas</a></li>
             <li class="menu-item"><a href="#">Animais</a></li>
-            <li class="menu-item"><a href="#">Voluntariado</a></li>
+            <li class="menu-item"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></li>
             <li class="menu-item"><a href="#">Doações</a></li>
           </ul>
         </div>
         <div class="hdr-desktop">
-          <img class="hdr-desktop-item hdr-logo" src="src\assets\images\logoIJ.png" >
+          <img class="hdr-desktop-item hdr-logo" src="../assets/images/logoIJ.png" >
           <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
-            <li class="menu-item-dkt"><a href="#">Home</a></li>
+            <li class="menu-item-dkt"><a href="./index.html">Home</a></li>
             <li class="menu-item-dkt"><a href="./src/templates/about.html">Sobre Nós</a></li>
             <li class="menu-item-dkt"><a href="./src/templates/program.html">Programas</a></li>
             <li class="menu-item-dkt"><a href="#">Animais</a></li>
@@ -46,8 +49,10 @@
       </nav>
     </header> 
 
-    <h2>Nossos animais e seus habitats!</h2>
-    <h3>Amazônia</h3>
+    <h2 class="title-principal title-anml">Nossos animais e seus habitats!</h2>
+    <section class="container-anml light">
+    <h3 class="subtitle-anml">Amazônia</h3>
+    <!--criar carrossel-->
     <p>
       <ul>
         <li>'Yara', 'Peixe-boi', 'Fêmea', 'Mamífero','Trichechus inunguis',  '2023-01-09', 'Ameaçado'</li>
@@ -55,7 +60,10 @@
         <li>'Iporã', 'Jabuti-tinga', 'Macho', 'Réptil','Chelonoidis denticulatus','2023-01-05', 'Ameaçado'</li>
       </ul>
     </p>
-    <h3>Cerrado</h3>
+  </section>
+  <section class="container-anml medium">
+    <h3 class="subtitle-anml">Cerrado</h3>
+    <!--criar carrossel-->
     <p>
       <ul>
         <li>('Jade', 'Ararinha-azul', 'Fêmea', 'Ave', 'Cyanopsitta spixii', '2023-01-02', 'Extinto na Natureza'),</li>
@@ -63,7 +71,10 @@
         <li>('Guarati', 'Lobo-guará','Macho', 'Mamífero', 'Chrysocyon brachyurus', 'Cerrado', '2023-01-06', 'Vulnerável'),</li>
       </ul>
     </p>
-    <h3>Mata Atlântica</h3>
+  </section>
+  <section class="container-anml light">
+    <!--criar carrossel-->
+    <h3 class="subtitle-anml">Mata Atlântica</h3>
     <p>
       <ul>
         <li>Juma, onça-pintada, fêmea, Mamífero, Panthera onca, 2023-01-01, Ameaçado</li>
@@ -72,5 +83,8 @@
         <li>Pitanga, Jaguatirica, Fêmea, Mamífero, Leopardus pardalis, 2023-01-10, Ameaçado</li>
       </ul>
     </p>
-    <script src="menu.js"></script>
+  </section>
+    <script src="../menu.js"></script>
   </body>
+
+
