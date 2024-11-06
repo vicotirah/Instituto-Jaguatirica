@@ -1,5 +1,6 @@
 @import url("../src/static/header.css");
 @import url("../src/static/about.css");
+@import url("../src/static/animais_regioes.css");
 
 :root {
   --cor-branco-principal: #f6f6f6;
@@ -12,6 +13,8 @@
   --cor-verde-escuro: #163513;
   --cor-verde-escuro-hover: #36862f82;
   --cor-escura-2-hover: #4414178f;
+  --cor-animal-clara-1: #fdf5f0;
+  --cor-animal-clara-2: #faebe1;
   --fonte-primaria: "Poppins", sans-serif;
 }
 
@@ -94,7 +97,7 @@ a {
   border-radius: 1em;
 }
 
-.program-item-img, .voluntarios_imagem {
+.program-item-img, .ally-img {
   border-radius: 1em;
 }
 
@@ -210,7 +213,7 @@ a {
   margin-bottom: 0.5em;
 }
 
-.voluntarios_imagem {
+.ally-img {
   width: 90%;
 }
 
@@ -301,7 +304,7 @@ a {
     height: 165vh;
   }
 
-  .voluntarios_imagem {
+  .ally-img {
     margin-bottom: 1em;
   }
     
@@ -368,17 +371,15 @@ a {
     width: 45%;
   }
 
-  .voluntarios_imagem {
+  .ally-img {
     margin-bottom: 1em;
+    width: 80%;
   }
 
   .container-img-home {
     height: 65vh;
   }
 
-  .voluntarios_imagem {
-    width: 80%;
-  }
   
   .btn-ally {
     box-sizing: content-box;
@@ -553,5 +554,138 @@ a {
 
   .ally {
     height: 130vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .container-img-home {
+    background-size: cover;
+    height: 85vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 21em 0 0 2em;
+    width: 15%;
+    padding: 0.5em;
+  }
+
+  .txt-description {
+    width: 85vw;
+  }
+
+  .txt-principal {
+    font-size: 2.5rem;
+  }
+
+  .title-principal-dkt {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .container, .principal, .our-animals {
+    box-sizing: border-box;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .list-our-animals-item {
+    width: 20em;
+    height: 15m;
+  }
+
+  .title-our-animals, .title-program{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+
+  .list-our-animals-item-title {
+    font-size: 2.5rem;
+  }
+
+  .program {
+    display: block;
+    height: 100vh;  
+  }
+
+  .card {
+    height: 18em;
+    width: 35%;
+  }
+
+  .ally {
+    height: 130vh;
+  }
+  .ally-img{
+    margin-bottom: 1em;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .container-img-home {
+    background-size: cover;
+    height: 85vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 21em 0 0 2em;
+    width: 15%;
+    padding: 0.5em;
+  }
+
+  .txt-description {
+    width: 85vw;
+  }
+
+  .txt-principal {
+    font-size: 2.5rem;
+  }
+
+  .title-principal-dkt {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .container, .principal, .our-animals {
+    box-sizing: border-box;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .list-our-animals-item {
+    width: 20em;
+    height: 15m;
+  }
+
+  .title-our-animals, .title-program{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+
+  .list-our-animals-item-title {
+    font-size: 2.5rem;
+  }
+
+  .program {
+    display: block;
+    height: 100vh;  
+  }
+
+  .card {
+    height: 18em;
+    width: 35%;
+  }
+
+  .ally {
+    height: 100vh;
+  }
+  .ally-img{
+    margin-bottom: 1em;
+    width: 80%;
+    height: 70%;
   }
 }
