@@ -15,6 +15,13 @@
   --cor-escura-2-hover: #4414178f;
   --cor-animal-clara-1: #fdf5f0;
   --cor-animal-clara-2: #faebe1;
+  --cor-label-fem: #fb74bc;
+  --cor-label-male: #14b4db;
+  --cor-label-ext3: #fd6b1c;
+  --cor-label-ext6:#8f0000;
+  --cor-label-ave: #37d2b8;
+  --cor-label-mam: #b175c7;
+  --cor-label-rep: #6d8e2f;
   --fonte-primaria: "Poppins", sans-serif;
 }
 
@@ -518,7 +525,7 @@ a {
 
   .container-img-home {
     background-size: initial;
-    height: 90vh;
+    height: 50vh;
   }
 
   .bnt-about {
@@ -543,17 +550,32 @@ a {
 
   .container, .principal, .our-animals {
     box-sizing: border-box;
-    height: 80vh;
+    height: 40vh;
     width: 100vw;
   }
 
   .program {
     display: block;
-    height: 100vh;
+    height: 50vh;
+  }
+
+  .card  {
+    margin: 1em;
+  }
+  
+  .program-item-img {
+    width: 80%;
+    height: 80%;
+    margin: 0.5em 0;
+  }
+  
+  .subtitle-program {
+    color: var(--cor-escura-2);
+    font-size: 1.125rem;
   }
 
   .ally {
-    height: 130vh;
+    height: 60vh;
   }
 }
 
@@ -619,7 +641,7 @@ a {
   }
   .ally-img{
     margin-bottom: 1em;
-    width: 60%;
+    width: 80%;
   }
 }
 
