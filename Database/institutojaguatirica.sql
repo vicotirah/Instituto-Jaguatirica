@@ -43,16 +43,16 @@ create table if not exists  apadrinhamento (
 );
 
 INSERT INTO animal (nome, nome_popular, sexo, genero, especie, regiao, data_entrada, status_preservacao) VALUES
-('Juma', 'Onça-Pintada', 'Fêmea', 'Mamífero', 'Panthera onca', 'Mata Atlântica', '2023-01-01', 'Ameaçado'),
+('Juma', 'Onça-Pintada', 'Fêmea', 'Mamífero', 'Panthera onca', 'Mata Atlântica', '2023-01-01', 'Quase Ameaçado'),
 ('Jade', 'Ararinha-azul', 'Fêmea', 'Ave', 'Cyanopsitta spixii', 'Cerrado', '2023-01-02', 'Extinto na Natureza'),
-('Taru', 'Mico-leão-dourado', 'Macho', 'Mamífero', 'Leontopithecus rosalia', 'Mata Atlântica', '2023-01-03', 'Ameaçado'),
+('Solar', 'Mico-leão-dourado', 'Macho', 'Mamífero', 'Leontopithecus rosalia', 'Mata Atlântica', '2023-01-03', 'Ameaçado'),
 ('Tande', 'Tamanduá-bandeira', 'Macho', 'Mamífero', 'Myrmecophaga tridactyla', 'Cerrado', '2023-01-04', 'Vulnerável'),
-('Iporã', 'Jabuti-tinga', 'Macho', 'Réptil','Chelonoidis denticulatus', 'Amazônia', '2023-01-05', 'Ameaçado'),
-('Guarati', 'Lobo-guará','Macho', 'Mamífero', 'Chrysocyon brachyurus', 'Cerrado', '2023-01-06', 'Vulnerável'),
-('Fuleco', 'Tatu-canastra', 'Macho', 'Mamífero','Priodontes maximus', 'Amazônia', '2023-01-07', 'Ameaçado'),
-('Sombra', 'Gato-do-mato','Fêmea', 'Mamífero', 'Leopardus wiedii', 'Mata Atlântica', '2023-01-08', 'Vulnerável'),
-('Yara', 'Peixe-boi', 'Fêmea', 'Mamífero','Trichechus inunguis', 'Amazônia', '2023-01-09', 'Ameaçado'),
-('Pitanga', 'Jaguatirica', 'Fêmea', 'Mamífero','Leopardus pardalis', 'Mata Atlântica', '2023-01-10', 'Ameaçado');
+('Iporã', 'Jabuti-tinga', 'Macho', 'Réptil','Chelonoidis denticulatus', 'Amazônia', '2023-01-05', 'Vulnerável'),
+('Guaraná', 'Lobo-guará','Macho', 'Mamífero', 'Chrysocyon brachyurus', 'Cerrado', '2023-01-06', 'Quase Ameaçado'),
+('Fuleco', 'Tatu-canastra', 'Macho', 'Mamífero','Priodontes maximus', 'Amazônia', '2023-01-07', 'Vulnerável'),
+('Sombra', 'Gato-do-mato','Fêmea', 'Mamífero', 'Leopardus wiedii', 'Mata Atlântica', '2023-01-08', 'Quase Ameaçado'),
+('Yara', 'Peixe-boi', 'Fêmea', 'Mamífero','Trichechus inunguis', 'Amazônia', '2023-01-09', 'Vulnerável'),
+('Pitanga', 'Jaguatirica', 'Fêmea', 'Mamífero','Leopardus pardalis', 'Mata Atlântica', '2023-01-10', 'Pouco Ameaçado');
 
 INSERT INTO usuario (CPF, nome, email, endereco, cidade, estado, tel) VALUES
 ('12345678900', 'João Silva', 'joao.silva@email.com', 'Rua A, 123', 'São Paulo', 'SP', '11912345678'),

@@ -75,7 +75,7 @@
 .anml-data{
   display: flex;
   justify-content: center;
-  margin: 0 0 0.5em 1em;
+  margin: 0
 }
 
 .anml-data-item {
@@ -106,8 +106,25 @@
   background-color: var(--cor-label-male);
 }
 
+.ext1 {
+  background-color: var(--cor-label-ext1);
+  color: var(--cor-escura-2)
+  
+}
+
+.ext2 {
+  background-color: var(--cor-label-ext2);
+  color: var(--cor-escura-2)
+  
+}
+
 .ext3 {
   background-color: var(--cor-label-ext3);
+  color: var(--cor-escura-2)
+}
+
+.ext4 {
+  background-color: var(--cor-label-ext4);
 }
 
 .ext6 {
