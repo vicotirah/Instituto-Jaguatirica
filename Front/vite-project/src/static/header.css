@@ -26,10 +26,12 @@
 
 .hamburguer-button[aria-expanded="false"] .icon::before {
   content: "\2630";
+  font-size: 1.5rem;
 }
 
 .hamburguer-button[aria-expanded="true"] .icon::before {
   content: "\2715";
+  font-size: 1.5rem;  
 }
 
 .hamburguer-button {
@@ -115,6 +117,18 @@
 
   .hdr-mobile-item {
     margin: 0.5em;
+  }
+
+  .hamburguer-button[aria-expanded="false"] .icon::before {
+    font-size: 3rem;
+  }
+  
+  .hamburguer-button[aria-expanded="true"] .icon::before {
+    font-size: 3rem;  
+  }
+
+  .menu-item {
+    font-size: 1.5rem;
   }
 
   .hamburguer-button-js-enabled + .menu {
@@ -220,7 +234,7 @@
 @media screen and (min-width: 1400px) {
 
   .menu-item-dkt {
-    font-size: .85rem;
+    font-size: 2rem;
     margin: 0 1em;
   }
 
