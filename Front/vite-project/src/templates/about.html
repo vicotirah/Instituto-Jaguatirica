@@ -1,48 +1,67 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="jpg" href="../assets/images/logoIJ.png" />
-    <link rel="stylesheet" href="../index.css"/>
-    <link rel="stylesheet" href="../reset.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="../../index.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IJ</title>
-  </head>
-  <body>
-    <header>
-      <nav class="hdr">
-        <div class="hdr-mobile">
-          <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png"" >
-          <h1 class="title-principal">Instituto Jaguatirica</h1>
-          <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu">
-            <span class="icon"></span>
-          </button>
-          <ul id="menu" class="menu">
-            <li class="menu-item"><a href="#">Home</a></li>
-            <li class="menu-item"><a href="#">Sobre Nós</a></li>
-            <li class="menu-item"><a href="#">Programas</a></li>
-            <li class="menu-item"><a href="#">Animais</a></li>
-            <li class="menu-item"><a href="#">Voluntariado</a></li>
-            <li class="menu-item"><a href="#">Doações</a></li>
-          </ul>
-        </div>
-        <div class="hdr-desktop">
-          <img class="hdr-desktop-item hdr-logo" src="../assets/images/logoIJ.png"" >
-          <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
-            <li class="menu-item-dkt"><a href="#">Home</a></li>
-            <li class="menu-item-dkt"><a href="./src/templates/about.html">Sobre Nós</a></li>
-            <li class="menu-item-dkt"><a href="./src/templates/program.html">Programas</a></li>
-            <li class="menu-item-dkt"><a href="#">Animais</a></li>
-            <li class="menu-item-dkt"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></li>
-            <li class="menu-item-dkt"><a href="#">Doações</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header> 
-    <script src="../menu.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Instituto Jaguatirica</title>
 
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../static/about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="hdr">
+      <div class="hdr-mobile">
+        <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png" >
+        <h1 class="title-principal">Instituto Jaguatirica</h1>
+        <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu">
+          <span class="icon"></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li class="menu-item"><a href="./index.html">Home</a></li>
+          <li class="menu-item"><a href="./src/templates/about.html">Sobre Nós</a></li>
+          <li class="menu-item"><a href="./src/templates/program.html">Programas</a></li>
+          <li class="menu-item"><a href="#">Animais</a></li>
+          <li class="menu-item"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></li>
+          <li class="menu-item"><a href="./src/templates/doacao.html">Doações</a></li>
+        </ul>
+      </div>
+      <div class="hdr-desktop">
+        <img class="hdr-desktop-item hdr-logo" src="../assets/images/logoIJ.png" >
+        <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
+          <li class="menu-item-dkt"><a href="./index.html">Home</a></li>
+          <li class="menu-item-dkt"><a href="./src/templates/about.html">Sobre Nós</a></li>
+          <li class="menu-item-dkt"><a href="./src/templates/program.html">Programas</a></li>
+          <li class="menu-item-dkt"><a href="#">Animais</a></li>
+          <li class="menu-item-dkt"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></li>
+          <li class="menu-item-dkt"><a href="./src/templates/doacao.html">Doações</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header> 
+
+  <div class="container-about">
+    <section class="about">
+      <div class="about-image-container">
+        <img class="about-image" src="../assets/images/Animais/mamifero/jaguatirica/Jaguatirica-about.webp" alt="Imagem de uma jaguatirica em uma árvore">
+      </div>
+      <h2 class="titulo-about">Sobre Nós</h2>
+      <p class="about-text">
+        O Instituto Jaguatirica é uma organização dedicada à proteção e conservação da fauna silvestre brasileira. Nosso foco é a reabilitação e reintegração dos animais em seus habitats naturais.
+        Fundado por especialistas amantes da natureza, o Instituto Jaguatirica trabalha incansavelmente no resgate e cuidado desses animais.
+        Acreditamos que, com a colaboração da comunidade, ciência e responsabilidade ambiental, podemos criar um futuro seguro para a vida selvagem no Brasil.
+      </p>
+      <a href="./src/templates/programas.html" class="about-button">CONHEÇA NOSSOS PROJETOS!</a>
+
+    </section>
+  </div>
+
+<script src="../menu.js"></script>
+
+</body>
+</html>
