@@ -32,7 +32,6 @@
   background-color: var(--cor-animal-clara-1);
 }
 
-
 .medium {
   background-color: var(--cor-animal-clara-2);
 }
@@ -40,7 +39,6 @@
 .swiper-slide {
   width: 60%
 }
-
 
 .anml-card {
   display: block;
@@ -106,21 +104,20 @@
   background-color: var(--cor-label-male);
 }
 
+.ext1, .ext2, .ext3 {
+  color: var(--cor-escura-2) 
+}
+
 .ext1 {
-  background-color: var(--cor-label-ext1);
-  color: var(--cor-escura-2)
-  
+  background-color: var(--cor-label-ext1); 
 }
 
 .ext2 {
   background-color: var(--cor-label-ext2);
-  color: var(--cor-escura-2)
-  
 }
 
 .ext3 {
   background-color: var(--cor-label-ext3);
-  color: var(--cor-escura-2)
 }
 
 .ext4 {
@@ -143,18 +140,3 @@
   background-color: var(--cor-label-ave);
 }
 
-
-
-
-/* Footer (adicionando uma área de rodapé simples) */
-footer {
-  background-color: #00274d;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-footer p {
-  font-size: 16px;
-}
