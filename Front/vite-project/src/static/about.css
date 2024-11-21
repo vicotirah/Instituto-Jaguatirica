@@ -37,7 +37,7 @@
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #4E2B1F; 
+    color: var(--cor-escura-2); 
   }
   
 
@@ -46,8 +46,8 @@
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 600;
-    color: #7E4A35;
-    background-color: #F3D181;
+    color: var(--cor-escura-2);
+    background-color: var(--cor-media);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -56,5 +56,60 @@
   }
   
   .about-button:hover {
-    background-color: #D4B06A; 
+    opacity: 50%; 
+  }
+  
+  .about-list i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    color: var(--cor-media);
+  }
+  
+  .about-text-list{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 1rem; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: var(--cor-media); 
+    margin-bottom: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 18px; 
+    padding: 1.5rem;
+    width: 300px; 
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .card i {
+    font-size: 2rem;
+    color: var(--cor-escura-1); 
+    margin-bottom: 1rem;
+  }
+  .about-text-list-card {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  .about-text-card {
+    font-size: 0.95rem;
+    color: var(--cor-escura-1);
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; 
+    }
   }
