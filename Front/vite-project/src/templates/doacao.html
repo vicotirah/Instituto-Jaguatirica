@@ -5,12 +5,13 @@
     <link rel="icon" type="jpg" href="../assets/images/logoIJ.png" />
     <link rel="stylesheet" href="../index.css"/>
     <link rel="stylesheet" href="../reset.css"/>
+    <link rel="stylesheet" href="../static/doacao.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="../../index.js"></script>
-    <title>IJ</title>
+    <title>Doações - Instituto Jaguatirica</title>
   </head>
   <body>
 
@@ -32,7 +33,7 @@
           </ul>
         </div>
         <div class="hdr-desktop">
-          <img class="hdr-desktop-item hdr-logo" src="../assets/images/logoIJ.png"" >
+          <img class="hdr-desktop-item hdr-logo" src="../assets/images/logoIJ.png" >
           <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
             <li class="menu-item-dkt"><a href="#">Home</a></li>
             <li class="menu-item-dkt"><a href="./src/templates/about.html">Sobre Nós</a></li>
@@ -46,6 +47,57 @@
     </header> 
     <script src="../menu.js"></script>
 
+    <div class="container-doacao">
+      <h1 class="titulo-doacao">Ajude a proteger a vida silvestre:<br>Faça sua Doação!</h1>
+      <p class="subtitulo-doacao">
+        Você pode doar mensalmente no cartão de crédito, ou também no PIX!
+      </p>
+  
+      <div class="conteudo-doacao">
+        <div class="imagem-container-doacao">
+          <img src="https://apremavi.org.br/wp-content/uploads/2022/11/mico-leao-dourado.jpg.webp" alt="Imagem de um mico-leão-dourado" class="imagem-doacao">
+          <p class="legenda-doacao">Sua doação é muito importante para nós!</p>
+        </div>
+  
+        <form class="formulario-doacao">
+          <div class="campo-doacao">
+            <label for="nome" class="label-doacao">Nome:</label>
+            <input type="text" id="nome" class="input-doacao">
+          </div>
+  
+          <div class="campo-doacao">
+            <label class="label-doacao">Valor:</label>
+            <div class="botoes-valor-doacao">
+              <button type="button" class="botao-valor-doacao">R$ 5,00</button>
+              <button type="button" class="botao-valor-doacao">R$ 10,00</button>
+              <button type="button" class="botao-valor-doacao">R$ 20,00</button>
+              <button type="button" class="botao-valor-doacao">Outro</button>
+            </div>
+          </div>
+  
+          <div class="opcoes-doacao">
+            <label>
+              <input type="checkbox" class="checkbox-doacao">
+              Doar mensalmente
+            </label>
+            <label>
+              <input type="checkbox" class="checkbox-doacao">
+              Doar avulso
+            </label>
+          </div>
+  
+          <div class="pagamento-doacao">
+            <img src="https://thumbs.dreamstime.com/b/logotipo-de-paypal-ilustra%C3%A7%C3%A3o-do-vetor-cor-isolada-no-fundo-branco-155631958.jpg" alt="Paypal" class="icone-pagamento-doacao">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShIFvdMaR9q2qNWmN8qQpXyAeka-FlyZBVJA&s" alt="PIX" class="icone-pagamento-doacao">
+            <img src="https://designe.com.br/wp-content/uploads/2020/07/tutorial-como-criar-um-icone-de-cartao-de-credito-no-illustrator-designe.png" alt="Cartão" class="icone-pagamento-doacao">
+          </div>
+  
+          <button type="submit" class="botao-doar">Doar</button>
+        </form>
+      </div>
+    </div>
+
   </body>
+
 
 

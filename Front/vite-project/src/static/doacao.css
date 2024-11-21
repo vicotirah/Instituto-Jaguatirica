@@ -1,0 +1,121 @@
+.container-doacao {
+  background-color: var(--cor-clara-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  }
+  
+  
+  .titulo-doacao {
+    font-family: var(--fonte-principal);
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--cor-escura-1);
+    margin-bottom: 50px;
+  }
+  
+  .subtitulo-doacao {
+    font-size: 24px;
+    color: var(--cor-escura-1);
+    margin-bottom: 100px;
+  }
+  
+  .legenda-doacao {
+    font-size: 20px;
+    color: var(--cor-escura-1);
+    margin-top: 10px;
+  }
+  
+  .imagem-container-doacao {
+    margin-bottom: 20px;
+  }
+  
+  .imagem-doacao {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .formulario-doacao {
+    text-align: left;
+  }
+  
+  .campo-doacao {
+    margin-bottom: 15px;
+  }
+  
+  .label-doacao {
+    font-size: 14px;
+    color: #4a4a4a;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-doacao {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .botoes-valor-doacao {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .botao-valor-doacao {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-media);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .botao-valor-doacao:hover {
+    background-color: #b57c50;
+  }
+  
+  .opcoes-doacao {
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-doacao {
+    margin-right: 5px;
+  }
+  
+  .pagamento-doacao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .icone-pagamento-doacao {
+    width: 50px;
+    height: auto;
+    mix-blend-mode: multiply;
+  }
+  
+  .botao-doar {
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-self: center;
+    background-color: var(--cor-media);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .botao-doar:hover {
+    background-color: var(--cor-clara-2);
+  }
+  
