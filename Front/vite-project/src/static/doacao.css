@@ -5,39 +5,39 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding:  1.25em;
   text-align: center;
   }
   
   
   .titulo-doacao {
     font-family: var(--fonte-principal);
-    font-size: 50px;
+    font-size: 3.125em;
     font-weight: bold;
     color: var(--cor-escura-1);
-    margin-bottom: 50px;
+    margin-bottom: 3.125em;
   }
   
   .subtitulo-doacao {
-    font-size: 24px;
+    font-size: 1.5em;
     color: var(--cor-escura-1);
     margin-bottom: 100px;
   }
   
   .legenda-doacao {
-    font-size: 20px;
+    font-size:  1.25em;
     color: var(--cor-escura-1);
-    margin-top: 10px;
+    margin-top: 0.625em;
   }
   
   .imagem-container-doacao {
-    margin-bottom: 20px;
+    margin-bottom:  1.25em;
   }
   
   .imagem-doacao {
-    width: 250px;
+    width: 23.125em;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.625em;
   }
   
   .formulario-doacao {
@@ -45,11 +45,11 @@
   }
   
   .campo-doacao {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
   }
   
   .label-doacao {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #4a4a4a;
     display: block;
     margin-bottom: 5px;
@@ -57,14 +57,14 @@
   
   .input-doacao {
     width: 100%;
-    padding: 8px;
+    padding: 0.5em;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
   .botoes-valor-doacao {
     display: flex;
-    gap: 10px;
+    gap: 0.625em;
   }
   
   .botao-valor-doacao {
@@ -72,7 +72,7 @@
     background-color: var(--cor-media);
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 0.625em 1em;
     border-radius: 5px;
     cursor: pointer;
   }
@@ -82,7 +82,7 @@
   }
   
   .opcoes-doacao {
-    margin-bottom: 15px;
+    margin-bottom: 1em;
   }
   
   .checkbox-doacao {
@@ -92,12 +92,12 @@
   .pagamento-doacao {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 1em;
+    margin-bottom:  1.25em;
   }
   
   .icone-pagamento-doacao {
-    width: 50px;
+    width: 3.125em;
     height: auto;
     mix-blend-mode: multiply;
   }
@@ -109,10 +109,10 @@
     background-color: var(--cor-media);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 0.625em  1.25em;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
   }
   
   .botao-doar:hover {

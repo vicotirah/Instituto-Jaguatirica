@@ -100,6 +100,7 @@ a {
 .btn-ally, .bnt-about {
   border-radius: 0.5em;
   border-color: transparent;
+  cursor: pointer;
 }
 
 .list-our-animals-item, .card {
@@ -199,6 +200,7 @@ a {
   width: 80%;
   padding: 0.5em 0.25em;
   margin: 0.5em auto;
+  border-color: transparent;
 }
 
 .program-item-img {

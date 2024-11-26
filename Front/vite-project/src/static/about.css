@@ -1,7 +1,7 @@
 .container-about {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 1.25em;
     background-color: var(--cor-clara-1); 
   }
   
@@ -15,12 +15,12 @@
   .about-image-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom:  1.25em;
   }
   
   .about-image {
-    width: 150px;
-    height: 150px;
+    width: 80%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
   }
@@ -28,7 +28,14 @@
   .titulo-about {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 0.5em;
+    margin: 0.5em 0;
+    color: var(--cor-escura-1);
+  }
+
+  .titulo-card {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5em 0; 
     color: var(--cor-escura-1);
   }
   
@@ -36,15 +43,16 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom:  1.25em;
     color: var(--cor-escura-2); 
+    text-align: justify;
+    text-indent: 1.5em;
   }
-  
 
   .about-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0.625em  1.25em;
+    font-size: 1em;
     font-weight: 600;
     color: var(--cor-escura-2);
     background-color: var(--cor-media);
@@ -66,26 +74,40 @@
   }
   
   .about-text-list{
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 1em 0 1em 0;
     font-weight: 600;
   }
+
+  .small {
+    font-size: .875rem;
+  }
   
+  .card-container-title {
+    background-color: var(--cor-animal-clara-2);
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+
+  }
+
   .card-container {
     display: flex;
-    gap: 1rem; 
+    gap: 1em; 
     justify-content: center; 
     flex-wrap: wrap; 
-    margin-top: 2rem;
+    background-color: var(--cor-animal-clara-2);
+    padding-bottom: 1em;
   }
   
   .card {
-    background-color: var(--cor-media); 
-    margin-bottom: 20px;
+    box-sizing: content-box;
+    background-color: var(--cor-clara-2); 
+    margin: 0.5em 1.25em;
     border: 1px solid #ddd; 
-    border-radius: 18px; 
+    border-radius: 1.125em; 
     padding: 1.5rem;
-    width: 300px; 
+    width: 15em; 
+    height: 12em;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
@@ -108,8 +130,71 @@
     line-height: 1.6;
   }
 
-  @media (max-width: 768px) {
+  @media screen and (min-width: 700px) {
+
+       
+    .about-image {
+      width: 60%;
+      height: 70%;
+    }
+    
+    .about-text, .about-text-list {
+      font-size: 1.125rem;
+    }
+     
+    .about-list i {
+      font-size: 2.5rem;
+      margin-right: 1rem;
+      color: var(--cor-media);
+    }
+      
+    .small {
+      font-size: 1rem;
+    }
+    
+    .card-container {
+      display: flex; 
+      justify-content: space-evenly; 
+      flex-wrap: nowrap; 
+      background-color: var(--cor-animal-clara-2);
+      padding-bottom: 1em;
+    }
+  
+    .titulo-card {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0.5em 0; 
+      color: var(--cor-escura-1);
+    }
+    
     .card {
-      width: 100%; 
+      box-sizing: content-box;
+      background-color: var(--cor-clara-2); 
+      margin: 0.1em;
+      border: 1px solid #ddd; 
+      border-radius: 1.125em; 
+      padding: 1em;
+      width: 30em; 
+      height: 15em;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .card i {
+      font-size: 2rem;
+      color: var(--cor-escura-1); 
+      margin-bottom: 1rem;
+    }
+    .about-text-list-card {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    
+    .about-text-card {
+      font-size: 0.85rem;
+      color: var(--cor-escura-1);
+      line-height: 1.6;
     }
   }
