@@ -30,7 +30,7 @@ input{
 }
 
 #btnGerar{
-    margin-top: 10px;
+    margin-top: 0.625em;
     height: 2.5em;
     background-color: #597814;
     color: white;
