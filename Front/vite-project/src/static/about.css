@@ -14,7 +14,10 @@
   
   .about-image-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+  }
+
+  .about-image-container, .about-text {
     margin-bottom:  1.25em;
   }
   
@@ -25,36 +28,29 @@
     object-fit: cover;
   }
   
-  .titulo-about {
+  .titulo-about, .titulo-card {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0.5em 0;
     color: var(--cor-escura-1);
   }
-
-  .titulo-card {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0.5em 0; 
-    color: var(--cor-escura-1);
-  }
   
   .about-text {
-    font-size: 1rem;
     font-weight: 400;
-    line-height: 1.6;
-    margin-bottom:  1.25em;
-    color: var(--cor-escura-2); 
+    line-height: 1.6; 
     text-align: justify;
     text-indent: 1.5em;
+  }
+
+  .about-text, .about-button {
+    color: var(--cor-escura-2);
+    font-size: 1rem;
   }
 
   .about-button {
     display: inline-block;
     padding: 0.625em  1.25em;
-    font-size: 1em;
     font-weight: 600;
-    color: var(--cor-escura-2);
     background-color: var(--cor-media);
     border: none;
     border-radius: 5px;
@@ -83,11 +79,13 @@
   }
   
   .card-container-title {
-    background-color: var(--cor-animal-clara-2);
     margin: 0;
     padding: 1em;
     text-align: center;
+  }
 
+  .card-container-title, .card-container {
+    background-color: var(--cor-animal-clara-2);
   }
 
   .card-container {
@@ -95,7 +93,6 @@
     gap: 1em; 
     justify-content: center; 
     flex-wrap: wrap; 
-    background-color: var(--cor-animal-clara-2);
     padding-bottom: 1em;
   }
   
@@ -115,7 +112,7 @@
   .card i {
     font-size: 2rem;
     color: var(--cor-escura-1); 
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
   }
   .about-text-list-card {
     font-size: 1.2rem;
@@ -131,8 +128,7 @@
   }
 
   @media screen and (min-width: 700px) {
-
-       
+ 
     .about-image {
       width: 60%;
       height: 70%;
@@ -144,8 +140,6 @@
      
     .about-list i {
       font-size: 2.5rem;
-      margin-right: 1rem;
-      color: var(--cor-media);
     }
       
     .small {
@@ -156,45 +150,73 @@
       display: flex; 
       justify-content: space-evenly; 
       flex-wrap: nowrap; 
-      background-color: var(--cor-animal-clara-2);
-      padding-bottom: 1em;
     }
-  
-    .titulo-card {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin: 0.5em 0; 
-      color: var(--cor-escura-1);
-    }
-    
+      
     .card {
       box-sizing: content-box;
-      background-color: var(--cor-clara-2); 
       margin: 0.1em;
-      border: 1px solid #ddd; 
-      border-radius: 1.125em; 
       padding: 1em;
       width: 30em; 
       height: 15em;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     }
     
-    .card i {
-      font-size: 2rem;
-      color: var(--cor-escura-1); 
-      margin-bottom: 1rem;
-    }
     .about-text-list-card {
       font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
     }
-    
     
     .about-text-card {
       font-size: 0.85rem;
-      color: var(--cor-escura-1);
-      line-height: 1.6;
     }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .about-image {
+      width: 30%;
+      height: 40%;
+    }
+
+    .titulo-about,  .titulo-card {
+      font-size: 2.25rem;
+      font-weight: 600;
+      margin: 0.5em 0;
+    }
+
+    .about-text, .about-text-list {
+      font-size: 1.25rem;
+    }
+
+    .about-list i {
+      font-size: 3.25rem;
+    }
+
+    .small {
+      font-size: 1.15rem;
+    }
+
+    .card-container {
+      display: flex; 
+      justify-content: space-around; 
+      flex-wrap: nowrap;
+      margin-left: 10em;
+      margin-right: 10em;
+    }
+
+    .card i {
+      font-size: 3rem;
+    }
+
+    .card {
+      box-sizing: content-box;
+      width: 20em; 
+      height: 15em;
+    }
+
+    .about-text-list-card {
+      font-size: 1.5rem;
+    }
+    
+    .about-text-card {
+      font-size: 1rem;
+    }
+
   }

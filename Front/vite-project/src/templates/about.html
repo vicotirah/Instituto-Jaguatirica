@@ -26,23 +26,35 @@
           <span class="icon"></span>
         </button>
         <ul id="menu" class="menu">
-          <li class="menu-item"><a href="./index.html">Home</a></li>
-          <li class="menu-item"><a href="./src/templates/about.html">Sobre Nós</a></li>
-          <li class="menu-item"><a href="./src/templates/program.html">Programas</a></li>
-          <li class="menu-item"><a href="#">Animais</a></li>
-          <li class="menu-item"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></li>
-          <li class="menu-item"><a href="./src/templates/doacao.html">Doações</a></li>
+          <li class="menu-item"><a href="../index.html">Home</a></li>
+          <li class="menu-item"><a href="./about.html">Sobre Nós</a></li>
+          <li class="menu-item"><a href="./programas.html">Programas</a></li>
+          <li class="menu-item btn btn-secondary" id="dropdownAnimais"  aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            <a href="#">Animais</a>
+            <ul class="dropdown-menu">
+              <li class="menu-item dropdown-item"><a href=".animais_especies.html">Espécies</a></li>
+              <li class="menu-item dropdown-item"><a href=".animais_regioes.html">Regiões</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href=".cadastro_voluntario.html">Voluntariado</a></li>
+          <li class="menu-item"><a href=".doacao.html">Doações</a></li>
         </ul>
       </div>
       <div class="hdr-desktop">
-        <img class="hdr-desktop-item hdr-logo" src="../assets/images/logoIJ.png" >
+        <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png" >
         <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
-          <li class="menu-item-dkt"><a href="./index.html">Home</a></li>
-          <li class="menu-item-dkt"><a href="./src/templates/about.html">Sobre Nós</a></li>
-          <li class="menu-item-dkt"><a href="./src/templates/program.html">Programas</a></li>
-          <li class="menu-item-dkt"><a href="#">Animais</a></li>
-          <li class="menu-item-dkt"><a href="./src/templates/cadastro_voluntario.html">Voluntariado</a></li>
-          <li class="menu-item-dkt"><a href="./src/templates/doacao.html">Doações</a></li>
+          <li class="menu-item-dkt"><a href="../index.html">Home</a></li>
+          <li class="menu-item-dkt"><a href="./about.html">Sobre Nós</a></li>
+          <li class="menu-item-dkt"><a href="./programas.html">Programas</a></li>
+          <li class="menu-item" id="dropdownAnimaisDkt" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            <a href="#">Animais</a>
+            <ul class="dropdown-menu-dkt">
+              <li class="menu-item dropdown-item"><a href="./animais_especies.html">Espécies</a></li>
+              <li class="menu-item dropdown-item"><a href="./animais_regioes.html">Regiões</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-dkt"><a href="./cadastro_voluntario.html">Voluntariado</a></li>
+          <li class="menu-item-dkt"><a href="./doacao.html">Doações</a></li>
         </ul>
       </div>
     </nav>
@@ -116,7 +128,7 @@
         <h3 class="titulo-about">Junte-se a nós!</h3>
         <p class="about-text">Nós acreditamos que, com o apoio de todos, podemos construir um futuro mais sustentável e saudável para a fauna brasileira. A nossa missão não seria possível sem o engajamento da sociedade e a colaboração entre ciência, educação e ação direta. Vamos, juntos, proteger o que há de mais precioso: a vida selvagem do Brasil!
         </p>
-        <a href="./src/templates/programas.html" class="about-button">CONHEÇA NOSSOS PROJETOS!</a>
+        <a href="./programas.html" class="about-button">CONHEÇA NOSSOS PROJETOS!</a>
       </section>
     </div>
   
