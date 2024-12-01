@@ -19,12 +19,20 @@ fieldset{
     padding-left: 10vw;
     padding-right:10vw
 }
+h1{
+    margin: 2vw;
+    font-size: 1.75vw;
+    text-align: center;
+    color: var(--cor-label-ext4);
+    font-weight: bolder;
+}
+/*
 header, header h1{
     display: block;
     text-align: center;
     margin:5vw;
     font-size: 5vw;
-}
+}*/
 input{
     line-height: 2em;
 }
@@ -41,4 +49,17 @@ input{
 
 form{
     margin-bottom: 1.25rem;
+}
+.cadastro{
+    width: 50vw;
+    align-items: center;
+    display: block;
+}
+.boxcad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo{
+    display: flex;
 }
