@@ -12,22 +12,32 @@
   
   .titulo-doacao {
     font-family: var(--fonte-principal);
-    font-size: 3.125em;
+    font-size: 2em;
     font-weight: bold;
     color: var(--cor-escura-1);
-    margin-bottom: 3.125em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+
+  .titulo-doacao2 {
+    font-family: var(--fonte-principal);
+    font-size: 1.75em;
+    font-weight: bold;
+    color: var(--cor-escura-1);
+    margin-bottom: 2.5em;
   }
   
   .subtitulo-doacao {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--cor-escura-1);
-    margin-bottom: 100px;
+    margin-bottom: 2.5em;
   }
   
   .legenda-doacao {
-    font-size:  1.25em;
+    font-size:  1.em;
     color: var(--cor-escura-1);
     margin-top: 0.625em;
+    margin-bottom: 1em;
   }
   
   .imagem-container-doacao {
@@ -35,7 +45,7 @@
   }
   
   .imagem-doacao {
-    width: 23.125em;
+    width: 19em;
     height: auto;
     border-radius: 0.625em;
   }
@@ -52,7 +62,7 @@
     font-size: 0.875em;
     color: #4a4a4a;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.75em;
   }
   
   .input-doacao {
@@ -119,3 +129,289 @@
     background-color: var(--cor-clara-2);
   }
   
+@media screen and (min-width: 700px) {
+  .container-doacao {
+    background-color: var(--cor-clara-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding:  1.25em;
+    text-align: center;
+    }
+    
+    
+    .titulo-doacao {
+      font-family: var(--fonte-principal);
+      font-size: 3.5em;
+      font-weight: bold;
+      color: var(--cor-escura-1);
+      margin-top: 0.2em;
+      margin-bottom: 0.3;
+    }
+  
+    .titulo-doacao2 {
+      font-family: var(--fonte-principal);
+      font-size: 3em;
+      font-weight: bold;
+      color: var(--cor-escura-1);
+      margin-bottom: 2em;
+    }
+    
+    .subtitulo-doacao {
+      font-size: 2em;
+      color: var(--cor-escura-1);
+      margin-bottom: 2.5em;
+    }
+    
+    .legenda-doacao {
+      font-size:  2em;
+      color: var(--cor-escura-1);
+      margin-top: 0.625em;
+      margin-bottom: 1em;
+    }
+    
+    .imagem-container-doacao {
+      margin-bottom:  1.25em;
+    }
+    
+    .imagem-doacao {
+      width: 38em;
+      height: auto;
+      border-radius: 0.625em;
+    }
+    
+    .formulario-doacao {
+      text-align: left;
+    }
+    
+    .campo-doacao {
+      margin-bottom: 1em;
+    }
+    
+    .label-doacao {
+      font-size: 1.7em;
+      color: #4a4a4a;
+      display: block;
+      margin-bottom: 0.75em;
+    }
+    
+    .input-doacao {
+      width: 100%;
+      height: 2.75em;
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .botoes-valor-doacao {
+      display: flex;
+      gap: 1.625em;
+    }
+    
+    .botao-valor-doacao {
+      font-family: var(--fonte-principal);
+      background-color: var(--cor-media);
+      color: #fff;
+      border: none;
+      padding: 0.625em 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.5em;
+    }
+    
+    .botao-valor-doacao:hover {
+      background-color: #b57c50;
+    }
+    
+    .opcoes-doacao {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+    
+    .checkbox-doacao {
+      margin-right: 5px;
+      width: 1.5em;
+      height: 1.5em;
+    }
+    
+    .pagamento-doacao {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-bottom:  1.25em;
+    }
+    
+    .icone-pagamento-doacao {
+      width: 4em;
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+    
+    .botao-doar {
+      font-family: var(--fonte-principal);
+      display: flex;
+      justify-self: center;
+      background-color: var(--cor-media);
+      color: #fff;
+      border: none;
+      padding: 0.625em  1.25em;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.75em;
+    }
+    
+    .botao-doar:hover {
+      background-color: var(--cor-clara-2);
+    }
+}
+
+@media screen and (min-width: 1000px){
+  .container-doacao {
+    background-color: var(--cor-clara-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding:  1.25em;
+    text-align: center;
+    }
+    
+    
+    .titulo-doacao {
+      font-family: var(--fonte-principal);
+      font-size: 3.5em;
+      font-weight: bold;
+      color: var(--cor-escura-1);
+      margin-top: 0.2em;
+      margin-bottom: 0.3;
+    }
+  
+    .titulo-doacao2 {
+      font-family: var(--fonte-principal);
+      font-size: 3em;
+      font-weight: bold;
+      color: var(--cor-escura-1);
+      margin-bottom: 2em;
+    }
+    
+    .subtitulo-doacao {
+      font-size: 2em;
+      color: var(--cor-escura-1);
+      margin-bottom: 0.3em;
+    }
+    
+    .legenda-doacao {
+      font-size:  1.75em;
+      color: var(--cor-escura-1);
+      margin-top: 0.625em;
+      margin-bottom: 0.5em;
+    }
+    
+    .imagem-container-doacao {
+      margin-bottom:  1.25em;
+    }
+    
+    .conteudo-doacao{
+      background-color: var(--cor-clara-1);
+      display: flex;
+     flex-direction: row;
+     justify-content: left;
+     align-items: center;
+      min-height: 50vh;
+      padding:  1.25em;
+      text-align: center;
+    }
+
+    .imagem-doacao {
+      width: 32em;
+      height: auto;
+      border-radius: 0.625em;
+    }
+    
+    .formulario-doacao {
+      text-align: left;
+    }
+    
+    .campo-doacao {
+      margin-bottom: 1em;
+    }
+    
+    .label-doacao {
+      font-size: 1.7em;
+      color: #4a4a4a;
+      display: block;
+      margin-bottom: 0.75em;
+    }
+    
+    .input-doacao {
+      width: 100%;
+      height: 2.75em;
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .botoes-valor-doacao {
+      display: flex;
+      gap: 1.625em;
+    }
+    
+    .botao-valor-doacao {
+      font-family: var(--fonte-principal);
+      background-color: var(--cor-media);
+      color: #fff;
+      border: none;
+      padding: 0.625em 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.5em;
+    }
+    
+    .botao-valor-doacao:hover {
+      background-color: #b57c50;
+    }
+    
+    .opcoes-doacao {
+      margin-bottom: 1em;
+      font-size: 1.5em;
+    }
+    
+    .checkbox-doacao {
+      margin-right: 5px;
+      width: 1.5em;
+      height: 1.5em;
+    }
+    
+    .pagamento-doacao {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-bottom:  1.25em;
+    }
+    
+    .icone-pagamento-doacao {
+      width: 4em;
+      height: auto;
+      mix-blend-mode: multiply;
+    }
+    
+    .botao-doar {
+      font-family: var(--fonte-principal);
+      display: flex;
+      justify-self: center;
+      background-color: var(--cor-media);
+      color: #fff;
+      border: none;
+      padding: 0.625em  1.25em;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.75em;
+    }
+    
+    .botao-doar:hover {
+      background-color: var(--cor-clara-2);
+    } 
+}
