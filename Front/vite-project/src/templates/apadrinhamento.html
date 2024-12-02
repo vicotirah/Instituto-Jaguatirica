@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="jpg" href="../assets/images/logoIJ.png" />
+    <link rel="stylesheet" href="../index.css"/>
+    <link rel="stylesheet" href="../reset.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../index.js"></script>
+    <title>IJ</title>
+  </head>
+  <body>
+
+    <header>
+      <nav class="hdr">
+        <div class="hdr-mobile">
+          <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png" >
+          <h1 class="title-principal">Instituto Jaguatirica</h1>
+          <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu">
+            <span class="icon"></span>
+          </button>
+          <ul id="menu" class="menu">
+            <li class="menu-item"><a href="../index.html">Home</a></li>
+            <li class="menu-item"><a href="./about.html">Sobre Nós</a></li>
+            <li class="menu-item"><a href="./programas.html">Programas</a></li>
+            <li class="menu-item btn btn-secondary" id="dropdownAnimais"  aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+              <a href="#">Animais</a>
+              <ul class="dropdown-menu">
+                <li class="menu-item dropdown-item"><a href=".animais_especies.html">Espécies</a></li>
+                <li class="menu-item dropdown-item"><a href=".animais_regioes.html">Regiões</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href=".cadastro_voluntario.html">Voluntariado</a></li>
+            <li class="menu-item"><a href=".doacao.html">Doações</a></li>
+          </ul>
+        </div>
+        <div class="hdr-desktop">
+          <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png" >
+          <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
+            <li class="menu-item-dkt"><a href="../index.html">Home</a></li>
+            <li class="menu-item-dkt"><a href="./about.html">Sobre Nós</a></li>
+            <li class="menu-item-dkt"><a href="./programas.html">Programas</a></li>
+            <li class="menu-item" id="dropdownAnimaisDkt" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+              <a href="#">Animais</a>
+              <ul class="dropdown-menu-dkt">
+                <li class="menu-item dropdown-item"><a href="./animais_especies.html">Espécies</a></li>
+                <li class="menu-item dropdown-item"><a href="./animais_regioes.html">Regiões</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-dkt"><a href="./cadastro_voluntario.html">Voluntariado</a></li>
+            <li class="menu-item-dkt"><a href="./doacao.html">Doações</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header> 
+    <script src="../menu.js"></script>
+  </body>
+

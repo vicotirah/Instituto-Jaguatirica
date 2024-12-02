@@ -1,6 +1,8 @@
-:root {
+@import url("../src/static/header.css");
+@import url("../src/static/about.css");
+@import url("../src/static/animais_regioes.css");
 
-  /* Paleta de cores */
+:root {
   --cor-branco-principal: #f6f6f6;
   --cor-branco-frio: hsl(0, 0%, 100%);
   --cor-clara-1: #F2E1CD;
@@ -9,148 +11,709 @@
   --cor-escura-1:#3E2111;
   --cor-escura-2:#19090A;
   --cor-verde-escuro: #163513;
-  /*Fonte*/
+  --cor-verde-escuro-hover: #36862f82;
+  --cor-escura-2-hover: #4414178f;
+  --cor-dropdown-hover: #583336;
+  --cor-animal-clara-1: #fdf5f0;
+  --cor-animal-clara-2: #faebe1;
+  --cor-label-fem: #fb74bc;
+  --cor-label-male: #14b4db;
+  --cor-label-ext1: #ccdb03e9;
+  --cor-label-ext2: #ffd000;
+  --cor-label-ext3: #ffae00;
+  --cor-label-ext4: #ff6f00;
+  --cor-label-ext6:#000000;
+  --cor-label-ave: #37d2b8;
+  --cor-label-mam: #b175c7;
+  --cor-label-rep: #6d8e2f;
   --fonte-primaria: "Poppins", sans-serif;
-
 }
-
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  text-decoration: none;
+  color: inherit;
 }
 
-article{
-  margin-left: 5vw;
-  margin-right: 5vw;
-}
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.container, .list-our-animals-item,
+.program, .card  {
+  box-sizing: border-box;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.container,.principal,.program,
+.btn-ally, .bnt-about {
+  padding: 0.5em;
 }
 
-
-/*Mobile*/
-/*Cabeçalho*/
-
-.cabecalho__mobile {
-  background-color: var(--cor-escura-2);
-  margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-} 
-
-.cabecalho__mobile__item {
-  margin: 0.5em 0.75em
+.title-our-animals, .title-program {
+  padding: 0.25em;
 }
 
-.cabecalho__logo {
-  height: 15%;
-  width: 15%;
-  border-radius: 50%;
+.txt-principal, .list-our-animals,
+.list-our-animals-item {
+  margin: 0.25em;
 }
 
-/*Imagem e descrição*/
-
-
-.container__imagem__home {
-  background-image: url("../src/assets/images/Animais/jaguatirica/jaquatirica_home.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.container, .our-animals {
   height: 40vh;
 }
 
-.botao__about {
-  font-family: var(--fonte-primaria);
-  color: var(--cor-branco-frio);
-  background-color: var(--cor-verde-escuro);
-  padding: 0.5em;
-  position: relative;
-  margin-top: 17em;
-  margin-left: 1em;
-  border-radius: 0.5em;
-}
-
-.container {
-  height: 45vh;
-  background-color: var(--cor-escura-1);
+.container,.principal,
+.program, .ally, .txt-description {
   width: 100vw;
+}
+
+.subtitle-program, .bnt-about,
+.title-our-animals, .container,.principal,.program,
+.btn-ally, .bnt-about,
+.title-principal-dkt {
   font-family: var(--fonte-primaria);
-
 }
 
-.principal {
-  color: var(--cor-branco-principal);
-  height: 35vh;
-}
-
-.titulo__principal, .titulo__conheca {
-  font-size: 1.5rem;
+.title-our-animals,.title-program, 
+.title-ally,.list-our-animals-item-title,
+.btn-ally, .list-our-animals-item-title, 
+.btn-ally, .title-principal-dkt{
   font-weight: 600;
+}
+
+.title-our-animals, .title-program, 
+.title-ally, .list-our-animals-item-title, 
+.btn-ally, .title-principal-dkt {
+  font-size: 1.25rem;
   text-align: center;
-  padding: 0.5em;
 }
 
-.titulo__principal {
-  padding-bottom: 0;
-}
-
-.texto__principal {
+.txt-principal, .subtitle-program {
   font-size: 1rem;
-  font-weight: 400;
-  text-align: center;
-  padding: 0.75em;
-  margin: 1em;
-  background-color: var(--cor-media);
-  border-radius: 1.25em;
 }
 
-.conheca {
-  background-color: var(--cor-clara-1);
+.subtitle-program, 
+.btn-ally, .bnt-about,
+.container, .principal, 
+.program, .title-principal-dkt {
+  color: var(--cor-branco-principal);
+}
+
+.our-animals, .ally {
   color: var(--cor-escura-2);
 }
 
-.lista__conheca {
-  display: flex;
-  justify-content: space-between;
-
+.btn-ally, .bnt-about {
+  border-radius: 0.5em;
+  border-color: transparent;
+  cursor: pointer;
 }
 
-.lista__conheca__item {
+.list-our-animals-item, .card {
   background-color: var(--cor-media);
-  margin: 0.5em;
-  padding: 1em;
   border-radius: 1em;
 }
 
-.lista__conheca__item__titulo {
-  font-weight: 600;
+.program-item-img, .ally-img {
+  border-radius: 1em;
+}
+
+.container, .btn-ally {
+  background-color: var(--cor-escura-1);
+}
+
+.title-our-animals, .title-program {
+  padding-bottom: 0;
+}
+
+.title-principal-dkt {
+  display: none;
+}
+
+.container-img-home {
+  background-image: url("../src/assets/images/Animais/mamifero/jaguatirica/Site_GeneticaeComportamento-0-1140.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+
+.bnt-about {
+  background-color: var(--cor-verde-escuro);
+  position: relative;
+  margin: 18em 0 0 1em;
+}
+
+.container {
+  display: block;
+  align-items: center;
+}
+
+.principal {
+  height: 35vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.txt-principal {
   text-align: center;
+}
+
+.our-animals {
+  background-color: var(--cor-clara-1);
+}
+
+.list-our-animals {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-our-animals-item {
+  display: block;
+  width: 10em;
+  height: 10m;
+  padding: 1em;
+  text-align: center;
+}
+
+.list-our-animals-item-title {
   padding-top: 0.5em;
-  font-size: 1.125rem;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.list-our-animals-item-img {
+  height: 70%;
+  width: 80%;
+}
+
+.program {
+  display: block;
+  height: 165vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-program {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: block;
+  text-align: center;
+  height: 15em;
+  width: 80%;
+  padding: 0.5em 0.25em;
+  margin: 0.5em auto;
+  border-color: transparent;
+}
+
+.program-item-img {
+  width: 80%;
+  height: 70%;
+  margin: 0.5em 0;
+}
+
+.subtitle-program {
+  font-weight: 500;
+}
+
+.ally {
+  display: block;
+  align-items: center;
+  text-align: center;
+  height: 75vh;
+  background-color: var(--cor-clara-2);
+}
+
+.title-ally {
+  margin-bottom: 0.5em;
+}
+
+.ally-img {
+  width: 90%;
+}
+
+.btn-ally {
+  text-align: center;
+  width: 70%;
+  margin: 0.5em;
+}
+
+@media screen and (min-width: 380px) {
+
+  .title-our-animals, .title-program {
+    padding: 0.5em;
+  }
+  
+  .container, .our-animals {
+    height: 35vh;
+  }
+  
+  .list-our-animals-item, .card {
+    background-color: var(--cor-media);
+    border-radius: 1em;
+  }
+  
+  .txt-principal, .list-our-animals, 
+  .list-our-animals-item, .btn-ally {
+    margin: 0.5em;
+  }
+
+  .title-our-animals, .title-program,
+  .title-ally {
+    font-size: 1.5rem;
+  }
+
+  .subtitle-program, .btn-ally {
+    font-size: 1.25rem;
+  }
+  
+  .container-img-home {
+    height: 40vh;
+  }
+  
+  .bnt-about {
+    margin: 20em 0 0 0.75em;
+  }
+
+  .principal {
+    height: 30vh;
+    max-width: 100vw;
+  }
+
+  .program {
+    height: 180vh;
+  }
+  
+  .card {
+    height: 20em;
+    padding: 1em 0.5em;
+    margin: 1em auto;
+  }
+  
+  .program-item-img {
+    width: 90%;
+    height: 80%;
+  }
+  
+  .ally {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 400px) {
+ 
+  .subtitle-program, .btn-ally, 
+  .txt-principal  {
+    font-size: 1.125rem;
+  }
+
+  .container, .our-animals {
+    height: 40vh;
+  }
+
+  .principal {
+    height: 35vh;
+  }
+
+  .program {
+    height: 165vh;
+  }
+
+  .ally-img {
+    margin-bottom: 1em;
+  }
+    
+}
+
+@media screen and (min-width: 430px) {
+ 
+  .subtitle-program, .btn-ally, 
+  .txt-principal  {
+    font-size: 1.25rem;
+  }
+
+ .program {
+   height: 165vh;
+ }
+
+ .ally {
+  height: 65vh;
+}   
+}
+
+@media screen and (min-width: 500px) {
+
+  .title-our-animals, .title-program, 
+  .title-ally {
+    font-size: 1.5rem;
+  }
+ 
+  .subtitle-program, .btn-ally, 
+  .txt-principal {
+    font-size: 1rem;
+  }
+
+  .bnt-about {
+    margin: 30em 0 0 0.75em;
+  }
+
+  .list-our-animals {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .program {
+    height: 165vh;
+  }
+
+  .program {
+    display: block;
+    height: 90vh;
+  }
+  
+  .list-program {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    display: block;
+    text-align: center;
+    height: 15em;
+    width: 45%;
+  }
+
+  .ally-img {
+    margin-bottom: 1em;
+    width: 80%;
+  }
+
+  .container-img-home {
+    height: 65vh;
+  }
+
+  
+  .btn-ally {
+    box-sizing: content-box;
+    text-align: center;
+    width: 20%;
+  }
+    
+}
+
+@media screen and (min-width: 700px) {
+
+.txt-principal, .title-ally {
+  padding: 0.5em;
+}
+
+.container, .our-animals {
+  box-sizing: border-box;
+  height: 45vh;
+  max-width: 100vw;
+}
+
+.container-img-home, .ally {
+  height: 65vh;
+}
+
+.card, .ally {
+  background-color: var(--cor-clara-2);
+}
+
+.title-our-animals, 
+.title-program, .list-our-animals-item-title {
+  font-size: 2rem;
+}
+
+.bnt-about {
+  font-size: 1.5rem;
+  margin: 22em 0 0 2em;
+  width: 30%;
+}
+
+.principal {
+  height: 35vh;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.txt-principal {
+  text-align: center;
+  border-radius: 1em;
+  background-color: var(--cor-escura-2);
+  font-size: 1.5rem;
+}
+
+.list-our-animals-item {
+  width: 15em;
+  height: 10m;
+  padding: 1em;
+  text-align: center;
+}
+
+.program {
+  display: block;
+  height: 60vh;
+}
+
+.card  {
+  margin: 0.5em;
+}
+
+.program-item-img {
+  width: 80%;
+  height: 70%;
+  margin: 0.5em 0;
+}
+
+.subtitle-program {
+  color: var(--cor-escura-2);
+}
+
+.ally {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+.title-ally {
+  font-size: 2.5rem;
+}
+
+.btn-ally {
+  font-size: 1.25rem;
+}
+}
+
+@media screen and (min-width: 800px) {
+
+  .container-img-home {
+    background-size: initial;
+    height: 50vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 20em 0 0 2em;
+    width: 20%;
+    padding: 0.5em;
+  }
+
+  .txt-description {
+    background-color: var(--cor-escura-2);
+    padding: 1em;
+    margin: 1em;
+    width: 85vw;
+    border-radius: 1em;
+  }
+
+  .title-principal-dkt {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .container, .principal, .our-animals {
+    box-sizing: border-box;
+    height: 35vh;
+    width: 100vw;
+  }
+
+  .program {
+    display: block;
+    height: 60vh;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+  .container-img-home {
+    background-size: initial;
+    height: 50vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 18em 0 0 2em;
+    width: 20%;
+    padding: 0.5em;
+  }
+
+  .txt-description {
+    width: 85vw;
+  }
+
+  .txt-principal {
+    font-size: 1.85rem;
+  }
+
+  .title-principal-dkt {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .container, .principal, .our-animals {
+    box-sizing: border-box;
+    height: 40vh;
+    width: 100vw;
+  }
+
+  .program {
+    display: block;
+    height: 50vh;
+  }
+
+  .card  {
+    margin: 1em;
+  }
+  
+  .program-item-img {
+    width: 80%;
+    height: 80%;
+    margin: 0.5em 0;
+  }
+  
+  .subtitle-program {
+    color: var(--cor-escura-2);
+    font-size: 1.125rem;
+  }
+
+  .ally {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .container-img-home {
+    background-size: cover;
+    height: 85vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 21em 0 0 2em;
+    width: 15%;
+    padding: 0.5em;
+  }
+
+  .txt-description {
+    width: 85vw;
+  }
+
+  .txt-principal {
+    font-size: 2.5rem;
+  }
+
+  .title-principal-dkt {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .container, .principal, .our-animals {
+    box-sizing: border-box;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .list-our-animals-item {
+    width: 20em;
+    height: 15m;
+  }
+
+  .title-our-animals, .title-program{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+
+  .list-our-animals-item-title {
+    font-size: 2.5rem;
+  }
+
+  .program {
+    display: block;
+    height: 100vh;  
+  }
+
+  .card {
+    height: 18em;
+    width: 35%;
+  }
+
+  .ally {
+    height: 130vh;
+  }
+  .ally-img{
+    margin-bottom: 1em;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .container-img-home {
+    background-size: cover;
+    height: 85vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 21em 0 0 2em;
+    width: 15%;
+    padding: 0.5em;
+  }
+
+  .txt-description {
+    width: 85vw;
+  }
+
+  .txt-principal {
+    font-size: 2.5rem;
+  }
+
+  .title-principal-dkt {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .container, .principal, .our-animals {
+    box-sizing: border-box;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .list-our-animals-item {
+    width: 20em;
+    height: 15m;
+  }
+
+  .title-our-animals, .title-program{
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+
+  .list-our-animals-item-title {
+    font-size: 2.5rem;
+  }
+
+  .program {
+    display: block;
+    height: 100vh;  
+  }
+
+  .card {
+    height: 18em;
+    width: 35%;
+  }
+
+  .ally {
+    height: 100vh;
+  }
+  .ally-img{
+    margin-bottom: 1em;
+    width: 80%;
+    height: 70%;
+  }
 }

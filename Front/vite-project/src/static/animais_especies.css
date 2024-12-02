@@ -1,0 +1,71 @@
+img{
+    width: 15vw;
+    height: 15vw;
+    margin: 0.5vw;
+    border-radius: 5%;
+}
+.card{
+    height: max-content;
+}
+.card-container{
+    height: max-content;
+    flex-wrap: wrap;
+    /*justify-content: flex-start;*/
+}
+h2{
+    font-size: 1.75vw;
+    text-align: center;
+    margin: 1.5vw;
+}
+/* Ajuste da sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 60px; /* Espaço para o menu principal */
+    bottom: 0;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding-top: 8rem;
+    z-index: 10; /* Certifique-se de que a sidebar não sobreponha outros elementos */
+}
+
+/* Ajuste do menu principal */
+.hdr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 6rem;
+    z-index: 20; /* Garantir que o menu fique acima da sidebar */
+    background-color: #fff; /* Caso seja necessário corrigir sobreposição visual */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombras opcionais */
+}
+
+/* Ajuste do conteúdo principal */
+#classestax {
+    margin-left: 220px; /* Espaço para compensar a sidebar */
+    margin-top: 8vw; /* Espaço para compensar o menu principal */
+    padding: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #444;
+}

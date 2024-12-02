@@ -34,23 +34,12 @@
 
 
 
-### Equipe 👩‍💻👨‍💻
-![Static Badge](https://img.shields.io/badge/vicotirah-github?logo=github&logoColor=white&labelColor=black&color=%23000058&link=https%3A%2F%2Fgithub.com%2Fvicotirah)
+### Colaboradores 👩‍💻👨‍💻
+![Static Badge](https://img.shields.io/badge/vicotirah-github?logo=github&logoColor=white&labelColor=black&color=indigo&link=https%3A%2F%2Fgithub.com%2Fvicotirah)
+![Static Badge](https://img.shields.io/badge/guedespedro-github?logo=github&logoColor=white&labelColor=black&color=indigo&link=https%3A%2F%2Fgithub.com%2Fguedespedro)
+![Static Badge](https://img.shields.io/badge/matheusgoissouza-github?logo=github&logoColor=white&labelColor=black&color=indigo&link=https%3A%2F%2Fgithub.com%2Fmatheusgoissouza)
+![Static Badge](https://img.shields.io/badge/MateusGildev-github?logo=github&logoColor=white&labelColor=black&color=indigo&link=https%3A%2F%2Fgithub.com%2FMateusGildev)
+![Static Badge](https://img.shields.io/badge/GuilhermeDamazio-github?logo=github&logoColor=white&labelColor=black&color=indigo&link=https%3A%2F%2Fgithub.com%2FGuilhermeDamazio)
+![Static Badge](https://img.shields.io/badge/KevinPrince2024-github?logo=github&logoColor=white&labelColor=black&color=indigo&link=https%3A%2F%2Fgithub.com%2FKevinPrince2024)
+![Static Badge](https://img.shields.io/badge/Carlos-github?logo=github&logoColor=white&labelColor=black&color=indigo)
 
-
-
-
-
-
-
-
-
-
-
-
-
-- Matheus Gois
-- Pedro Guedes
-- Guilherme
-- Kevin
-- Carlos

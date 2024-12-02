@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="../static/cadastro_voluntario.css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+</head>
+
+<body>
+  <header>
+    <nav class="hdr">
+      <div class="hdr-mobile">
+        <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png">
+        <h1 class="title-principal">Instituto Jaguatirica</h1>
+        <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu">
+          <span class="icon"></span>
+        </button>
+        <ul id="menu" class="menu">
+          <li class="menu-item"><a href="../index.html">Home</a></li>
+          <li class="menu-item"><a href="./about.html">Sobre Nós</a></li>
+          <li class="menu-item"><a href="./programas.html">Programas</a></li>
+          <li class="menu-item btn btn-secondary" id="dropdownAnimais" aria-haspopup="true" aria-expanded="false"
+            data-offset="10,20">
+            <a href="#">Animais</a>
+            <ul class="dropdown-menu">
+              <li class="menu-item dropdown-item"><a href=".animais_especies.html">Espécies</a></li>
+              <li class="menu-item dropdown-item"><a href=".animais_regioes.html">Regiões</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href=".cadastro_voluntario.html">Voluntariado</a></li>
+          <li class="menu-item"><a href=".doacao.html">Doações</a></li>
+        </ul>
+      </div>
+      <div class="hdr-desktop">
+        <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png">
+        <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
+          <li class="menu-item-dkt"><a href="../index.html">Home</a></li>
+          <li class="menu-item-dkt"><a href="./about.html">Sobre Nós</a></li>
+          <li class="menu-item-dkt"><a href="./programas.html">Programas</a></li>
+          <li class="menu-item" id="dropdownAnimaisDkt" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            <a href="#">Animais</a>
+            <ul class="dropdown-menu-dkt">
+              <li class="menu-item dropdown-item"><a href="./animais_especies.html">Espécies</a></li>
+              <li class="menu-item dropdown-item"><a href="./animais_regioes.html">Regiões</a></li>
+            </ul>
+          </li>
+          <li class="menu-item-dkt"><a href="./cadastro_voluntario.html">Voluntariado</a></li>
+          <li class="menu-item-dkt"><a href="./doacao.html">Doações</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="titulo">
+    <h1><em><u>Vem ser voluntário!</u></em></h1>
+  </section>
+  <section class="boxcad">
+    <form name="cadastro" class="cadastro">
+      <fieldset>
+        <legend>Voluntário</legend>
+        <label for="nome">
+          Nome:
+        </label>
+        <input type="text" id="nome" name="nome" />
+        <label for="cpf">
+          cpf:
+        </label>
+        <input type="text" id="cpf" name="cpf" />
+        <label for="email">
+          email:
+        </label>
+        <input type="email" id="email" name="email" />
+        <label for="psw">
+          senha:
+        </label>
+        <input type="password" id="senha" name="senha">
+
+        <label for="estado">
+          estado:
+        </label>
+        <select id="estado" name="estado">
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+          <option value="EX">Estrangeiro</option>
+        </select>
+        <label for="endereco">
+          endereço:
+        </label>
+        <input type="text" id="endereco" name="endereco" />
+        <label for="cidade">
+          cidade:
+        </label>
+        <input type="text" id="cidade" name="cidade" />
+        <input type="button" id="btnGerar" value="Enviar" onclick="envioVoluntario()" />
+      </fieldset>
+    </form>
+  </section>
+  <script src="../menu.js"></script>
+</body>

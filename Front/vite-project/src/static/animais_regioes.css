@@ -1,0 +1,141 @@
+
+.bd-anml {
+  background-color: var(--cor-clara-1);
+  overflow-x: hidden;
+}
+
+.title-anml, .subtitle-anml, .anml-name {
+  color: var(--cor-escura-2);
+  font-weight: 600;
+}
+
+.title-anml {
+  margin: 1em 0;
+}
+
+.anml-name, .anml-spe {
+  margin: 0.2em 0;
+  font-size: 1rem;
+}
+
+.subtitle-anml {
+  padding: 0.2em;
+  font-size: 1.25rem;
+  padding-bottom: 0;
+  margin-left: 1em;
+}
+
+.container-anml {
+  height: 50vh;
+}
+
+.light {
+  background-color: var(--cor-animal-clara-1);
+}
+
+.medium {
+  background-color: var(--cor-animal-clara-2);
+}
+
+
+.anml-card {
+  display: block;
+  margin: 0.5em;
+  padding: 1em;
+  width: 60%;
+  text-align: center;
+  border-radius: 1em;
+  z-index: 2;
+}
+
+.card-light {
+  background-color: var(--cor-animal-clara-2);
+}
+
+.card-medium {
+  background-color: var(--cor-animal-clara-1);
+}
+
+.anml-card-img{
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  align-items: center;
+  border-radius: 0.5em; 
+}
+
+.sci-name-item {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.anml-data{
+  display: flex;
+  justify-content: center;
+  margin: 0
+}
+
+.anml-data-item {
+  margin-top: 0.25em;
+}
+
+.label {
+  font-family: var(--fonte-principal);
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  text-transform: capitalize;
+  color: var(--cor-branco-principal);
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  padding: 0.35em 0.55em;
+  margin: 0.5em;
+  border-style: none;
+  box-shadow: none;
+}
+
+.fem {
+  background-color: var(--cor-label-fem);
+}
+
+.male {
+  background-color: var(--cor-label-male);
+}
+
+.ext1, .ext2, .ext3 {
+  color: var(--cor-escura-2) 
+}
+
+.ext1 {
+  background-color: var(--cor-label-ext1); 
+}
+
+.ext2 {
+  background-color: var(--cor-label-ext2);
+}
+
+.ext3 {
+  background-color: var(--cor-label-ext3);
+}
+
+.ext4 {
+  background-color: var(--cor-label-ext4);
+}
+
+.ext6 {
+  background-color: var(--cor-label-ext6); 
+}
+
+.mam {
+  background-color: var(--cor-label-mam);
+}
+
+.rep {
+  background-color: var(--cor-label-rep);
+}
+
+.ave {
+  background-color: var(--cor-label-ave);
+}
+
