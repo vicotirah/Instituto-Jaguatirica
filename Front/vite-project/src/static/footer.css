@@ -23,7 +23,7 @@
     font-size: 1rem;
     font-weight: 600;
     padding-bottom: 1em;
-    
+
 }
 
 .rodape__lista__item-contato {
@@ -36,7 +36,7 @@
         margin: 0;
         height: 9em;
         width: 2px;
-        border-left: 1px solid var(--cor-escura-2) ;
+        border-left: 1px solid var(--cor-escura-2);
     }
 
     .rodape__lista {
@@ -47,7 +47,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items:normal;
+        align-items: normal;
     }
 
     .rodape__lista__titulo {

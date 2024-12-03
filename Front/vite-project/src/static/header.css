@@ -1,9 +1,15 @@
-.hdr, .hdr-mobile, .hdr-desktop, .hamburguer-button, .nav-menu, .menu, .menu-item {
+.hdr,
+.hdr-mobile,
+.hdr-desktop,
+.hamburguer-button,
+.nav-menu,
+.menu,
+.menu-item {
   font-family: var(--fonte-primaria);
   color: var(--cor-branco-principal);
   background-color: var(--cor-escura-2);
   list-style: none;
-  position:relative;
+  position: relative;
   z-index: 2;
 }
 
@@ -13,7 +19,6 @@
   padding: 0;
   margin: 0;
   width: 100vw;
-
 }
 
 .hamburguer-button .icon {
@@ -31,7 +36,7 @@
 
 .hamburguer-button[aria-expanded="true"] .icon::before {
   content: "\2715";
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
 }
 
 .hamburguer-button {
@@ -47,12 +52,14 @@
   position: relative;
 }
 
-.menu-item, .menu-item a{
+.menu-item,
+.menu-item a {
   display: block;
   padding: 0.5em;
 }
 
-.menu-item a:hover, .menu-item a:focus {
+.menu-item a:hover,
+.menu-item a:focus {
   background-color: var(--cor-escura-2-hover);
 }
 
@@ -68,7 +75,7 @@
   display: none;
 }
 
-.hamburguer-button-js-enabled + .menu {
+.hamburguer-button-js-enabled+.menu {
   display: flex;
   position: absolute;
   width: 60%;
@@ -77,11 +84,11 @@
   flex-direction: column;
 }
 
-.hamburguer-button-js-enabled + .menu-closed {
+.hamburguer-button-js-enabled+.menu-closed {
   display: none;
 }
 
-.hamburguer-button-js-enabled{
+.hamburguer-button-js-enabled {
   display: block;
 }
 
@@ -108,7 +115,7 @@
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 2;
   padding-left: 0;
-  }
+}
 
 .dropdown-item {
   background-color: var(--cor-dropdown-hover);
@@ -122,7 +129,8 @@
 @keyframes slideDown {
   from {
     transform: translateY(-20px);
-    }
+  }
+
   to {
     transform: translateY(0);
   }
@@ -130,13 +138,13 @@
 
 @media screen and (min-width: 380px) {
 
-  .hdr-mobile   {
+  .hdr-mobile {
     justify-content: space-evenly;
-  } 
+  }
 
   .hdr-mobile-item {
     margin: 0.5em 0.75em;
-  } 
+  }
 
   .title-principal {
     font-size: 1.5rem;
@@ -156,9 +164,9 @@
   .hamburguer-button[aria-expanded="false"] .icon::before {
     font-size: 3rem;
   }
-  
+
   .hamburguer-button[aria-expanded="true"] .icon::before {
-    font-size: 3rem;  
+    font-size: 3rem;
   }
 
   .menu-item {
@@ -166,7 +174,7 @@
     z-index: 5000;
   }
 
-  .hamburguer-button-js-enabled + .menu {
+  .hamburguer-button-js-enabled+.menu {
     top: 6em;
   }
 
@@ -184,7 +192,7 @@
     display: flex;
     flex-direction: row;
     width: auto;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -213,14 +221,16 @@
     font-size: 1.25rem;
   }
 
-  .menu-item-dkt a{
+  .menu-item-dkt a {
     display: flex;
     justify-content: space-evenly;
     margin: 0 0.5em;
     font-size: 1rem;
   }
 
-  #dropdownAnimaisDKT a, #dropdownColabDKT a, #dropdownContabDKT a{
+  #dropdownAnimaisDKT a,
+  #dropdownColabDKT a,
+  #dropdownContabDKT a {
     font-size: 1rem;
     padding: 0;
   }
@@ -272,15 +282,12 @@
   }
 }
 
-.menu-item-dkt a{
-  font-size: 1rem;
+.menu-item-dkt a,
+.menu-item a {
+  font-size: 1.25rem;
 }
 
-.menu-item a{
-  font-size: 1rem;
-}
-
-.dropdown-menu{
+.dropdown-menu {
   display: none;
 }
 
@@ -295,7 +302,8 @@
   list-style: none;
 }
 
-.btn, .btn-secondary {
+.btn,
+.btn-secondary {
   z-index: 500;
 }
 
@@ -306,23 +314,24 @@
 
 }
 
-.dropdown-item{
+.dropdown-item {
   margin: 0;
 }
 
-.dropdown-item a{
+.dropdown-item a {
   font-size: 1rem;
 }
 
 .menu-item-dkt:hover .dropdown-menu-dkt {
-    visibility: visible;
-    animation: slideDown 0.3s ease-out;
+  visibility: visible;
+  animation: slideDown 0.3s ease-out;
 }
 
 @keyframes slideDown {
   from {
     transform: translateY(-20px);
   }
+
   to {
     transform: translateY(0);
   }
@@ -344,7 +353,9 @@
     padding: 0.25em;
   }
 
-  #dropdownAnimaisDKT a, #dropdownColabDKT a, #dropdownContabDKT a{
+  #dropdownAnimaisDKT a,
+  #dropdownColabDKT a,
+  #dropdownContabDKT a {
     font-size: 2rem;
     padding: 0;
   }
@@ -354,11 +365,11 @@
 @media screen and (min-width: 1400px) {
 
   .menu-item-dkt {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 0 1em;
   }
 
-  .menu-item-dkt a{
+  .menu-item-dkt a {
     font-size: 1.5rem;
   }
 
