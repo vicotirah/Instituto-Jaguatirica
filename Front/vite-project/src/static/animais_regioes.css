@@ -45,7 +45,6 @@
   width: 60%;
   text-align: center;
   border-radius: 1em;
-  z-index: 2;
 }
 
 .card-light {
@@ -57,8 +56,9 @@
 }
 
 .anml-card-img{
-  width: 80%;
-  height: 80%;
+  box-sizing: content-box;
+  width: 13em;
+  height: 9em;
   text-align: center;
   align-items: center;
   border-radius: 0.5em; 
@@ -137,5 +137,55 @@
 
 .ave {
   background-color: var(--cor-label-ave);
+}
+
+@media screen and (min-width: 390px){
+
+  .subtitle-anml {
+    padding-top: 1em;
+  }
+
+  .container-anml {
+    height: 40vh;
+  }
+}
+
+@media screen and (min-width: 500px){
+
+  .subtitle-anml {
+    padding-top: 1em;
+  }
+
+  .container-anml {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 700px){
+
+  .container-anml {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 800px){
+
+  .container-anml {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 1000px){
+
+  .container-anml {
+    height: 25vh;
+  }
+}
+
+@media screen and (min-width: 1200px){
+
+  .container-anml {
+    height: 45vh;
+  }
 }
 
