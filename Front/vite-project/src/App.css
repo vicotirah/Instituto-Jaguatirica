@@ -1,0 +1,19 @@
+body{
+  background-color: rgb(86, 55, 19);
+}
+article{
+text-align: center;
+color:aliceblue;
+}
+article img{
+  text-align: center;
+}
+@media screen and (max-width:1000px){
+  img{
+    width: 50vw;
+  }
+  *{
+    background-color: rgb(81, 81, 138);
+    font-size: 50vw;
+  }
+}
