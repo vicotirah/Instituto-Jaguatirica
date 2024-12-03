@@ -64,21 +64,6 @@
     .carousel-item {
         width: 20%; 
     }
-
-    .carousel-list {
-        display: flex;
-        overflow-x: scroll; /* Habilita a rolagem horizontal */
-        overflow-y: hidden; /* Impede rolagem vertical */
-        scroll-behavior: smooth; /* Suaviza a rolagem */
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        position: relative;
-        -ms-overflow-style: none; /* Remove scrollbar no IE e Edge */
-        scrollbar-width: none; /* Remove scrollbar no Firefox */
-        z-index: 0;
-        justify-content: center;
-    }
 }
 
 
