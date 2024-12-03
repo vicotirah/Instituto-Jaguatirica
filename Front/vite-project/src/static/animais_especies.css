@@ -1,33 +1,51 @@
 img{
-    width: 15vw;
-    height: 15vw;
-    margin: 0.5vw;
+    box-sizing: content-box;
+    width: 9em;
+    height: 7em;
+    margin: 0.5em;
     border-radius: 5%;
 }
-.card{
-    height: max-content;
+
+.card-esp{
+    height: 80%;
+    width: 100%;
+    padding: 1em;
+    background-color: var(--cor-clara-2);
+    border-radius: 1em;
+    text-align: center;
 }
+
 .card-container{
     height: max-content;
     flex-wrap: wrap;
-    /*justify-content: flex-start;*/
+    padding: 1em;
+    border-radius: 0.5em;
 }
-h2{
-    font-size: 1.75vw;
+
+
+.esp-title{
+    font-size: 1.25rem;
     text-align: center;
-    margin: 1.5vw;
+    font-weight: 600;
+    margin-bottom: 0.5em;
 }
-/* Ajuste da sidebar */
+
+.esp-subtitle{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 .sidebar {
     position: fixed;
     left: 0;
-    top: 60px; /* Espaço para o menu principal */
+    top: 50px; 
     bottom: 0;
-    width: 200px;
-    background-color: #333;
+    width: 35%;
+    background-color: var(--cor-escura-1);
     color: white;
-    padding-top: 8rem;
-    z-index: 10; /* Certifique-se de que a sidebar não sobreponha outros elementos */
+    padding-top: 1em;
+    z-index: 10; 
 }
 
 /* Ajuste do menu principal */
@@ -38,15 +56,14 @@ h2{
     width: 100%;
     margin-bottom: 6rem;
     z-index: 20; /* Garantir que o menu fique acima da sidebar */
-    background-color: #fff; /* Caso seja necessário corrigir sobreposição visual */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombras opcionais */
 }
 
 /* Ajuste do conteúdo principal */
 #classestax {
-    margin-left: 220px; /* Espaço para compensar a sidebar */
-    margin-top: 8vw; /* Espaço para compensar o menu principal */
-    padding: 1rem;
+    margin-left: 9em; /* Espaço para compensar a sidebar */
+    margin-top: 4em; /* Espaço para compensar o menu principal */
+    padding: 1em;
+    background-color: var(--cor-clara-1);
 }
 
 .sidebar ul {
@@ -55,17 +72,173 @@ h2{
 }
 
 .sidebar ul li {
-    margin: 1rem 0;
+    margin: 0.5em 0;
 }
 
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.25em 1em;
     display: block;
     transition: background-color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
     background-color: #444;
+}
+
+.card-esp-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.txt-esp {
+    font-size: 0.925rem;
+    padding: 0.5em 0;
+}
+
+@media screen and (min-width: 400px){
+    
+    #classestax {
+        margin-left: 9.5em; /* Espaço para compensar a sidebar */
+    }
+}
+
+@media screen and (min-width: 700px){
+
+    img{
+        width: 15em;
+        height: 9em;
+    }
+
+    .card-esp{
+        width: 50%;
+        padding: 1em;
+    }
+
+    .esp-title{
+        font-size: 2.25rem;
+    }
+    
+    .esp-subtitle{
+        font-size: 1.5rem;
+    }
+
+    .sidebar {
+        top: 100px; 
+        width: 35%;
+    }
+
+    .sidebar ul li a {
+        font-size: 1.5rem;
+    }
+
+    .card-container{
+        height: max-content;
+        flex-wrap: wrap;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        background-color: transparent;
+    }
+    
+
+    #classestax {
+        margin-left: 15em; /* Espaço para compensar a sidebar */
+        margin-top: 8em; /* Espaço para compensar o menu principal */
+        padding: 1em;
+        background-color: var(--cor-clara-1);
+    }
+
+    .card-esp-title {
+        font-size: 1.25rem;
+    }
+    
+    .txt-esp {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    img{
+        width: 15em;
+        height: 9em;
+    }
+
+    .card-esp{
+        width: 80%;
+        padding: 1em;
+    }
+
+    .esp-title{
+        font-size: 2.25rem;
+    }
+    
+    .esp-subtitle{
+        font-size: 1.5rem;
+    }
+
+    .sidebar {
+        top: 120px; 
+        width: 35%;
+    }
+
+    .sidebar ul li a {
+        font-size: 1.5rem;
+    }    
+
+    #classestax {
+        margin-left: 21em; /* Espaço para compensar a sidebar */
+        margin-top: 10em; /* Espaço para compensar o menu principal */
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    img{
+        width: 14em;
+        height: 9em;
+    }
+
+    .card-esp{
+        width: 14em;
+        height: 16em;
+        padding: 1em;
+    }
+
+    .sidebar {
+        top: 100px; 
+        width: 30%;
+    } 
+
+    #classestax {
+        margin-left: 23em; /* Espaço para compensar a sidebar */
+        margin-top: 8em; /* Espaço para compensar o menu principal */
+    }
+
+    .card-container{
+        height: max-content;
+        flex-wrap:wrap;
+        padding: 1em;
+        border-radius: 0.5em;
+        align-content: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1300px){
+
+    .sidebar {
+        top: 110px; 
+        width: 30%;
+    }
+
+
+    #classestax {
+        margin-top: 15em; /* Espaço para compensar o menu principal */
+    }
+
+
 }
