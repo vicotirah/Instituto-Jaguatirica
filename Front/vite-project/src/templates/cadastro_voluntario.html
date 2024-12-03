@@ -19,7 +19,7 @@
   <header>
     <nav class="hdr">
       <div class="hdr-mobile">
-        <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png">
+        <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png" >
         <h1 class="title-principal">Instituto Jaguatirica</h1>
         <button id="hamburguer-button" class="hamburguer-button" aria-label="Menu Principal" aria-controls="menu">
           <span class="icon"></span>
@@ -28,20 +28,32 @@
           <li class="menu-item"><a href="../index.html">Home</a></li>
           <li class="menu-item"><a href="./about.html">Sobre Nós</a></li>
           <li class="menu-item"><a href="./programas.html">Programas</a></li>
-          <li class="menu-item btn btn-secondary" id="dropdownAnimais" aria-haspopup="true" aria-expanded="false"
-            data-offset="10,20">
+          <li class="menu-item btn btn-secondary" id="dropdownAnimais"  aria-haspopup="true" aria-expanded="false" data-offset="10,20">
             <a href="#">Animais</a>
             <ul class="dropdown-menu">
-              <li class="menu-item dropdown-item"><a href=".animais_especies.html">Espécies</a></li>
-              <li class="menu-item dropdown-item"><a href=".animais_regioes.html">Regiões</a></li>
+              <li class="menu-item dropdown-item"><a href="./animais_especies.html">Espécies</a></li>
+              <li class="menu-item dropdown-item"><a href="./animais_regioes.html">Regiões</a></li>
             </ul>
           </li>
-          <li class="menu-item"><a href=".cadastro_voluntario.html">Voluntariado</a></li>
-          <li class="menu-item"><a href=".doacao.html">Doações</a></li>
+          <li class="menu-item btn btn-secondary" id="dropdownColab"  aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            <a href="#">Colabore</a>
+            <ul class="dropdown-menu">
+              <li class="menu-item dropdown-item"><a href="./doacao.html">Doações</a></li>
+              <li class="menu-item dropdown-item"><a href="./apadrinhamento.html">Apadrinhamento</a></li>
+              <li class="menu-item dropdown-item"><a href="./cadastro_voluntario.html">Voluntariado</a></li>
+            </ul>
+          </li>
+          <li class="menu-item btn btn-secondary" id="dropdownConta"  aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            <a href="#">Minha conta</a>
+            <ul class="dropdown-menu">
+              <li class="menu-item dropdown-item"><a href="./registro.html">Registro</a></li>
+              <li class="menu-item dropdown-item"><a href="./login.html">Login</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="hdr-desktop">
-        <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png">
+        <img class="hdr-mobile-item hdr-logo" src="../assets/images/logoIJ.png" >
         <ul id="menu-dkt" class="menu-dkt" aria-hidden="true">
           <li class="menu-item-dkt"><a href="../index.html">Home</a></li>
           <li class="menu-item-dkt"><a href="./about.html">Sobre Nós</a></li>
@@ -53,12 +65,25 @@
               <li class="menu-item dropdown-item"><a href="./animais_regioes.html">Regiões</a></li>
             </ul>
           </li>
-          <li class="menu-item-dkt"><a href="./cadastro_voluntario.html">Voluntariado</a></li>
-          <li class="menu-item-dkt"><a href="./doacao.html">Doações</a></li>
+          <li class="menu-item btn btn-secondary" id="dropdownColabDkt"  aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            <a href="#">Colabore</a>
+            <ul class="dropdown-menu-dkt">
+              <li class="menu-item dropdown-item"><a href="./doacao.html">Doações</a></li>
+              <li class="menu-item dropdown-item"><a href="./apadrinhamento.html">Apadrinhamento</a></li>
+              <li class="menu-item dropdown-item"><a href="./cadastro_voluntario.html">Voluntariado</a></li>
+            </ul>
+          </li>
+          <li class="menu-item btn btn-secondary" id="dropdownContaDkt"  aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+            <a href="#">Minha conta</a>
+            <ul class="dropdown-menu-dkt">
+              <li class="menu-item dropdown-item"><a href="./registro.html">Registro</a></li>
+              <li class="menu-item dropdown-item"><a href="./login.html">Login</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
-  </header>
+  </header> 
   <section id="titulo">
     <h1><em><u>Vem ser voluntário!</u></em></h1>
   </section>
@@ -78,5 +103,59 @@
       </fieldset>
     </form>
   </section>
+  <footer class="rodape">        
+    <ul class="rodape__lista-contato">
+      <li class="rodape__lista__titulo-contato">Fale conosco</li>
+      <li class="rodape__lista__item-contato">Rua das Palmeiras, 450 - Centro</li>
+      <li class="rodape__lista__item-contato">Nova Esperança, São Paulo, Brasil - CEP: 13800-123</li>
+      <li class="rodape__lista__item-contato">Telefone: (19) 3456-7890</li>
+      <li class="rodape__lista__item-contato">E-mail: <a href="mailto:contato@institutojaguatirica.org" style="text-decoration: none">contato@institutojaguatirica.org</a></li>
+      <li class="rodape__lista__item-contato">&copy; 2024 Instituto Jaguatirica - Todos os direitos reservados.</li>
+    </ul>
+    <div class="vl"></div>
+    <ul class="rodape__lista">
+        <li class="rodape__lista__titulo">Conheça</li>
+        <li class="rodape__lista__item">
+          <img class="footer_icon" src="../assets/images/Vetores/icon-about.png">
+          <a href="./about.html">Sobre nós</a>
+        </li>
+        <li class="rodape__lista__item">
+          <img class="footer_icon" src="../assets/images/Vetores/binoculos.png">
+          <a href="./programas.html">Nossos Programas</a>
+        </li>
+        <li class="rodape__lista__item">
+          <img class="footer_icon" src="../assets/images/Vetores/mapa.png">
+          <a href="./animais_regioes.html">Regiões</a>
+        </li>
+        <li class="rodape__lista__item">
+          <img class="footer_icon" src="../assets/images/Vetores/pata-de-animal.png">
+          <a href="./animais_especies.html">Espécies</a>
+        </li>
+    </ul>
+    <div class="vl"></div>
+    <ul class="rodape__lista">
+        <li class="rodape__lista__titulo">Ajude nossa causa</li>
+        <li class="rodape__lista__item">
+          <img class="footer_icon" src="../assets/images/Vetores/doacao.png">
+          <a href="./doacao.html">Doações</a>
+        </li>
+        <li class="rodape__lista__item">
+          <img class="footer_icon" src="../assets/images/Vetores/dois-coracoes.png">
+          <a href="./apadrinhamento.html">Apadrinhamento</a>
+        </li>
+    </ul>
+    <div class="vl"></div>   
+    <ul class="rodape__lista">
+        <li class="rodape__lista__titulo">Faça parte do instituto</li>
+        <li class="rodape__lista__item">
+          <img class="footer_icon" src="../assets/images/Vetores/observacao.png">
+          <a href="./registro.html">Registro</a>
+        </li>
+        <li class="rodape__lista__item">
+          <img class="footer_icon" src="../assets/images/Vetores/">
+          <a href="./cadastro_voluntario.html">Voluntariado</a>
+        </li>
+    </ul>
+  </footer>
   <script src="../menu.js"></script>
 </body>
