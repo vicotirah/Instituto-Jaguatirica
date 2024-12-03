@@ -1,0 +1,90 @@
+.vl {
+    margin: 0;
+    color: transparent;
+}
+
+.footer_icon {
+    width: 1em;
+    height: 1em;
+}
+
+.rodape {
+    display: block;
+    background-color: var(--cor-clara-1);
+    padding: 1em;
+    color: var(--cor-escura-2);
+}
+
+.rodape__lista {
+    display: none;
+}
+
+.rodape__lista__titulo-contato {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 1em;
+    
+}
+
+.rodape__lista__item-contato {
+    font-size: 0.75rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .vl {
+        margin: 0;
+        height: 9em;
+        width: 2px;
+        border-left: 1px solid var(--cor-escura-2) ;
+    }
+
+    .rodape__lista {
+        display: block;
+    }
+
+    .rodape {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items:normal;
+    }
+
+    .rodape__lista__titulo {
+        color: var(--cor-cinza-claro);
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    .rodape__lista__item {
+        display: flex;
+        align-items: center;
+        color: var(--cor-cinza-escuro);
+        padding: 0.5em;
+
+    }
+
+    .rodape__lista__item a {
+        color: var(--cor-cinza-escuro);
+        text-decoration: none;
+        margin-left: 0.6em;
+        font-size: 0.875rem;
+    }
+
+    .rodape__titulo {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .rodape {
+        padding: 3em 0;
+    }
+
+    .rodape__lista {
+        border-left: solid 1px var(--cor-cinza-claro);
+        padding-left: 1em;
+    }
+
+}

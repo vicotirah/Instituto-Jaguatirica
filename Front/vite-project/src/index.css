@@ -1,6 +1,7 @@
 @import url("../src/static/header.css");
 @import url("../src/static/about.css");
 @import url("../src/static/animais_regioes.css");
+@import url(../src/static/footer.css);
 
 :root {
   --cor-branco-principal: #f6f6f6;
