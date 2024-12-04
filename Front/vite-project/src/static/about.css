@@ -1,222 +1,239 @@
-.container-about {
-    display: flex;
-    justify-content: center;
-    padding: 1.25em;
-    background-color: var(--cor-clara-1); 
-  }
-  
-  .about {
-    text-align: center;
-    max-width: 100vw;
-    font-family: var(--fonte-principal);
-    color: var(--cor-escura-2); 
-  }
-  
-  .about-image-container {
-    display: flex;
-    justify-content: center; 
-  }
+.container-about,
+.container-about-2 {
+  display: flex;
+  justify-content: center;
+  padding: 1.25em;
+  background-color: var(--cor-clara-1);
+}
 
-  .about-image-container, .about-text {
-    margin-bottom:  1.25em;
-  }
-  
+.about {
+  text-align: center;
+  max-width: 100vw;
+  font-family: var(--fonte-principal);
+  color: var(--cor-escura-2);
+}
+
+.about-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image-container,
+.about-text {
+  margin-bottom: 1.25em;
+}
+
+.about-image {
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.titulo-about,
+.titulo-card {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5em 0;
+  color: var(--cor-escura-1);
+}
+
+.about-text {
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: justify;
+  text-indent: 1.5em;
+}
+
+.about-text,
+.about-button {
+  color: var(--cor-escura-2);
+  font-size: 1rem;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 0.625em 1.25em;
+  font-weight: 600;
+  background-color: var(--cor-media);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.about-button:hover {
+  opacity: 50%;
+}
+
+.about-list i {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: var(--cor-media);
+}
+
+.about-text-list {
+  margin: 1em 0 1em 0;
+  font-weight: 600;
+}
+
+.small {
+  font-size: .875rem;
+}
+
+.card-container-about-title {
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
+
+.card-container-about-title,
+.card-container-about {
+  background-color: var(--cor-animal-clara-2);
+}
+
+.card-container-about {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1em;
+}
+
+.card-about {
+  box-sizing: content-box;
+  background-color: var(--cor-clara-2);
+  margin: 0.5em 1.25em;
+  border: 1px solid #ddd;
+  border-radius: 1.125em;
+  padding: 1.5rem;
+  width: 15em;
+  height: 12em;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-about i {
+  font-size: 2rem;
+  color: var(--cor-escura-1);
+  margin-bottom: 1em;
+}
+
+.about-text-list-card {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+
+.about-text-card {
+  font-size: 0.95rem;
+  color: var(--cor-escura-1);
+  line-height: 1.6;
+}
+
+
+
+@media screen and (min-width: 700px) {
+
   .about-image {
-    width: 80%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .titulo-about, .titulo-card {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0.5em 0;
-    color: var(--cor-escura-1);
-  }
-  
-  .about-text {
-    font-weight: 400;
-    line-height: 1.6; 
-    text-align: justify;
-    text-indent: 1.5em;
+    width: 60%;
+    height: 70%;
   }
 
-  .about-text, .about-button {
-    color: var(--cor-escura-2);
-    font-size: 1rem;
+  .about-text,
+  .about-text-list {
+    font-size: 1.125rem;
   }
 
-  .about-button {
-    display: inline-block;
-    padding: 0.625em  1.25em;
-    font-weight: 600;
-    background-color: var(--cor-media);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin-bottom: 1em;
-  }
-  
-  .about-button:hover {
-    opacity: 50%; 
-  }
-  
   .about-list i {
-    font-size: 1.8rem;
-    margin-right: 1rem;
-    color: var(--cor-media);
-  }
-  
-  .about-text-list{
-    margin: 1em 0 1em 0;
-    font-weight: 600;
+    font-size: 2.5rem;
   }
 
   .small {
-    font-size: .875rem;
-  }
-  
-  .card-container-title {
-    margin: 0;
-    padding: 1em;
-    text-align: center;
+    font-size: 1rem;
   }
 
-  .card-container-title, .card-container {
-    background-color: var(--cor-animal-clara-2);
-  }
-
-  .card-container {
+  .card-container-about {
     display: flex;
-    gap: 1em; 
-    justify-content: center; 
-    flex-wrap: wrap; 
-    padding-bottom: 1em;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
   }
-  
-  .card {
+
+  .card-about {
     box-sizing: content-box;
-    background-color: var(--cor-clara-2); 
-    margin: 0.5em 1.25em;
-    border: 1px solid #ddd; 
-    border-radius: 1.125em; 
-    padding: 1.5rem;
-    width: 15em; 
-    height: 12em;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 0.1em;
+    padding: 1em;
+    width: 30em;
+    height: 15em;
   }
-  
-  .card i {
-    font-size: 2rem;
-    color: var(--cor-escura-1); 
-    margin-bottom: 1em;
-  }
+
   .about-text-list-card {
     font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
   }
-  
-  
+
   .about-text-card {
-    font-size: 0.95rem;
-    color: var(--cor-escura-1);
-    line-height: 1.6;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about-image {
+    width: 30%;
+    height: 40%;
   }
 
-  @media screen and (min-width: 700px) {
- 
-    .about-image {
-      width: 60%;
-      height: 70%;
-    }
-    
-    .about-text, .about-text-list {
-      font-size: 1.125rem;
-    }
-     
-    .about-list i {
-      font-size: 2.5rem;
-    }
-      
-    .small {
-      font-size: 1rem;
-    }
-    
-    .card-container {
-      display: flex; 
-      justify-content: space-evenly; 
-      flex-wrap: nowrap; 
-    }
-      
-    .card {
-      box-sizing: content-box;
-      margin: 0.1em;
-      padding: 1em;
-      width: 30em; 
-      height: 15em;
-    }
-    
-    .about-text-list-card {
-      font-size: 1.2rem;
-    }
-    
-    .about-text-card {
-      font-size: 0.85rem;
-    }
+  .titulo-about,
+  .titulo-card {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin: 0.5em 0;
   }
 
-  @media screen and (min-width: 1000px) {
-    .about-image {
-      width: 30%;
-      height: 40%;
-    }
-
-    .titulo-about,  .titulo-card {
-      font-size: 2.25rem;
-      font-weight: 600;
-      margin: 0.5em 0;
-    }
-
-    .about-text, .about-text-list {
-      font-size: 1.25rem;
-    }
-
-    .about-list i {
-      font-size: 3.25rem;
-    }
-
-    .small {
-      font-size: 1.15rem;
-    }
-
-    .card-container {
-      display: flex; 
-      justify-content: space-around; 
-      flex-wrap: nowrap;
-      margin-left: 10em;
-      margin-right: 10em;
-    }
-
-    .card i {
-      font-size: 3rem;
-    }
-
-    .card {
-      box-sizing: content-box;
-      width: 20em; 
-      height: 15em;
-    }
-
-    .about-text-list-card {
-      font-size: 1.5rem;
-    }
-    
-    .about-text-card {
-      font-size: 1rem;
-    }
-
+  .about-text,
+  .about-text-list {
+    font-size: 1.25rem;
   }
+
+  .about-list i {
+    font-size: 3.25rem;
+  }
+
+  .small {
+    font-size: 1.15rem;
+  }
+
+  .card-container-about {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 50vh;
+  }
+
+  .card-about i {
+    font-size: 2rem;
+  }
+
+  .card-about {
+    box-sizing: content-box;
+    width: 50em;
+    height: 15em;
+  }
+
+  .about-text-list-card {
+    font-size: 1.25rem;
+  }
+
+  .about-text-card {
+    font-size: 1rem;
+  }
+
+  .container-about-2 {
+    height: 80vh;
+  }
+
+
+}

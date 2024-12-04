@@ -1,7 +1,5 @@
 @import url("../src/static/header.css");
-@import url("../src/static/about.css");
-@import url("../src/static/animais_regioes.css");
-@import url(../src/static/footer.css);
+@import url("../src/static/footer.css");
 
 :root {
   --cor-branco-principal: #f6f6f6;
@@ -9,8 +7,8 @@
   --cor-clara-1: #F2E1CD;
   --cor-clara-2: #D7B68B;
   --cor-media: #9F7541;
-  --cor-escura-1:#3E2111;
-  --cor-escura-2:#19090A;
+  --cor-escura-1: #3E2111;
+  --cor-escura-2: #19090A;
   --cor-verde-escuro: #163513;
   --cor-verde-escuro-hover: #36862f82;
   --cor-escura-2-hover: #4414178f;
@@ -23,7 +21,7 @@
   --cor-label-ext2: #ffd000;
   --cor-label-ext3: #ffae00;
   --cor-label-ext4: #ff6f00;
-  --cor-label-ext6:#000000;
+  --cor-label-ext6: #000000;
   --cor-label-ave: #37d2b8;
   --cor-label-mam: #b175c7;
   --cor-label-rep: #6d8e2f;
@@ -35,90 +33,123 @@ a {
   color: inherit;
 }
 
-.container, .list-our-animals-item,
-.program, .card  {
+.container,
+.list-our-animals-item,
+.program,
+.card {
   box-sizing: border-box;
 }
 
-.container,.principal,.program,
-.btn-ally, .bnt-about {
+.container,
+.principal,
+.program,
+.btn-ally,
+.bnt-about {
   padding: 0.5em;
 }
 
-.title-our-animals, .title-program {
+.title-our-animals,
+.title-program {
   padding: 0.25em;
 }
 
-.txt-principal, .list-our-animals,
+.txt-principal,
+.list-our-animals,
 .list-our-animals-item {
   margin: 0.25em;
 }
 
-.container, .our-animals {
+.container,
+.our-animals {
   height: 40vh;
 }
 
-.container,.principal,
-.program, .ally, .txt-description {
+.container,
+.principal,
+.program,
+.ally,
+.txt-description {
   width: 100vw;
 }
 
-.subtitle-program, .bnt-about,
-.title-our-animals, .container,.principal,.program,
-.btn-ally, .bnt-about,
+.subtitle-program,
+.bnt-about,
+.title-our-animals,
+.container,
+.principal,
+.program,
+.btn-ally,
+.bnt-about,
 .title-principal-dkt {
   font-family: var(--fonte-primaria);
 }
 
-.title-our-animals,.title-program, 
-.title-ally,.list-our-animals-item-title,
-.btn-ally, .list-our-animals-item-title, 
-.btn-ally, .title-principal-dkt{
+.title-our-animals,
+.title-program,
+.title-ally,
+.list-our-animals-item-title,
+.btn-ally,
+.list-our-animals-item-title,
+.btn-ally,
+.title-principal-dkt {
   font-weight: 600;
 }
 
-.title-our-animals, .title-program, 
-.title-ally, .list-our-animals-item-title, 
-.btn-ally, .title-principal-dkt {
+.title-our-animals,
+.title-program,
+.title-ally,
+.list-our-animals-item-title,
+.btn-ally,
+.title-principal-dkt {
   font-size: 1.25rem;
   text-align: center;
 }
 
-.txt-principal, .subtitle-program {
+.txt-principal,
+.subtitle-program {
   font-size: 1rem;
 }
 
-.subtitle-program, 
-.btn-ally, .bnt-about,
-.container, .principal, 
-.program, .title-principal-dkt {
+.subtitle-program,
+.btn-ally,
+.bnt-about,
+.container,
+.principal,
+.program,
+.title-principal-dkt {
   color: var(--cor-branco-principal);
 }
 
-.our-animals, .ally {
+.our-animals,
+.ally {
   color: var(--cor-escura-2);
 }
 
-.btn-ally, .bnt-about {
+.btn-ally,
+.bnt-about {
   border-radius: 0.5em;
   border-color: transparent;
   cursor: pointer;
 }
 
-.list-our-animals-item, .card {
+.list-our-animals-item,
+.card {
   background-color: var(--cor-media);
   border-radius: 1em;
 }
 
-.program-item-img, .ally-img {
+.program-item-img,
+.ally-img {
   border-radius: 1em;
 }
 
-.container, .btn-ally {
+.container,
+.btn-ally {
   background-color: var(--cor-escura-1);
 }
 
-.title-our-animals, .title-program {
+.title-our-animals,
+.title-program {
   padding-bottom: 0;
 }
 
@@ -146,9 +177,9 @@ a {
 
 .principal {
   height: 35vh;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .txt-principal {
@@ -239,37 +270,44 @@ a {
 
 @media screen and (min-width: 380px) {
 
-  .title-our-animals, .title-program {
+  .title-our-animals,
+  .title-program {
     padding: 0.5em;
   }
-  
-  .container, .our-animals {
+
+  .container,
+  .our-animals {
     height: 35vh;
   }
-  
-  .list-our-animals-item, .card {
+
+  .list-our-animals-item,
+  .card {
     background-color: var(--cor-media);
     border-radius: 1em;
   }
-  
-  .txt-principal, .list-our-animals, 
-  .list-our-animals-item, .btn-ally {
+
+  .txt-principal,
+  .list-our-animals,
+  .list-our-animals-item,
+  .btn-ally {
     margin: 0.5em;
   }
 
-  .title-our-animals, .title-program,
+  .title-our-animals,
+  .title-program,
   .title-ally {
     font-size: 1.5rem;
   }
 
-  .subtitle-program, .btn-ally {
+  .subtitle-program,
+  .btn-ally {
     font-size: 1.25rem;
   }
-  
+
   .container-img-home {
     height: 40vh;
   }
-  
+
   .bnt-about {
     margin: 20em 0 0 0.75em;
   }
@@ -282,31 +320,33 @@ a {
   .program {
     height: 180vh;
   }
-  
+
   .card {
     height: 20em;
     padding: 1em 0.5em;
     margin: 1em auto;
   }
-  
+
   .program-item-img {
     width: 90%;
     height: 80%;
   }
-  
+
   .ally {
     height: 60vh;
   }
 }
 
 @media screen and (min-width: 400px) {
- 
-  .subtitle-program, .btn-ally, 
-  .txt-principal  {
+
+  .subtitle-program,
+  .btn-ally,
+  .txt-principal {
     font-size: 1.125rem;
   }
 
-  .container, .our-animals {
+  .container,
+  .our-animals {
     height: 40vh;
   }
 
@@ -321,33 +361,36 @@ a {
   .ally-img {
     margin-bottom: 1em;
   }
-    
+
 }
 
 @media screen and (min-width: 430px) {
- 
-  .subtitle-program, .btn-ally, 
-  .txt-principal  {
+
+  .subtitle-program,
+  .btn-ally,
+  .txt-principal {
     font-size: 1.25rem;
   }
 
- .program {
-   height: 165vh;
- }
+  .program {
+    height: 165vh;
+  }
 
- .ally {
-  height: 65vh;
-}   
+  .ally {
+    height: 65vh;
+  }
 }
 
 @media screen and (min-width: 500px) {
 
-  .title-our-animals, .title-program, 
+  .title-our-animals,
+  .title-program,
   .title-ally {
     font-size: 1.5rem;
   }
- 
-  .subtitle-program, .btn-ally, 
+
+  .subtitle-program,
+  .btn-ally,
   .txt-principal {
     font-size: 1rem;
   }
@@ -370,7 +413,7 @@ a {
     display: block;
     height: 90vh;
   }
-  
+
   .list-program {
     display: flex;
     flex-wrap: wrap;
@@ -394,98 +437,103 @@ a {
     height: 65vh;
   }
 
-  
+
   .btn-ally {
     box-sizing: content-box;
     text-align: center;
     width: 20%;
   }
-    
+
 }
 
 @media screen and (min-width: 700px) {
 
-.txt-principal, .title-ally {
-  padding: 0.5em;
-}
+  .txt-principal,
+  .title-ally {
+    padding: 0.5em;
+  }
 
-.container, .our-animals {
-  box-sizing: border-box;
-  height: 45vh;
-  max-width: 100vw;
-}
+  .container,
+  .our-animals {
+    box-sizing: border-box;
+    height: 45vh;
+    max-width: 100vw;
+  }
 
-.container-img-home, .ally {
-  height: 65vh;
-}
+  .container-img-home,
+  .ally {
+    height: 65vh;
+  }
 
-.card, .ally {
-  background-color: var(--cor-clara-2);
-}
+  .card,
+  .ally {
+    background-color: var(--cor-clara-2);
+  }
 
-.title-our-animals, 
-.title-program, .list-our-animals-item-title {
-  font-size: 2rem;
-}
+  .title-our-animals,
+  .title-program,
+  .list-our-animals-item-title {
+    font-size: 2rem;
+  }
 
-.bnt-about {
-  font-size: 1.5rem;
-  margin: 22em 0 0 2em;
-  width: 30%;
-}
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 22em 0 0 2em;
+    width: 30%;
+  }
 
-.principal {
-  height: 35vh;
-  background-repeat: repeat;
-  background-size: contain;
-}
+  .principal {
+    height: 35vh;
+    background-repeat: repeat;
+    background-size: contain;
+  }
 
-.txt-principal {
-  text-align: center;
-  border-radius: 1em;
-  background-color: var(--cor-escura-2);
-  font-size: 1.5rem;
-}
+  .txt-principal {
+    text-align: center;
+    border-radius: 1em;
+    background-color: var(--cor-escura-2);
+    font-size: 1.5rem;
+  }
 
-.list-our-animals-item {
-  width: 15em;
-  height: 10m;
-  padding: 1em;
-  text-align: center;
-}
+  .list-our-animals-item {
+    width: 15em;
+    height: 10m;
+    padding: 1em;
+    text-align: center;
+  }
 
-.program {
-  display: block;
-  height: 60vh;
-}
+  .program {
+    display: block;
+    height: 60vh;
+  }
 
-.card  {
-  margin: 0.5em;
-}
+  .card {
+    margin: 0.5em;
+  }
 
-.program-item-img {
-  width: 80%;
-  height: 70%;
-  margin: 0.5em 0;
-}
+  .program-item-img {
+    width: 80%;
+    height: 70%;
+    margin: 0.5em 0;
+  }
 
-.subtitle-program {
-  color: var(--cor-escura-2);
-}
+  .subtitle-program {
+    color: var(--cor-escura-2);
+  }
 
-.ally {
-  display: block;
-  align-items: center;
-  text-align: center;
-}
+  .ally {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
 
-.title-ally {
-  font-size: 2.5rem;
-}
+  .title-ally {
+    font-size: 2.5rem;
+  }
 
-.btn-ally {
-  font-size: 1.25rem;
-}
+  .btn-ally {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -515,7 +563,9 @@ a {
     font-size: 2.5rem;
   }
 
-  .container, .principal, .our-animals {
+  .container,
+  .principal,
+  .our-animals {
     box-sizing: border-box;
     height: 35vh;
     width: 100vw;
@@ -555,7 +605,9 @@ a {
     font-size: 2.5rem;
   }
 
-  .container, .principal, .our-animals {
+  .container,
+  .principal,
+  .our-animals {
     box-sizing: border-box;
     height: 40vh;
     width: 100vw;
@@ -566,23 +618,23 @@ a {
     height: 50vh;
   }
 
-  .card  {
+  .card {
     margin: 1em;
   }
-  
+
   .program-item-img {
     width: 80%;
     height: 80%;
     margin: 0.5em 0;
   }
-  
+
   .subtitle-program {
     color: var(--cor-escura-2);
     font-size: 1.125rem;
   }
 
   .ally {
-    height: 60vh;
+    height: 100vh;
   }
 }
 
@@ -595,7 +647,7 @@ a {
 
   .bnt-about {
     font-size: 1.5rem;
-    margin: 21em 0 0 2em;
+    margin: 18em 0 0 2em;
     width: 15%;
     padding: 0.5em;
   }
@@ -613,9 +665,11 @@ a {
     font-size: 3rem;
   }
 
-  .container, .principal, .our-animals {
+  .container,
+  .principal,
+  .our-animals {
     box-sizing: border-box;
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
   }
 
@@ -624,7 +678,8 @@ a {
     height: 15m;
   }
 
-  .title-our-animals, .title-program{
+  .title-our-animals,
+  .title-program {
     font-size: 3rem;
     margin-bottom: 0.5em;
   }
@@ -635,7 +690,7 @@ a {
 
   .program {
     display: block;
-    height: 100vh;  
+    height: 120vh;
   }
 
   .card {
@@ -644,9 +699,10 @@ a {
   }
 
   .ally {
-    height: 130vh;
+    height: 150vh;
   }
-  .ally-img{
+
+  .ally-img {
     margin-bottom: 1em;
     width: 80%;
   }
@@ -679,7 +735,9 @@ a {
     font-size: 3rem;
   }
 
-  .container, .principal, .our-animals {
+  .container,
+  .principal,
+  .our-animals {
     box-sizing: border-box;
     height: 80vh;
     width: 100vw;
@@ -690,7 +748,8 @@ a {
     height: 15m;
   }
 
-  .title-our-animals, .title-program{
+  .title-our-animals,
+  .title-program {
     font-size: 3rem;
     margin-bottom: 0.5em;
   }
@@ -701,7 +760,7 @@ a {
 
   .program {
     display: block;
-    height: 100vh;  
+    height: 100vh;
   }
 
   .card {
@@ -712,7 +771,8 @@ a {
   .ally {
     height: 100vh;
   }
-  .ally-img{
+
+  .ally-img {
     margin-bottom: 1em;
     width: 80%;
     height: 70%;
