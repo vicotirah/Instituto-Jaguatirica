@@ -15,6 +15,7 @@ body{
 fieldset{
     display: flex;
     flex-direction: column;
+    justify-self: center;
     line-height: 2em;
     padding-left: 10vw;
     padding-right:10vw
@@ -62,4 +63,21 @@ form{
 }
 .conteudo{
     display: flex;
+}
+
+.titulologin{
+    font-size: 1.75rem;
+    margin-top: 50%;
+    margin-bottom: 7%;
+}
+
+.tituloregistro{
+    font-size: 1.75rem;
+    margin-top: 20%;
+}
+
+.rodape{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }
