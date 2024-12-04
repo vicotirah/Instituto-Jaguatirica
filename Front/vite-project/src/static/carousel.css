@@ -1,69 +1,75 @@
 .carousel {
     position: relative;
-    width: 100%; /* Garante que o carrossel ocupa toda a largura */
-    overflow: hidden; /* Esconde itens fora da área visível */
+    width: 100%;
+    /* Garante que o carrossel ocupa toda a largura */
+    overflow: hidden;
+    /* Esconde itens fora da área visível */
     display: flex;
-    flex-direction: column; /* Alinha bullets abaixo do carrossel */
+    flex-direction: column;
+    /* Alinha bullets abaixo do carrossel */
     z-index: 0;
 }
 
 
 .carousel-list {
     display: flex;
-    overflow-x: scroll; /* Habilita a rolagem horizontal */
-    overflow-y: hidden; /* Impede rolagem vertical */
-    scroll-behavior: smooth; /* Suaviza a rolagem */
+    overflow-x: scroll;
+    /* Habilita a rolagem horizontal */
+    overflow-y: hidden;
+    /* Impede rolagem vertical */
+    scroll-behavior: smooth;
+    /* Suaviza a rolagem */
     padding: 0;
     margin: 0;
     list-style: none;
     position: relative;
-    -ms-overflow-style: none; /* Remove scrollbar no IE e Edge */
-    scrollbar-width: none; /* Remove scrollbar no Firefox */
+    -ms-overflow-style: none;
+    /* Remove scrollbar no IE e Edge */
+    scrollbar-width: none;
+    /* Remove scrollbar no Firefox */
     z-index: 0;
-    justify-content: center;
 }
 
 .carousel-item {
-    flex: 0 0 auto; /* Itens não se expandem além de seu tamanho */
-    width: 70%; 
+    flex: 0 0 auto;
+    /* Itens não se expandem além de seu tamanho */
+    width: 70%;
     height: 50%;
     z-index: 0;
 }
 
 
-@media screen and (min-width: 390px){
+@media screen and (min-width: 390px) {
 
     .carousel-list {
         margin-top: 0.5em;
     }
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
 
     .carousel-item {
         width: 45%;
     }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
 
     .carousel-item {
         width: 35%;
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
 
     .carousel-item {
-        width: 30%; 
+        width: 30%;
     }
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 1300px) {
 
     .carousel-item {
-        width: 20%; 
+        width: 20%;
     }
 }
-
-

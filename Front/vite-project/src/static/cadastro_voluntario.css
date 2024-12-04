@@ -4,28 +4,34 @@
     --cor-clara-1: #F2E1CD;
     --cor-clara-2: #D7B68B;
     --cor-media: #9F7541;
-    --cor-escura-1:#3E2111;
-    --cor-escura-2:#19090A;
+    --cor-escura-1: #3E2111;
+    --cor-escura-2: #19090A;
     --cor-verde-escuro: #163513;
     --fonte-primaria: "Poppins", sans-serif;
-  }
-body{
+}
+
+
+.body-vol {
     background-color: var(--cor-clara-2);
 }
-fieldset{
+
+fieldset {
     display: flex;
     flex-direction: column;
+    justify-self: center;
     line-height: 2em;
     padding-left: 10vw;
-    padding-right:10vw
+    padding-right: 10vw
 }
-h1{
+
+h1 {
     margin: 2vw;
     font-size: 1.75vw;
     text-align: center;
     color: var(--cor-label-ext4);
     font-weight: bolder;
 }
+
 /*
 header, header h1{
     display: block;
@@ -33,11 +39,11 @@ header, header h1{
     margin:5vw;
     font-size: 5vw;
 }*/
-input{
+input {
     line-height: 2em;
 }
 
-#btnGerar{
+#btnGerar {
     margin-top: 0.625em;
     height: 2.5em;
     background-color: #597814;
@@ -47,19 +53,39 @@ input{
     text-align: center;
 }
 
-form{
+form {
     margin-bottom: 1.25rem;
 }
-.cadastro{
+
+.cadastro {
     width: 50vw;
     align-items: center;
     display: block;
 }
-.boxcad{
+
+.boxcad {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.conteudo{
+
+.conteudo {
     display: flex;
+}
+
+.titulologin {
+    font-size: 1.75rem;
+    margin-top: 50%;
+    margin-bottom: 7%;
+}
+
+.tituloregistro {
+    font-size: 1.75rem;
+    margin-top: 20%;
+}
+
+.rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }
