@@ -32,16 +32,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
-<<<<<<< HEAD
-.container, .list-our-animals-item,
-.program, .card  {
-=======
 
 .container,
 .list-our-animals-item,
 .program,
 .card {
->>>>>>> 6459dc42159e25ea2701219033560ffc542c6804
   box-sizing: border-box;
 }
 
