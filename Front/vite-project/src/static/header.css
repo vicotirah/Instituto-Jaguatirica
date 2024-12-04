@@ -287,7 +287,12 @@
   font-size: 1.25rem;
 }
 
+<<<<<<< HEAD
+
+.dropdown-menu{
+=======
 .dropdown-menu {
+>>>>>>> 6459dc42159e25ea2701219033560ffc542c6804
   display: none;
 }
 
