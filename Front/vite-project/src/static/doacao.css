@@ -66,6 +66,7 @@
   }
   
   .input-doacao {
+
     width: 100%;
     padding: 0.5em;
     border: 1px solid #ccc;
@@ -115,7 +116,8 @@
   .botao-doar {
     font-family: var(--fonte-principal);
     display: flex;
-    justify-self: center;
+    justify-content: center;
+    
     background-color: var(--cor-media);
     color: #fff;
     border: none;
