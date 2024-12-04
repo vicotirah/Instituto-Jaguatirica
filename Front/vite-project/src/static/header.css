@@ -370,12 +370,13 @@
 @media screen and (min-width: 1400px) {
 
   .menu-item-dkt {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0 1em;
   }
 
-  .menu-item-dkt a {
-    font-size: 1.5rem;
+  .menu-item-dkt a,
+  .dropdown-item a {
+    font-size: 2rem;
   }
 
 }
