@@ -210,7 +210,7 @@
     flex-wrap: nowrap;
     margin-left: 1em;
     margin-right: 1em;
-    height: 50vh;
+    height: 50vh  ;
   }
 
   .card-about i {
