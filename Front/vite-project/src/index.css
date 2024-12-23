@@ -33,123 +33,85 @@ a {
   color: inherit;
 }
 
-.container,
-.list-our-animals-item,
-.program,
+.container, .list-our-animals-item, .program, 
 .card {
   box-sizing: border-box;
 }
 
-.container,
-.principal,
-.program,
-.btn-ally,
-.bnt-about {
+.container, .principal, .program,
+.btn-ally, .bnt-about {
   padding: 0.5em;
 }
 
-.title-our-animals,
-.title-program {
+.title-our-animals, .title-program {
   padding: 0.25em;
 }
 
-.txt-principal,
-.list-our-animals,
-.list-our-animals-item {
+.txt-principal, .list-our-animals, .list-our-animals-item {
   margin: 0.25em;
 }
 
-.container,
-.our-animals {
+.container, .our-animals {
   height: 40vh;
 }
 
-.container,
-.principal,
-.program,
-.ally,
-.txt-description {
+.container, .principal, .program,
+.ally, .txt-description {
   width: 100vw;
 }
 
-.subtitle-program,
-.bnt-about,
-.title-our-animals,
-.container,
-.principal,
-.program,
-.btn-ally,
-.bnt-about,
-.title-principal-dkt {
+.subtitle-program, .bnt-about, .title-our-animals,
+.container, .principal, .program,
+.btn-ally, .bnt-about, .title-principal-dkt {
   font-family: var(--fonte-primaria);
 }
 
-.title-our-animals,
-.title-program,
-.title-ally,
+.title-our-animals, .title-program, .title-ally,
 .list-our-animals-item-title,
-.btn-ally,
-.list-our-animals-item-title,
-.btn-ally,
-.title-principal-dkt {
+.btn-ally, .title-principal-dkt {
   font-weight: 600;
 }
 
-.title-our-animals,
-.title-program,
-.title-ally,
-.list-our-animals-item-title,
-.btn-ally,
-.title-principal-dkt {
+.title-our-animals, .title-program, .title-ally,
+.list-our-animals-item-title, .btn-ally, .title-principal-dkt {
   font-size: 1.25rem;
   text-align: center;
 }
 
-.txt-principal,
-.subtitle-program {
+.txt-principal, .subtitle-program {
   font-size: 1rem;
 }
 
-.subtitle-program,
-.btn-ally,
-.bnt-about,
-.container,
-.principal,
-.program,
+.subtitle-program, .btn-ally, .bnt-about,
+.container, .principal, .program,
 .title-principal-dkt {
   color: var(--cor-branco-principal);
 }
 
-.our-animals,
-.ally {
+.our-animals, .ally {
   color: var(--cor-escura-2);
 }
 
-.btn-ally,
-.bnt-about {
+.btn-ally, .bnt-about {
   border-radius: 0.5em;
   border-color: transparent;
   cursor: pointer;
 }
 
-.list-our-animals-item,
-.card {
+.list-our-animals-item, .card {
   background-color: var(--cor-media);
   border-radius: 1em;
 }
 
-.program-item-img,
-.ally-img {
+.program-item-img, .ally-img {
   border-radius: 1em;
 }
 
-.container,
-.btn-ally {
+.container, .btn-ally {
   background-color: var(--cor-escura-1);
 }
 
-.title-our-animals,
-.title-program {
+.title-our-animals, .title-program {
   padding-bottom: 0;
 }
 
@@ -209,25 +171,27 @@ a {
   text-align: center;
 }
 
-.list-our-animals-item-img {
+.list-our-animals-item-img, .program-item-img {
   height: 70%;
   width: 80%;
 }
 
 .program {
   display: block;
-  height: 165vh;
+  height: 45vh;
   align-items: center;
   justify-content: center;
 }
 
 .list-program {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 1em;
 }
 
 .card {
   display: block;
+  box-sizing: content-box;
   text-align: center;
   height: 15em;
   width: 80%;
@@ -237,9 +201,8 @@ a {
 }
 
 .program-item-img {
-  width: 80%;
-  height: 70%;
   margin: 0.5em 0;
+  height: 8.5em;
 }
 
 .subtitle-program {
@@ -270,37 +233,29 @@ a {
 
 @media screen and (min-width: 380px) {
 
-  .title-our-animals,
-  .title-program {
+  .title-our-animals, .title-program {
     padding: 0.5em;
   }
 
-  .container,
-  .our-animals {
+  .container, .our-animals {
     height: 35vh;
   }
 
-  .list-our-animals-item,
-  .card {
+  .list-our-animals-item, .card {
     background-color: var(--cor-media);
     border-radius: 1em;
   }
 
-  .txt-principal,
-  .list-our-animals,
-  .list-our-animals-item,
+  .txt-principal, .list-our-animals, .list-our-animals-item,
   .btn-ally {
     margin: 0.5em;
   }
 
-  .title-our-animals,
-  .title-program,
-  .title-ally {
+  .title-our-animals, .title-program, .title-ally {
     font-size: 1.5rem;
   }
 
-  .subtitle-program,
-  .btn-ally {
+  .subtitle-program, .btn-ally {
     font-size: 1.25rem;
   }
 
@@ -318,7 +273,7 @@ a {
   }
 
   .program {
-    height: 180vh;
+    height: 45vh;
   }
 
   .card {
@@ -329,7 +284,7 @@ a {
 
   .program-item-img {
     width: 90%;
-    height: 80%;
+    height: 10em;
   }
 
   .ally {
@@ -339,14 +294,11 @@ a {
 
 @media screen and (min-width: 400px) {
 
-  .subtitle-program,
-  .btn-ally,
-  .txt-principal {
+  .subtitle-program, .btn-ally, .txt-principal {
     font-size: 1.125rem;
   }
 
-  .container
-  .our-animals {
+  .container .our-animals {
     height: 40vh;
   }
 
@@ -354,26 +306,15 @@ a {
     height: 35vh;
   }
 
-  .program {
-    height: 165vh;
-  }
-
   .ally-img {
     margin-bottom: 1em;
   }
-
 }
 
 @media screen and (min-width: 430px) {
 
-  .subtitle-program,
-  .btn-ally,
-  .txt-principal {
+  .subtitle-program, .btn-ally, .txt-principal {
     font-size: 1.25rem;
-  }
-
-  .program {
-    height: 165vh;
   }
 
   .ally {
@@ -383,15 +324,11 @@ a {
 
 @media screen and (min-width: 500px) {
 
-  .title-our-animals,
-  .title-program,
-  .title-ally {
+  .title-our-animals, .title-program, .title-ally {
     font-size: 1.5rem;
   }
 
-  .subtitle-program,
-  .btn-ally,
-  .txt-principal {
+  .subtitle-program, .btn-ally, .txt-principal {
     font-size: 1rem;
   }
 
@@ -443,36 +380,29 @@ a {
     text-align: center;
     width: 20%;
   }
-
 }
 
 @media screen and (min-width: 700px) {
 
-  .txt-principal,
-  .title-ally {
+  .txt-principal, .title-ally {
     padding: 0.5em;
   }
 
-  .container,
-  .our-animals {
+  .container, .our-animals {
     box-sizing: border-box;
     height: 45vh;
     max-width: 100vw;
   }
 
-  .container-img-home,
-  .ally {
+  .container-img-home, .ally {
     height: 65vh;
   }
 
-  .card,
-  .ally {
+  .card, .ally {
     background-color: var(--cor-clara-2);
   }
 
-  .title-our-animals,
-  .title-program,
-  .list-our-animals-item-title {
+  .title-our-animals, .title-program, .list-our-animals-item-title {
     font-size: 2rem;
   }
 
@@ -563,9 +493,7 @@ a {
     font-size: 2.5rem;
   }
 
-  .container,
-  .principal,
-  .our-animals {
+  .container, .principal, .our-animals {
     box-sizing: border-box;
     height: 35vh;
     width: 100vw;
@@ -607,9 +535,7 @@ a {
     font-size: 2.5rem;
   }
 
-  .container,
-  .principal,
-  .our-animals {
+  .container, .principal, .our-animals {
     box-sizing: border-box;
     height: 35vh;
     width: 100vw;
@@ -623,10 +549,7 @@ a {
   .ally {
     height: 55vh;
   }
-
-  
 }
-
 
 @media screen and (min-width: 1000px) {
 
@@ -655,9 +578,7 @@ a {
     font-size: 2.5rem;
   }
 
-  .container,
-  .principal,
-  .our-animals {
+  .container, .principal, .our-animals {
     box-sizing: border-box;
     height: 35vh;
     width: 100vw;
@@ -715,9 +636,7 @@ a {
     font-size: 3rem;
   }
 
-  .container,
-  .principal,
-  .our-animals {
+  .container, .principal, .our-animals {
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
@@ -728,8 +647,7 @@ a {
     height: 15m;
   }
 
-  .title-our-animals,
-  .title-program {
+  .title-our-animals, .title-program {
     font-size: 3rem;
     margin-bottom: 0.5em;
   }
@@ -785,9 +703,7 @@ a {
     font-size: 3rem;
   }
 
-  .container,
-  .principal,
-  .our-animals {
+  .container, .principal, .our-animals {
     box-sizing: border-box;
     height: 80vh;
     width: 100vw;
@@ -798,8 +714,7 @@ a {
     height: 15m;
   }
 
-  .title-our-animals,
-  .title-program {
+  .title-our-animals, .title-program {
     font-size: 3rem;
     margin-bottom: 0.5em;
   }
