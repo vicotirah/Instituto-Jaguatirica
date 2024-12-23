@@ -1,44 +1,38 @@
-:root {
-    --cor-branco-principal: #f6f6f6;
-    --cor-branco-frio: hsl(0, 0%, 100%);
-    --cor-clara-1: #F2E1CD;
-    --cor-clara-2: #D7B68B;
-    --cor-media: #9F7541;
-    --cor-escura-1: #3E2111;
-    --cor-escura-2: #19090A;
-    --cor-verde-escuro: #163513;
-    --fonte-primaria: "Poppins", sans-serif;
-}
-
-
 .body-vol {
-    background-color: var(--cor-clara-2);
+    background-color: var(--cor-animal-clara-1);
+    height: 100vh;
+    font-family: var(--fonte-primaria);
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    line-height: 2em;
-    padding-left: 10vw;
-    padding-right: 10vw
+    line-height: 1.5em;
+    padding: 0.5em 1em;
+    font-family: var(--fonte-primaria);
 }
 
-h1 {
-    margin: 2vw;
-    font-size: 1.75vw;
+input, #estado {
+    border-radius: 1em;
+    border: 1px solid var(--cor-escura-1);
+    font-family: var(--fonte-primaria);
+}
+
+label {
+    font-size: 0.85em;
+    font-family: var(--fonte-primaria);
+}
+
+h1, .titulovol {
+    margin: 1em;
+    font-size: 1.5rem;
     text-align: center;
     color: var(--cor-label-ext4);
-    font-weight: bolder;
+    font-weight: 600;
+    font-family: var(--fonte-primaria);
 }
 
-/*
-header, header h1{
-    display: block;
-    text-align: center;
-    margin:5vw;
-    font-size: 5vw;
-}*/
 input {
     line-height: 2em;
 }
@@ -51,6 +45,10 @@ input {
     border-radius: 15%;
     width: min-content;
     text-align: center;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 form {
@@ -63,29 +61,36 @@ form {
     display: block;
 }
 
-.boxcad {
+.boxcad, .boxcad-login  {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.boxcad-login {
+    height: 30vh;
+    margin-bottom: 8em;
 }
 
 .conteudo {
     display: flex;
 }
 
-.titulologin {
-    font-size: 1.75rem;
-    margin-top: 50%;
-    margin-bottom: 7%;
+.tituloregistro, .titulologin {
+    font-size: 1.5rem;
+    margin: 0.5em 0;
 }
 
-.tituloregistro {
-    font-size: 1.75rem;
-    margin-top: 20%;
+legend {
+    margin:0;
 }
 
-.rodape {
-    position: absolute;
+footer {
+    position: relative;
     bottom: 0;
-    width: 100vw;
 }
+
+.login-img {
+    width: 125%;
+}
+

@@ -109,7 +109,7 @@
   border-radius: 1.125em;
   padding: 1.5rem;
   width: 15em;
-  height: 12em;
+  height: 15em;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -210,7 +210,7 @@
     flex-wrap: nowrap;
     margin-left: 1em;
     margin-right: 1em;
-    height: 50vh  ;
+    height: 25vh  ;
   }
 
   .card-about i {
@@ -232,8 +232,16 @@
   }
 
   .container-about-2 {
-    height: 80vh;
+    height: 30vh;
   }
 
+}
+
+@media screen and (min-width: 1200px) {
+
+  .card-container-about {
+    margin-right: 1em;
+    height: 35vh  ;
+  }
 
 }
