@@ -7,6 +7,7 @@
   <!---Styles-->
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./static/carousel.css" />
   <!---Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,27 +118,29 @@
   </section>
   <section class="container program">
     <h1 class="title-program">Programas do Instituto</h1>
-    <ul class="list-program">
-      <li class="list-program-item card">
-        <img class="program-item-img" src="./assets/images/Animais/mamifero/micoleao/micoleao.jfif">
-        <h2 class="subtitle-program"><a href="./templates/programas.html">Monitoramento de Espécies Ameaçadas</a></h2>
-      </li>
-      <li class="list-program-item card">
-        <img class="program-item-img" src="./assets/images/Animais/ave/ararinha_azul/Ararinha-azul.png">
-        <h2 class="subtitle-program"><a href="./templates/programas.html">Combate ao Tráfico de Animais Silvestres</a>
-        </h2>
-      </li>
-      <li class="list-program-item card">
-        <img class="program-item-img" src="./assets/images/Animais/mamifero/tatucanastra/tatu_canastra.jpg">
-        <h2 class="subtitle-program"><a href="./templates/programas.html">Resgate e Reabilitação de Animais
-            Silvestres</a></h2>
-      </li>
-      <li class="list-program-item card">
-        <img class="program-item-img" src="./assets/images/Animais/mamifero/jaguatirica/jaguaritica filhota.png">
-        <h2 class="subtitle-program"><a href="./templates/programas.html">Apadrinhamento de Animais e Apoio à Fauna</a>
-        </h2>
-      </li>
-    </ul>
+    <div class="carousel">
+      <ul class="list-program carousel-list">
+        <li class="list-program-item card carousel-item">
+          <img class="program-item-img" src="./assets/images/Animais/mamifero/micoleao/micoleao.jfif">
+          <h2 class="subtitle-program"><a href="./templates/programas.html">Monitoramento de Espécies Ameaçadas</a></h2>
+        </li>
+        <li class="list-program-item card carousel-item">
+          <img class="program-item-img" src="./assets/images/Animais/ave/ararinha_azul/Ararinha-azul.png">
+          <h2 class="subtitle-program"><a href="./templates/programas.html">Combate ao Tráfico de Animais Silvestres</a>
+          </h2>
+        </li>
+        <li class="list-program-item card carousel-item">
+          <img class="program-item-img" src="./assets/images/Animais/mamifero/tatucanastra/tatu_canastra.jpg">
+          <h2 class="subtitle-program"><a href="./templates/programas.html">Resgate e Reabilitação de Animais
+              Silvestres</a></h2>
+        </li>
+        <li class="list-program-item card carousel-item">
+          <img class="program-item-img" src="./assets/images/Animais/mamifero/jaguatirica/jaguaritica filhota.png">
+          <h2 class="subtitle-program"><a href="./templates/programas.html">Apadrinhamento de Animais e Apoio à Fauna</a>
+          </h2>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="container ally">
     <h1 class="title-ally">Seja um aliado!</h1>
@@ -205,6 +208,7 @@
 
   <div id="root"></div>
   <script src="./menu.js"></script>
+  <script src="./carousel.js"></script>
 </body>
 
 </html>

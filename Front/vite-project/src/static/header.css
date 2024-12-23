@@ -1,9 +1,5 @@
-.hdr,
-.hdr-mobile,
-.hdr-desktop,
-.hamburguer-button,
-.nav-menu,
-.menu,
+.hdr, .hdr-mobile, .hdr-desktop,
+.hamburguer-button, .nav-menu, .menu,
 .menu-item {
   font-family: var(--fonte-primaria);
   color: var(--cor-branco-principal);
@@ -58,11 +54,9 @@
   padding: 0.5em;
 }
 
-.menu-item a:hover,
-.menu-item a:focus {
+.menu-item a:hover, .menu-item a:focus {
   background-color: var(--cor-escura-2-hover);
 }
-
 
 .hdr-mobile {
   display: flex;
@@ -228,16 +222,11 @@
     font-size: 1rem;
   }
 
-  #dropdownAnimaisDKT a,
-  #dropdownColabDKT a,
-  #dropdownContabDKT a {
+  #dropdownAnimaisDKT a, #dropdownColabDKT a, #dropdownContabDKT a {
     font-size: 1rem;
     padding: 0;
   }
-
 }
-
-
 
 @media screen and (min-width: 1000px) {
   .hdr-mobile {
@@ -282,8 +271,7 @@
   }
 }
 
-.menu-item-dkt a,
-.menu-item a {
+.menu-item-dkt a, .menu-item a {
   font-size: 1.25rem;
 }
 
@@ -302,8 +290,7 @@
   list-style: none;
 }
 
-.btn,
-.btn-secondary {
+.btn, .btn-secondary {
   z-index: 500;
 }
 
@@ -311,7 +298,6 @@
   display: block;
   opacity: 1;
   z-index: 5000;
-
 }
 
 .dropdown-item {
@@ -353,13 +339,10 @@
     padding: 0.25em;
   }
 
-  #dropdownAnimaisDKT a,
-  #dropdownColabDKT a,
-  #dropdownContabDKT a {
+  #dropdownAnimaisDKT a, #dropdownColabDKT a, #dropdownContabDKT a {
     font-size: 2rem;
     padding: 0;
   }
-
 }
 
 @media screen and (min-width: 1400px) {
@@ -369,12 +352,8 @@
     margin: 0 1em;
   }
 
-
-  #dropdownAnimaisDKT a,
-  #dropdownColabDKT a,
-  #dropdownContabDKT a {
+  #dropdownAnimaisDKT a, #dropdownColabDKT a, #dropdownContabDKT a {
     font-size: 2.5rem;
     padding: 0;
   }
-
 }
