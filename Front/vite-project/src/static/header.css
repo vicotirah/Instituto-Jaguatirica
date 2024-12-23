@@ -369,9 +369,12 @@
     margin: 0 1em;
   }
 
-  .menu-item-dkt a,
-  .dropdown-item a {
-    font-size: 2rem;
+
+  #dropdownAnimaisDKT a,
+  #dropdownColabDKT a,
+  #dropdownContabDKT a {
+    font-size: 2.5rem;
+    padding: 0;
   }
 
 }

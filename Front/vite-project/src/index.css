@@ -345,7 +345,7 @@ a {
     font-size: 1.125rem;
   }
 
-  .container,
+  .container
   .our-animals {
     height: 40vh;
   }
@@ -377,7 +377,7 @@ a {
   }
 
   .ally {
-    height: 65vh;
+    height: 60vh;
   }
 }
 
@@ -575,6 +575,56 @@ a {
     display: block;
     height: 60vh;
   }
+
+  .ally {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container-img-home {
+    background-size: initial;
+    height: 45vh;
+  }
+
+  .bnt-about {
+    font-size: 1.5rem;
+    margin: 20em 0 0 2em;
+    width: 20%;
+    padding: 0.5em;
+  }
+
+  .txt-description {
+    background-color: var(--cor-escura-2);
+    padding: 1em;
+    margin: 1em;
+    width: 85vw;
+    border-radius: 1em;
+  }
+
+  .title-principal-dkt {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .container,
+  .principal,
+  .our-animals {
+    box-sizing: border-box;
+    height: 35vh;
+    width: 100vw;
+  }
+
+  .program {
+    display: block;
+    height: 50vh;
+  }
+
+  .ally {
+    height: 55vh;
+  }
+
+  
 }
 
 
@@ -609,7 +659,7 @@ a {
   .principal,
   .our-animals {
     box-sizing: border-box;
-    height: 40vh;
+    height: 35vh;
     width: 100vw;
   }
 
@@ -634,7 +684,7 @@ a {
   }
 
   .ally {
-    height: 100vh;
+    height: 60vh;
   }
 }
 
